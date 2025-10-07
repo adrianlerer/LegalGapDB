@@ -114,7 +114,7 @@ No! We welcome contributions from:
 - **CSV**: Spreadsheet analysis
 - **Excel**: Multi-sheet analysis with summaries
 - **ML formats**: Classification, regression, text generation
-- **API**: Programmatic access (coming 2026)
+- **API**: Programmatic access (coming 2026 - planned)
 
 ### Can I download the entire database?
 Yes! Multiple options:
@@ -125,12 +125,12 @@ Yes! Multiple options:
 
 ### How do I cite this database?
 ```bibtex
-@dataset{lerer_2026_legalgapdb,
+@dataset{lerer_2025_legalgapdb,
   author = {Lerer, Ignacio Adrian},
   title = {{LegalGapDB: A Crowdsourced Database of 
            Formal/Informal Legal Gaps in Non-WEIRD 
            Jurisdictions}},
-  year = 2026,
+  year = 2025,
   publisher = {Zenodo},
   doi = {10.5281/zenodo.XXXXXXX}
 }
@@ -140,7 +140,7 @@ Yes! Multiple options:
 - **Current**: No API yet (direct downloads available)
 - **Planned**: 1000 requests/hour for research use
 - **Commercial**: Higher limits available by arrangement
-- **Launch**: Q3 2026 estimated
+- **Launch**: Q3 2026 estimated (planned)
 
 ## 🌍 Coverage and Expansion
 

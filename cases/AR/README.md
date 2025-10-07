@@ -137,6 +137,6 @@ This directory contains legal gap cases documented in Argentina, covering system
 
 ---
 
-*Last updated: February 2026*  
+*Last updated: October 2025*  
 *Cases contributed by: Ignacio Adrian Lerer (Legal Expert)*  
-*Next review: August 2026*
+*Next review: August 2026 (scheduled)*

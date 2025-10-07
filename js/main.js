@@ -108,10 +108,10 @@ function animateNumber(element, start, end, duration) {
 function generateCountryStatsHTML() {
     const countries = [
         { code: 'AR', name: 'Argentina', cases: 20, flag: '🇦🇷' },
-        { code: 'BR', name: 'Brazil', cases: 0, flag: '🇧🇷', coming: 'Q2 2026' },
-        { code: 'MX', name: 'Mexico', cases: 0, flag: '🇲🇽', coming: 'Q3 2026' },
-        { code: 'IN', name: 'India', cases: 0, flag: '🇮🇳', coming: 'Q3 2026' },
-        { code: 'NG', name: 'Nigeria', cases: 0, flag: '🇳🇬', coming: 'Q4 2026' }
+        { code: 'BR', name: 'Brazil', cases: 0, flag: '🇧🇷', coming: 'Q2 2026 (planned)' },
+        { code: 'MX', name: 'Mexico', cases: 0, flag: '🇲🇽', coming: 'Q3 2026 (planned)' },
+        { code: 'IN', name: 'India', cases: 0, flag: '🇮🇳', coming: 'Q3 2026 (planned)' },
+        { code: 'NG', name: 'Nigeria', cases: 0, flag: '🇳🇬', coming: 'Q4 2026 (planned)' }
     ];
     
     return countries.map(country => {

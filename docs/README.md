@@ -113,7 +113,7 @@ A **legal gap** is a systematic divergence between:
 ### Academic Papers
 - Henrich, J. et al. (2010). "The Weirdest People in the World?" *Behavioral and Brain Sciences*
 - Hadfield, G. (2016). "Rules for a Flat World" - Oxford University Press
-- Our forthcoming paper: "Beyond WEIRD Legal AI" (2026)
+- Our forthcoming paper: "Beyond WEIRD Legal AI" (planned for 2026)
 
 ### Legal Databases
 - **Argentina**: InfoLEG, SAIJ, INDEC
@@ -147,12 +147,12 @@ A **legal gap** is a systematic divergence between:
 
 | Section | Status | Last Updated | Next Review |
 |---------|--------|--------------|-------------|
-| Getting Started | ✅ Complete | 2026-02-01 | 2026-05-01 |
-| API Reference | ✅ Complete | 2026-02-01 | 2026-03-01 |
-| Schema Reference | ✅ Complete | 2026-02-01 | 2026-04-01 |
-| Use Cases | 🔄 In Progress | 2026-02-01 | 2026-03-01 |
-| Jurisdictional Guides | 🔄 Partial | 2026-02-01 | 2026-04-01 |
-| Tools Documentation | ✅ Complete | 2026-02-01 | 2026-06-01 |
+| Getting Started | ✅ Complete | 2025-10-07 | 2025-10-07 |
+| API Reference | ✅ Complete | 2025-10-07 | 2025-10-07 |
+| Schema Reference | ✅ Complete | 2025-10-07 | 2025-10-07 |
+| Use Cases | 🔄 In Progress | 2025-10-07 | 2025-10-07 |
+| Jurisdictional Guides | 🔄 Partial | 2025-10-07 | 2025-10-07 |
+| Tools Documentation | ✅ Complete | 2025-10-07 | 2025-10-07 |
 
 ## 🏷️ Tags and Categories
 
@@ -167,6 +167,6 @@ A **legal gap** is a systematic divergence between:
 
 *This documentation is maintained by the LegalGapDB community. Found an error or want to contribute? See our [contribution guidelines](../CONTRIBUTING.md).*
 
-**Last Updated**: February 2026  
+**Last Updated**: October 2025  
 **Version**: 1.0  
 **License**: CC BY-SA 4.0 (Documentation), MIT (Code)

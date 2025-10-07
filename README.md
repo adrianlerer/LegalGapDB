@@ -114,7 +114,7 @@ python tools/validate_case.py cases/AR/labor/AR-LAB-001.json
 - 🏛️ **Criminal Law**: [ESTIMACIÓN: 23.1%] conviction rate
 - 👨‍👩‍👧‍👦 **Family Law**: 45.3% average compliance
 
-*Updated: February 2026*
+*Updated: October 2025*
 
 ## 🤝 How to Contribute
 
@@ -163,7 +163,7 @@ We apply Reality Reasoner 3.0 protocol to verify all statistical claims:
 
 ### BibTeX
 ```bibtex
-@dataset{lerer_2026_legalgapdb,
+@dataset{lerer_2025_legalgapdb,
   author       = {Lerer, Ignacio Adrian},
   title        = {{LegalGapDB: A Crowdsourced Database of 
                    Formal/Informal Legal Gaps in Non-WEIRD 
