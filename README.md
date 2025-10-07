@@ -33,6 +33,17 @@ LegalGapDB documents this gap to enable Legal AI that works for the **Global Maj
 | Family Law | 2 | 0 | 0 | 0 | 0 | **2** |
 | **Total** | **19** | **0** | **0** | **0** | **0** | **19** |
 
+## 🌐 Website Access
+
+**Primary Website:** https://adrianlerer.github.io/LegalGapDB  
+**Key Pages:**
+- [Browse Cases](https://adrianlerer.github.io/LegalGapDB/browse.html) - Explore legal gap documentation
+- [Contribute](https://adrianlerer.github.io/LegalGapDB/contribute.html) - Join our global community
+- [Statistics](https://adrianlerer.github.io/LegalGapDB/stats.html) - View gap analysis dashboards
+- [API Docs](https://adrianlerer.github.io/LegalGapDB/api.html) - Programmatic access guide
+
+> **Note for Developers:** GitHub Pages serves from `/web` directory. Run `./sync-web.sh` after updating HTML files to maintain website functionality.
+
 ## 🚀 Quick Start
 
 ### 1. 🔍 Explore
