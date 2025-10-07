@@ -17,7 +17,7 @@
   },
   
   "informal_practice": {
-    "text": "En la práctica, el 42% de trabajadores argentinos opera sin registro formal en seguridad social ('trabajo en negro'). La tasa de informalidad varía por sector: construcción (76.6%), trabajo doméstico (77%), comercio minorista (47%), agricultura (51%), industria (28%). El incumplimiento es mayor en empresas pequeñas (<10 empleados: 65%) que en grandes (>200 empleados: 12%).",
+    "text": "En la práctica, el 42% de trabajadores argentinos opera sin registro formal en seguridad social ('trabajo en negro'). La tasa de informalidad varía por sector: construcción (76.6%), trabajo doméstico (77%), comercio (51.9%), agricultura (datos no disponibles), industria (36.1%). El incumplimiento es mayor en empresas pequeñas (<10 empleados: 65%) que en grandes (>200 empleados: 12%). Por edad: jóvenes hasta 29 años (58.7%), 30-64 años (36.5%), 65+ años (49.5%). Por género: mujeres (43.4%), varones (40.9%).",
     "sources": [
       "INDEC - Informe de Informalidad Laboral EPH Q4 2024",
       "Ministerio de Trabajo - Sistema de Inspecciones"
@@ -38,9 +38,17 @@
       "sectoral_breakdown": {
         "construction": 76.6,
         "domestic_work": 77,
-        "retail": 47,
-        "agriculture": 51,
-        "manufacturing": 28
+        "retail": 51.9,
+        "manufacturing": 36.1
+      },
+      "age_breakdown": {
+        "youth_up_to_29": 58.7,
+        "adult_30_64": 36.5,
+        "senior_65_plus": 49.5
+      },
+      "gender_breakdown": {
+        "women": 43.4,
+        "men": 40.9
       },
       "firm_size_breakdown": {
         "micro_0_10": 65,
@@ -91,7 +99,7 @@
   
   "english_abstract": {
     "formal": "Argentine Labor Contract Law (LCT 20.744) mandates that all employers register workers with social security within 5 days of hiring and contribute 23% of gross salary monthly.",
-    "informal": "In practice, 42% of Argentine workers operate without formal registration ('trabajo en negro'). Informality varies by sector: construction (76.6%), domestic work (77%), retail (47%), agriculture (51%), manufacturing (28%).",
+    "informal": "In practice, 42% of Argentine workers operate without formal registration ('trabajo en negro'). Informality varies by sector: construction (76.6%), domestic work (77%), retail (51.9%), manufacturing (36.1%). By age: youth up to 29 years (58.7%), adults 30-64 (36.5%), seniors 65+ (49.5%). By gender: women (43.4%), men (40.9%).",
     "gap": "Gap persists due to: (1) limited inspection capacity (300 inspectors for 1.2M firms = [ESTIMACIÓN: 0.8% annual inspection probability]), (2) administrative burden (18 hours/month for small employers), (3) selective enforcement (penalties rarely executed due to 3.5-year judicial delays), (4) economic equilibrium (low-productivity sectors cannot absorb 23% contribution + admin costs), (5) social norm (informality perceived as necessary for SME survival)."
   },
   

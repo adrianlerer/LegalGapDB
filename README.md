@@ -133,6 +133,32 @@ We welcome contributions from:
 
 **Read the full [Contribution Guide](CONTRIBUTING.md)**
 
+## 📝 Data Quality & Corrections
+
+**Last Update:** October 7, 2025
+
+**Recent Corrections based on Reality Reasoner 3.0 verification:**
+- ✅ Labor informality rate confirmed at 42% (INDEC Q4 2024)
+- ✅ Informal workers updated to ~9M absolute number (INDEC Q4 2024)  
+- ✅ Construction sector informality updated to 76.6% (was 58%, INDEC Q4 2024)
+- ✅ Domestic workers informality updated to 77% (was 72%, INDEC Q4 2024)
+- ✅ Retail sector informality updated to 51.9% (INDEC Q4 2024)
+- ✅ Manufacturing sector informality updated to 36.1% (was 28%, INDEC Q4 2024)
+- ⚠️ Inspection probability marked as **[ESTIMACIÓN]** - requires verification
+- ⚠️ Criminal conviction rate marked as **[ESTIMACIÓN: 23.1%]** - requires verification
+
+**Data Sources:**
+- All labor statistics sourced from INDEC official EPH Q4 2024 reports
+- Criminal statistics require additional verification from MPF/PJN
+- For detailed methodology and source verification, see [data_validation.md](docs/data_validation.md)
+
+**Verification Protocol:**
+We apply Reality Reasoner 3.0 protocol to verify all statistical claims:
+1. 🔍 Source verification with official government data
+2. 📊 Cross-reference with multiple authoritative sources  
+3. 🏷️ Clear labeling: [Verified], [Estimación], or [Conjetura]
+4. 📅 Regular updates with latest available data
+
 ## 📚 Citation
 
 ### BibTeX
