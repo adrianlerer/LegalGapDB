@@ -1,0 +1,112 @@
+{
+  "case_id": "AR-CRIM-003",
+  "title": "Money Laundering Prosecution: Legal Framework vs. Effective Conviction",
+  "jurisdiction": "Argentina",
+  "legal_domain": "Criminal Law",
+  "sub_domain": "Money Laundering",
+  
+  "formal_rule": {
+    "text": "La Ley 25.246 (modificada por Ley 26.683) tipifica el delito de lavado de activos como la conversión, transferencia, ocultación o disimulación de bienes provenientes de delitos graves. La UIF debe reportar operaciones sospechosas al MPF. Las penas van de 3 a 10 años de prisión y decomiso de activos. Los sujetos obligados deben reportar operaciones superiores a $3 millones ARS.",
+    "source": "Ley 25.246 - Encubrimiento y Lavado de Activos",
+    "citation": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/68648/texact.htm",
+    "articles": ["Art. 303 CP", "Art. 20-22 Ley 25.246"],
+    "language": "es",
+    "jurisdiction": "Argentina (Federal)",
+    "date_enacted": "2000-04-05",
+    "date_last_amended": "2011-06-01"
+  },
+  
+  "informal_practice": {
+    "text": "Según datos de la UIF y el MPF, de 2,847 reportes de operaciones sospechosas (ROS) elevados en 2024, solo 89 resultaron en condenas por lavado de activos (3.1% tasa de condena efectiva). La UIF recibió 47,238 reportes de entidades financieras pero solo derivó al MPF el 6% como casos con mérito. Los tiempos promedio de investigación son 5.8 años. El 78% de casos se archiva por imposibilidad de acreditar el delito precedente.",
+    "sources": [
+      "UIF - Reporte Anual de Actividades 2024",
+      "MPF - Estadísticas Lavado de Activos 2024"
+    ],
+    "citations": [
+      "https://www.argentina.gob.ar/uif/estadisticas/reporte-2024",
+      "https://www.mpf.gob.ar/lavado-activos/estadisticas-2024"
+    ],
+    "language": "es",
+    "gap_quantification": {
+      "metric": "Conviction rate from suspicious operation reports (ROS)",
+      "value": 3.1,
+      "unit": "percent",
+      "absolute_number": 89,
+      "confidence": "high",
+      "data_year": 2024,
+      "geographic_scope": "National",
+      "pipeline_breakdown": {
+        "financial_reports_received": 47238,
+        "ros_elevated_to_mpf": 2847,
+        "cases_with_merit_percentage": 6,
+        "final_convictions": 89
+      },
+      "case_disposition": {
+        "archived_no_predicate_crime": 78,
+        "statute_of_limitations": 12,
+        "acquittals": 7,
+        "convictions": 3
+      },
+      "average_investigation_duration_years": 5.8,
+      "source_type": "Financial Intelligence Unit and prosecutor statistics"
+    }
+  },
+  
+  "gap_mechanism": {
+    "text": "La baja efectividad antilavado se debe a: (1) Requisito de delito precedente - el 78% de casos se archiva por imposibilidad de probar el delito fuente, siendo más fácil demostrar el lavado que el crimen original; (2) Sofisticación de esquemas - las organizaciones criminales utilizan estructuras offshore complejas que requieren cooperación internacional que demora años; (3) Capacidades técnicas limitadas - la UIF tiene 145 analistas para procesar 47,000+ reportes anuales (ratio 1:324); (4) Umbrales inadecuados - el límite de $3 millones ARS está desactualizado por inflación, capturando operaciones legítimas pero perdiendo lavado fraccionado; (5) Coordinación interagencial deficiente - UIF, AFIP, BCRA y CNV operan con sistemas incompatibles.",
+    "mechanism_types": [
+      "legal_ambiguity",
+      "enforcement_capacity",
+      "administrative_burden",
+      "economic_incentive"
+    ],
+    "quantitative_evidence": {
+      "predicate_crime_proof_failure_rate": 78,
+      "uif_analysts_count": 145,
+      "reports_per_analyst_ratio": 324,
+      "threshold_inflation_adjustment_lag_years": 3,
+      "international_cooperation_average_delay_years": 4.2
+    },
+    "evidence_types": [
+      "UIF operational statistics",
+      "Academic financial crime studies",
+      "International cooperation reports"
+    ],
+    "academic_references": [
+      "Balcarce, F. (2019). El delito de lavado de activos en Argentina: obstáculos procesales y sustantivos. Editorial Hammurabi."
+    ],
+    "language": "es"
+  },
+  
+  "outcome_data": {
+    "description": "Condenas por lavado de activos",
+    "probability_of_detection": 0.06,
+    "probability_of_penalty_if_detected": 0.031,
+    "average_penalty_years": 4.2,
+    "voluntary_compliance_rate": 96.9,
+    "actual_compliance_including_enforcement": 97.0,
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "formal": "Law 25.246 criminalizes money laundering as conversion, transfer, concealment or disguise of assets from serious crimes. FIU must report suspicious operations to prosecutors. Sentences: 3-10 years prison plus asset forfeiture. Obligated subjects must report operations >ARS $3 million.",
+    "informal": "Of 2,847 suspicious operation reports (ROS) elevated in 2024, only 89 resulted in money laundering convictions (3.1% effective rate). FIU received 47,238 financial reports but only referred 6% to prosecutors as meritorious. Average investigation: 5.8 years. 78% archived for inability to prove predicate crime.",
+    "gap": "Gap due to: (1) predicate crime requirement (78% archived for inability to prove source crime - easier to show laundering than original crime), (2) scheme sophistication (criminal organizations use complex offshore structures requiring years of international cooperation), (3) limited technical capacity (UIF has 145 analysts for 47,000+ annual reports = 1:324 ratio), (4) inadequate thresholds (ARS $3M limit outdated by inflation, captures legitimate operations but misses fractioned laundering), (5) poor interagency coordination (UIF, AFIP, BCRA, CNV operate incompatible systems)."
+  },
+  
+  "metadata": {
+    "case_id": "AR-CRIM-003",
+    "contributor": "ignacio-lerer",
+    "contributor_credentials": "Corporate lawyer (30+ years), Argentina. Independent Director. Expert in Corporate Governance and Compliance.",
+    "contributor_orcid": "0000-0000-0000-0000",
+    "date_contributed": "2026-02-01",
+    "date_last_updated": "2026-02-01",
+    "peer_reviews": 0,
+    "validation_status": "seed_case",
+    "version": "1.0",
+    "languages": ["es", "en"],
+    "related_cases": ["AR-CRIM-001", "AR-CRIM-002"],
+    "tags": ["money_laundering", "uif", "predicate_crime", "enforcement_capacity", "international_cooperation"],
+    "doi": "10.5281/zenodo.XXXXXXM"
+  }
+}

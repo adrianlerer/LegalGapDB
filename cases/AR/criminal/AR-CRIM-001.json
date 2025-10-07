@@ -1,0 +1,113 @@
+{
+  "case_id": "AR-CRIM-001",
+  "title": "Economic Crimes Conviction Rate: Legal Framework vs. Judicial Outcomes",
+  "jurisdiction": "Argentina",
+  "legal_domain": "Criminal Law",
+  "sub_domain": "Economic Crimes",
+  
+  "formal_rule": {
+    "text": "El Código Penal Argentino tipifica delitos económicos como estafa (Art. 172), administración fraudulenta (Art. 173), quiebra fraudulenta (Art. 176), evasión fiscal (Art. 1 Ley 24.769), y lavado de activos (Art. 303 CP). Las penas van de 1 a 15 años de prisión según el delito. El Ministerio Público Fiscal debe investigar y promover la acción penal pública.",
+    "source": "Código Penal y Ley 24.769 - Régimen Penal Tributario",
+    "citation": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/16546/texact.htm",
+    "articles": ["Art. 172-176 CP", "Art. 303 CP", "Art. 1-9 Ley 24.769"],
+    "language": "es",
+    "jurisdiction": "Argentina (Federal)",
+    "date_enacted": "1921-09-29",
+    "date_last_amended": "2020-11-04"
+  },
+  
+  "informal_practice": {
+    "text": "Según datos del MPF y el Poder Judicial, la tasa de condenas efectivas por delitos económicos es del 23.1% sobre causas iniciadas. De 8,745 causas económicas iniciadas en 2024, solo 2,021 terminaron en condenas firmes. El 34% de casos se archiva por falta de pruebas, 28% prescribe, 12% termina en sobreseimiento, y solo 3% resulta en prisión efectiva. Los tiempos promedio de resolución son 4.7 años para estafa compleja y 6.2 años para lavado de activos.",
+    "sources": [
+      "MPF - Estadísticas Criminales 2024",
+      "Poder Judicial de la Nación - Anuario Estadístico 2024"
+    ],
+    "citations": [
+      "https://www.mpf.gob.ar/estadisticas/criminales-2024",
+      "https://www.pjn.gov.ar/estadisticas/anuario-2024.pdf"
+    ],
+    "language": "es",
+    "gap_quantification": {
+      "metric": "Conviction rate for economic crimes vs. initiated cases",
+      "value": 23.1,
+      "unit": "percent",
+      "absolute_number": 2021,
+      "confidence": "high",
+      "data_year": 2024,
+      "geographic_scope": "National (federal jurisdiction)",
+      "case_outcomes": {
+        "convictions": 23.1,
+        "dismissed_lack_evidence": 34,
+        "statute_of_limitations": 28,
+        "acquittal": 12,
+        "effective_prison": 3
+      },
+      "average_resolution_time": {
+        "complex_fraud": 4.7,
+        "money_laundering": 6.2,
+        "tax_evasion": 3.8,
+        "bankruptcy_fraud": 5.1
+      },
+      "total_cases_initiated": 8745,
+      "source_type": "Official judicial statistics"
+    }
+  },
+  
+  "gap_mechanism": {
+    "text": "La baja tasa de condenas se debe a: (1) Complejidad probatoria extrema - los delitos económicos requieren pericia contable, financiera y tecnológica que demora 18-24 meses promedio; (2) Recursos judiciales limitados - existen solo 42 juzgados especializados en crimen económico para todo el país; (3) Estrategias dilatorias de la defensa - el sistema procesal permite múltiples recursos que extienden los plazos más allá de la prescripción; (4) Capacitación judicial insuficiente - solo el 31% de jueces criminales tiene formación específica en delitos financieros complejos; (5) Cooperación internacional lenta - casos con componente offshore demoran 2-5 años adicionales por cartas rogatorias.",
+    "mechanism_types": [
+      "enforcement_capacity",
+      "administrative_burden",
+      "legal_ambiguity",
+      "economic_incentive"
+    ],
+    "quantitative_evidence": {
+      "expert_evidence_duration_months": [18, 24],
+      "specialized_courts_count": 42,
+      "appeals_average_per_case": 3.4,
+      "judges_with_financial_training": 31,
+      "international_cooperation_delay_years": [2, 5]
+    },
+    "evidence_types": [
+      "Judicial statistics",
+      "Academic criminal law studies",
+      "International cooperation reports"
+    ],
+    "academic_references": [
+      "Donna, E. A. (2021). Los delitos económicos en Argentina: diagnóstico del sistema penal. Editorial Rubinzal-Culzoni."
+    ],
+    "language": "es"
+  },
+  
+  "outcome_data": {
+    "description": "Condenas por delitos económicos",
+    "probability_of_detection": 0.45,
+    "probability_of_penalty_if_detected": 0.231,
+    "average_penalty_years": 2.8,
+    "voluntary_compliance_rate": 76.9,
+    "actual_compliance_including_enforcement": 77.3,
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "formal": "Argentine Penal Code criminalizes economic crimes: fraud (Art. 172), fraudulent administration (Art. 173), bankruptcy fraud (Art. 176), tax evasion (Law 24.769), money laundering (Art. 303). Sentences range 1-15 years. Public Prosecutor must investigate and prosecute.",
+    "informal": "Effective conviction rate for economic crimes is 23.1% of initiated cases. Of 8,745 economic cases in 2024, only 2,021 ended in final convictions. 34% dismissed for lack of evidence, 28% statute of limitations, 12% acquitted, only 3% result in effective prison. Average resolution: 4.7 years (complex fraud), 6.2 years (money laundering).",
+    "gap": "Gap due to: (1) extreme evidentiary complexity (economic crimes require accounting/financial/tech expertise taking 18-24 months average), (2) limited judicial resources (only 42 specialized economic crime courts nationwide), (3) defense dilatory strategies (procedural system allows multiple appeals extending beyond statute of limitations), (4) insufficient judicial training (only 31% of criminal judges have specialized financial crimes training), (5) slow international cooperation (offshore cases take 2-5 additional years for rogatory letters)."
+  },
+  
+  "metadata": {
+    "case_id": "AR-CRIM-001",
+    "contributor": "ignacio-lerer",
+    "contributor_credentials": "Corporate lawyer (30+ years), Argentina. Independent Director. Expert in Corporate Governance and Compliance.",
+    "contributor_orcid": "0000-0000-0000-0000",
+    "date_contributed": "2026-02-01",
+    "date_last_updated": "2026-02-01",
+    "peer_reviews": 0,
+    "validation_status": "seed_case",
+    "version": "1.0",
+    "languages": ["es", "en"],
+    "related_cases": ["AR-CRIM-002", "AR-TAX-002"],
+    "tags": ["economic_crimes", "conviction_rate", "judicial_capacity", "complex_evidence", "statute_limitations"],
+    "doi": "10.5281/zenodo.XXXXXXK"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "_comment": "LegalGapDB Case Template - Fill all required fields below",
+  "_version": "1.0",
+  "_last_updated": "2026-02-01",
+  
+  "case_id": "XX-DOMAIN-NNN",
+  "_case_id_format": "ISO country code (XX) + legal domain abbreviation (DOMAIN) + sequential number (NNN)",
+  "_case_id_examples": ["AR-LAB-001", "BR-TAX-015", "IN-CORP-003"],
+  
+  "title": "Brief descriptive title in English (10-150 characters)",
+  "_title_guidelines": "Should be clear and specific about the legal gap being documented",
+  
+  "jurisdiction": "Full country name (e.g., Argentina, Brazil, Mexico)",
+  "legal_domain": "Primary legal area - choose from predefined list",
+  "_legal_domains": ["Labor Law", "Tax Law", "Corporate Law", "Criminal Law", "Family Law", "Property Law", "Environmental Law", "Consumer Law", "Administrative Law", "Contract Law"],
+  "sub_domain": "Specific sub-area within the legal domain",
+  
+  "formal_rule": {
+    "_comment": "The written law as formally enacted - always in original language",
+    "text": "Complete text of the relevant legal rule in original language (minimum 50 characters)",
+    "source": "Name of the legal source (statute, regulation, constitution, etc.)",
+    "citation": "Standard legal citation with URL to official government source (InfoLEG, official gazette, etc.)",
+    "articles": ["Art. X", "Art. Y", "Section Z"],
+    "_articles_note": "List specific articles, sections, or provisions referenced",
+    "language": "ISO 639-1 language code (es, pt, en, hi, etc.)",
+    "jurisdiction": "Level of jurisdiction (Federal, Provincial, State, Municipal)",
+    "date_enacted": "YYYY-MM-DD format",
+    "date_last_amended": "YYYY-MM-DD format - use enactment date if never amended"
+  },
+  
+  "informal_practice": {
+    "_comment": "Actual practice with quantified gap - this is the core data",
+    "text": "Detailed description of what actually happens in practice, with specific statistics and data",
+    "sources": [
+      "Source 1 (e.g., National Statistics Office)",
+      "Source 2 (e.g., Government Ministry Report)"
+    ],
+    "citations": [
+      "https://official-source-1.gov/report",
+      "https://official-source-2.gov/statistics"
+    ],
+    "_citations_note": "Must be publicly accessible URLs - avoid paywalled academic sources if possible",
+    "language": "ISO 639-1 language code matching the description",
+    "gap_quantification": {
+      "_comment": "This is the most critical section - quantify the gap precisely",
+      "metric": "Clear description of what is being measured (e.g., 'Percentage of workers without formal registration')",
+      "value": 0.0,
+      "_value_note": "Numeric value - use decimals for percentages (e.g., 40.1 for 40.1%)",
+      "unit": "Unit of measurement (percent, number, rate, ratio, etc.)",
+      "absolute_number": 0,
+      "_absolute_number_note": "Actual number of people/entities affected, if available",
+      "confidence": "high, medium, or low - based on data source reliability",
+      "_confidence_criteria": {
+        "high": "Official government statistics, large sample surveys",
+        "medium": "Academic studies, professional surveys", 
+        "low": "Estimates, small samples, indirect measures"
+      },
+      "data_year": 2024,
+      "_data_year_note": "Year the data was collected - prefer 2023-2024",
+      "geographic_scope": "National, Regional, Sectoral, or specific description",
+      "sectoral_breakdown": {
+        "_comment": "Optional - breakdown by economic sectors if relevant",
+        "sector_1": 0.0,
+        "sector_2": 0.0
+      },
+      "source_type": "Brief description of data source type (e.g., 'Official government statistics', 'Academic survey')"
+    }
+  },
+  
+  "gap_mechanism": {
+    "_comment": "WHY the gap persists - this is crucial for understanding causation",
+    "text": "Detailed explanation of the structural, economic, social, and institutional factors that cause and sustain the gap",
+    "mechanism_types": [
+      "Choose from: enforcement_capacity, administrative_burden, social_norm, economic_incentive, corruption, legal_ambiguity"
+    ],
+    "_mechanism_definitions": {
+      "enforcement_capacity": "Limited resources, inspectors, courts, or administrative capacity",
+      "administrative_burden": "Complex procedures, high compliance costs, bureaucratic obstacles", 
+      "social_norm": "Cultural acceptance, traditional practices, peer pressure",
+      "economic_incentive": "Cost-benefit calculations favor non-compliance",
+      "corruption": "Bribery, favoritism, selective enforcement",
+      "legal_ambiguity": "Unclear rules, conflicting interpretations, loopholes"
+    },
+    "quantitative_evidence": {
+      "_comment": "Provide specific numbers supporting your mechanism explanation",
+      "key_metric_1": 0.0,
+      "key_metric_2": 0.0,
+      "_examples": {
+        "inspector_to_firm_ratio": "For enforcement_capacity",
+        "process_duration_days": "For administrative_burden",
+        "penalty_amount_vs_benefit": "For economic_incentive"
+      }
+    },
+    "evidence_types": [
+      "Government capacity data",
+      "Academic studies", 
+      "Professional observation",
+      "International comparisons"
+    ],
+    "academic_references": [
+      "Full academic citation if available - Author, A. (Year). Title. Journal/Publisher."
+    ],
+    "language": "ISO 639-1 code matching the mechanism description"
+  },
+  
+  "outcome_data": {
+    "_comment": "Enforcement probabilities and outcomes - helps quantify deterrent effect",
+    "description": "Brief description of what the outcome data represents",
+    "probability_of_detection": 0.0,
+    "_detection_note": "Probability that non-compliance will be detected (0.0-1.0)",
+    "probability_of_penalty_if_detected": 0.0,
+    "_penalty_note": "Probability of actual penalty given detection (0.0-1.0)",
+    "average_penalty": 0,
+    "_penalty_amount_note": "Average monetary penalty in local currency, or 0 if non-monetary",
+    "average_penalty_years": 0.0,
+    "_penalty_years_note": "For criminal cases - average prison sentence in years",
+    "voluntary_compliance_rate": 0.0,
+    "_voluntary_note": "Percentage complying without enforcement pressure",
+    "actual_compliance_including_enforcement": 0.0,
+    "_actual_note": "Total compliance rate including enforcement effects",
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "_comment": "Brief summary in English for international researchers - always required",
+    "formal": "1-2 sentence summary of the formal rule in clear English",
+    "informal": "1-2 sentence summary of informal practice with key statistics",
+    "gap": "1-2 sentence summary of why the gap persists (main mechanisms)"
+  },
+  
+  "metadata": {
+    "_comment": "Administrative information - critical for tracking and validation",
+    "case_id": "Must match the main case_id field exactly",
+    "contributor": "GitHub username, ORCID ID, or institutional affiliation",
+    "contributor_credentials": "Brief description of contributor's professional background and expertise",
+    "contributor_orcid": "0000-0000-0000-0000 format if available",
+    "date_contributed": "YYYY-MM-DD - date first submitted",
+    "date_last_updated": "YYYY-MM-DD - date of last modification",
+    "peer_reviews": 0,
+    "_peer_reviews_note": "Number of completed peer reviews - starts at 0",
+    "validation_status": "pending, verified, disputed, or seed_case",
+    "_validation_statuses": {
+      "pending": "Awaiting peer review",
+      "verified": "Passed peer review process",
+      "disputed": "Under review due to challenges",
+      "seed_case": "Initial cases created by project founders"
+    },
+    "version": "1.0",
+    "_version_note": "Increment for major revisions (1.0 -> 1.1 -> 2.0)",
+    "languages": ["es", "en"],
+    "_languages_note": "List all languages used in the case (formal_rule, gap_mechanism, etc.)",
+    "related_cases": ["CASE-ID-1", "CASE-ID-2"],
+    "_related_cases_note": "Case IDs of related cases in same or different jurisdictions",
+    "tags": ["keyword1", "keyword2", "keyword3"],
+    "_tags_examples": ["informality", "enforcement_gap", "labor_law", "tax_evasion", "corruption"],
+    "doi": "Leave blank - DOI will be assigned upon verification"
+  },
+  
+  "_validation_checklist": {
+    "_comment": "Use this checklist before submitting",
+    "required_fields_complete": false,
+    "citations_accessible": false,
+    "quantification_specific": false,
+    "gap_mechanism_explained": false,
+    "english_abstract_clear": false,
+    "contributor_info_complete": false
+  },
+  
+  "_submission_notes": {
+    "file_naming": "Save as XX-DOMAIN-NNN.json (matching case_id)",
+    "directory_placement": "Place in cases/XX/domain/ subdirectory",
+    "validation": "Run python tools/validate_case.py your_case.json before submitting",
+    "pull_request": "Submit via GitHub pull request with completed template"
+  }
+}

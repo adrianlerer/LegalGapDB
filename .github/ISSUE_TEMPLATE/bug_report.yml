@@ -1,0 +1,120 @@
+name: Bug Report
+description: Report a bug or technical issue
+title: "[BUG] "
+labels: ["bug", "needs-triage"]
+projects: ["LegalGapDB"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve LegalGapDB! Please provide detailed information about the bug you encountered.
+
+  - type: dropdown
+    id: bug_category
+    attributes:
+      label: Bug Category
+      description: Which part of the system is affected?
+      options:
+        - Validation Tools
+        - Export Tools
+        - Statistics Dashboard
+        - Website/UI
+        - Documentation
+        - GitHub Workflows
+        - JSON Schema
+        - Case Data
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of the bug
+      placeholder: "Describe what happened..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Step-by-step instructions to reproduce the bug
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. Scroll down to...
+        4. See error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: What should have happened instead?
+      placeholder: "Describe the expected behavior..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: "Describe what actually occurred..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: error_messages
+    attributes:
+      label: Error Messages
+      description: Include any error messages, logs, or console output
+      placeholder: "Paste error messages here..."
+      render: shell
+    validations:
+      required: false
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Your operating system and Python version (if applicable)
+      placeholder: "e.g., Windows 11, Python 3.9.2"
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser (for website issues)
+      description: Browser name and version
+      placeholder: "e.g., Chrome 91.0.4472.124"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Any additional information that might be helpful
+      placeholder: "Screenshots, related issues, workarounds, etc."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Verification
+      description: Please confirm the following
+      options:
+        - label: I have searched for existing issues
+          required: true
+        - label: I have provided sufficient detail to reproduce the bug
+          required: true
+        - label: This is a genuine bug report (not a feature request)
+          required: true

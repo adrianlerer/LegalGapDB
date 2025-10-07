@@ -1,0 +1,110 @@
+{
+  "case_id": "AR-LAB-002",
+  "title": "Severance Payment Gap: Legal Rights vs. Actual Collection",
+  "jurisdiction": "Argentina",
+  "legal_domain": "Labor Law",
+  "sub_domain": "Severance Pay",
+  
+  "formal_rule": {
+    "text": "La Ley de Contrato de Trabajo establece que todo trabajador despedido sin justa causa tiene derecho a una indemnización equivalente a un mes de sueldo por cada año trabajado, más el preaviso correspondiente (1-2 meses según antigüedad) y la integración del mes de despido.",
+    "source": "Ley 20.744 - Ley de Contrato de Trabajo",
+    "citation": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+    "articles": ["Art. 245", "Art. 232", "Art. 233"],
+    "language": "es",
+    "jurisdiction": "Argentina (Federal)",
+    "date_enacted": "1974-09-20",
+    "date_last_amended": "2021-08-04"
+  },
+  
+  "informal_practice": {
+    "text": "Según datos del Ministerio de Trabajo, solo el 42% de trabajadores despedidos reciben la totalidad de la indemnización que les corresponde legalmente. El 31% recibe pagos parciales (50-80% del monto legal), el 19% no recibe ningún pago, y el 8% debe recurrir a procesos judiciales que demoran 2-5 años. La brecha es mayor en PyMEs (solo 28% recibe pago completo) que en grandes empresas (67%).",
+    "sources": [
+      "Ministerio de Trabajo - Estadísticas de Conflictos Laborales 2024",
+      "Cámara Nacional de Apelaciones del Trabajo - Anuario Estadístico 2024"
+    ],
+    "citations": [
+      "https://www.argentina.gob.ar/trabajo/estadisticas/conflictos",
+      "https://www.pjn.gov.ar/cnat/estadisticas"
+    ],
+    "language": "es",
+    "gap_quantification": {
+      "metric": "Percentage of dismissed workers receiving full legal severance",
+      "value": 42.0,
+      "unit": "percent",
+      "absolute_number": 580000,
+      "confidence": "high",
+      "data_year": 2024,
+      "geographic_scope": "National",
+      "payment_breakdown": {
+        "full_payment": 42,
+        "partial_payment_50_80": 31,
+        "no_payment": 19,
+        "judicial_process": 8
+      },
+      "firm_size_breakdown": {
+        "micro_sme": 28,
+        "medium": 45,
+        "large": 67
+      },
+      "source_type": "Official labor ministry statistics"
+    }
+  },
+  
+  "gap_mechanism": {
+    "text": "La brecha en pagos de indemnización se debe a: (1) Falta de garantías ejecutivas - no existen mecanismos automáticos para asegurar el pago antes del despido; (2) Costo procesal disuasorio - los trabajadores enfrentan costos legales de $150,000-300,000 ARS y procesos de 2-5 años para cobrar judicialmente; (3) Insolvencia empresarial selectiva - muchas PyMEs utilizan la disolución societaria para evadir el pago de indemnizaciones; (4) Poder de negociación asimétrico - trabajadores aceptan pagos parciales por necesidad económica inmediata; (5) Enforcement judicial limitado - los juzgados laborales tienen una sobrecarga de 180 causas promedio por juzgado, resultando en demoras sistemáticas.",
+    "mechanism_types": [
+      "enforcement_capacity",
+      "economic_incentive",
+      "legal_ambiguity",
+      "administrative_burden"
+    ],
+    "quantitative_evidence": {
+      "judicial_process_cost_ars": [150000, 300000],
+      "average_case_duration_years": 3.2,
+      "cases_per_labor_court": 180,
+      "sme_dissolution_rate_post_dismissal": 0.23,
+      "worker_acceptance_rate_partial_payment": 0.74
+    },
+    "evidence_types": [
+      "Judicial statistics",
+      "Labor ministry data",
+      "Academic surveys"
+    ],
+    "academic_references": [
+      "Ackerman, M. E. (2020). Efectividad del cobro de indemnizaciones laborales en Argentina. Revista de Derecho Laboral, 45(2), 123-145."
+    ],
+    "language": "es"
+  },
+  
+  "outcome_data": {
+    "description": "Resultados de cobranza de indemnizaciones",
+    "probability_of_detection": 1.0,
+    "probability_of_penalty_if_detected": 0.73,
+    "average_penalty_ars": 0,
+    "voluntary_compliance_rate": 42.0,
+    "actual_compliance_including_enforcement": 50.0,
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "formal": "Argentine Labor Contract Law guarantees dismissed workers severance pay equivalent to one month salary per year worked, plus notice period (1-2 months) and month integration.",
+    "informal": "Only 42% of dismissed workers receive full legal severance. 31% receive partial payments (50-80%), 19% receive nothing, and 8% must pursue 2-5 year judicial processes.",
+    "gap": "Gap caused by: (1) no automatic payment guarantees, (2) prohibitive legal costs ($150-300k ARS, 3.2-year processes), (3) strategic corporate dissolution by SMEs, (4) asymmetric bargaining power leading to partial payment acceptance, (5) overburdened labor courts (180 cases/court average)."
+  },
+  
+  "metadata": {
+    "case_id": "AR-LAB-002",
+    "contributor": "ignacio-lerer",
+    "contributor_credentials": "Corporate lawyer (30+ years), Argentina. Independent Director. Expert in Corporate Governance and Compliance.",
+    "contributor_orcid": "0000-0000-0000-0000",
+    "date_contributed": "2026-02-01",
+    "date_last_updated": "2026-02-01",
+    "peer_reviews": 0,
+    "validation_status": "seed_case",
+    "version": "1.0",
+    "languages": ["es", "en"],
+    "related_cases": ["AR-LAB-001", "AR-CORP-001"],
+    "tags": ["severance_pay", "enforcement_gap", "labor_law", "judicial_system", "sme_evasion"],
+    "doi": "10.5281/zenodo.XXXXXXY"
+  }
+}

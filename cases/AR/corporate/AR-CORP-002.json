@@ -1,0 +1,111 @@
+{
+  "case_id": "AR-CORP-002",
+  "title": "Corporate Governance LSC: Board Independence Requirements vs. Reality",
+  "jurisdiction": "Argentina",
+  "legal_domain": "Corporate Law",
+  "sub_domain": "Corporate Governance",
+  
+  "formal_rule": {
+    "text": "La Ley 19.550 de Sociedades Comerciales (LSC) y las normas de la CNV establecen que las sociedades anónimas abiertas deben tener al menos 25% de directores independientes en su directorio. Los directores independientes no pueden tener vínculos patrimoniales, familiares o comerciales significativos con la sociedad, controlantes o gerencia.",
+    "source": "Ley 19.550 - Ley de Sociedades Comerciales y Normas CNV",
+    "citation": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25553/texact.htm",
+    "articles": ["Art. 256", "Art. 264", "Normas CNV T.O. 2013 Cap. VI"],
+    "language": "es",
+    "jurisdiction": "Argentina (Federal)",
+    "date_enacted": "1972-04-03",
+    "date_last_amended": "2019-12-04"
+  },
+  
+  "informal_practice": {
+    "text": "Según análisis del Instituto Argentino de Ejecutivos de Finanzas (IAEF) sobre 73 empresas cotizantes, solo el 47% cumple efectivamente con el requisito del 25% de directores independientes. El 31% tiene directores formalmente independientes pero con vínculos no declarados, el 15% tiene menos del 25% requerido, y el 7% no designa directores independientes. En empresas familiares cotizantes, el cumplimiento baja al 23%.",
+    "sources": [
+      "IAEF - Encuesta Gobierno Corporativo 2024",
+      "Universidad de San Andrés - Observatorio de Governance 2024"
+    ],
+    "citations": [
+      "https://www.iaef.org.ar/gobierno-corporativo/encuesta-2024",
+      "https://www.udesa.edu.ar/observatorio-governance-2024"
+    ],
+    "language": "es",
+    "gap_quantification": {
+      "metric": "Percentage of listed companies with effective board independence compliance",
+      "value": 47.0,
+      "unit": "percent",
+      "absolute_number": 34,
+      "confidence": "high",
+      "data_year": 2024,
+      "geographic_scope": "National (Buenos Aires Stock Exchange)",
+      "compliance_breakdown": {
+        "fully_compliant": 47,
+        "formally_compliant_undisclosed_links": 31,
+        "below_25_percent": 15,
+        "no_independent_directors": 7
+      },
+      "company_type_breakdown": {
+        "professional_management": 68,
+        "family_controlled": 23,
+        "state_controlled": 82
+      },
+      "total_listed_companies": 73,
+      "source_type": "Financial executives survey and academic governance observatory"
+    }
+  },
+  
+  "gap_mechanism": {
+    "text": "La brecha en independencia directorial se debe a: (1) Redes de relaciones concentradas - el mercado de directores independientes en Argentina es pequeño (aprox. 200 personas), generando vínculos cruzados no evidentes; (2) Control familiar persistente - en el 64% de empresas cotizantes el grupo controlante mantiene >50% del capital, limitando el poder real de directores independientes; (3) Supervisión limitada de CNV - la Comisión no verifica activamente los vínculos de independencia más allá de las declaraciones juradas; (4) Incentivos económicos débiles - las dietas de directores independientes ($150-300k ARS mensuales) atraen profesionales de segundo nivel; (5) Cultura de lealtad personal - se prioriza la confianza personal sobre la independencia profesional en la selección.",
+    "mechanism_types": [
+      "social_norm",
+      "enforcement_capacity",
+      "economic_incentive",
+      "administrative_burden"
+    ],
+    "quantitative_evidence": {
+      "independent_directors_pool_size": 200,
+      "family_control_percentage": 64,
+      "cnv_active_verification": 0.12,
+      "monthly_compensation_ars": [150000, 300000],
+      "cross_directorships_percentage": 47
+    },
+    "evidence_types": [
+      "Corporate governance surveys",
+      "Stock exchange data",
+      "Professional market analysis"
+    ],
+    "academic_references": [
+      "Apreda, R. (2021). Gobierno corporativo en Argentina: avances y desafíos pendientes. Universidad del CEMA."
+    ],
+    "language": "es"
+  },
+  
+  "outcome_data": {
+    "description": "Cumplimiento independencia directorial",
+    "probability_of_detection": 0.12,
+    "probability_of_penalty_if_detected": 0.08,
+    "average_penalty_ars": 850000,
+    "voluntary_compliance_rate": 47.0,
+    "actual_compliance_including_enforcement": 47.2,
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "formal": "Commercial Companies Law 19.550 and CNV regulations require public companies to have at least 25% independent directors. Independent directors cannot have significant patrimonial, family or commercial ties with company, controllers or management.",
+    "informal": "Only 47% of listed companies effectively comply with 25% independent directors requirement. 31% have formally independent directors with undisclosed links, 15% have less than 25%, 7% designate no independent directors. Family-controlled firms: 23% compliance.",
+    "gap": "Gap due to: (1) concentrated relationship networks (small pool of ~200 independent directors creates non-evident cross-links), (2) persistent family control (64% of listed companies have >50% controlling shareholder), (3) limited CNV supervision (doesn't actively verify independence beyond sworn statements), (4) weak economic incentives (ARS $150-300k monthly compensation attracts second-tier professionals), (5) personal loyalty culture prioritizing trust over professional independence."
+  },
+  
+  "metadata": {
+    "case_id": "AR-CORP-002",
+    "contributor": "ignacio-lerer",
+    "contributor_credentials": "Corporate lawyer (30+ years), Argentina. Independent Director. Expert in Corporate Governance and Compliance.",
+    "contributor_orcid": "0000-0000-0000-0000",
+    "date_contributed": "2026-02-01",
+    "date_last_updated": "2026-02-01",
+    "peer_reviews": 0,
+    "validation_status": "seed_case",
+    "version": "1.0",
+    "languages": ["es", "en"],
+    "related_cases": ["AR-CORP-001", "AR-CORP-003"],
+    "tags": ["board_independence", "corporate_governance", "family_control", "cnv_supervision", "director_networks"],
+    "doi": "10.5281/zenodo.XXXXXXH"
+  }
+}

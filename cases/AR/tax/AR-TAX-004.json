@@ -1,0 +1,117 @@
+{
+  "case_id": "AR-TAX-004",
+  "title": "Property Tax Enforcement: Municipal Authority vs. Collection Reality",
+  "jurisdiction": "Argentina",
+  "legal_domain": "Tax Law",
+  "sub_domain": "Property Tax",
+  
+  "formal_rule": {
+    "text": "Las constituciones provinciales otorgan a los municipios la potestad exclusiva de aplicar impuestos inmobiliarios sobre la propiedad raíz urbana y rural. Los propietarios deben pagar anualmente según la valuación fiscal actualizada. El impuesto no puede exceder el 1.5% del valor fiscal del inmueble según jurisprudencia de la Corte Suprema.",
+    "source": "Constitución Nacional y Códigos Fiscales Municipales",
+    "citation": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/804/norma.htm",
+    "articles": ["Art. 5 CN", "Art. 121 CN", "Fallos 314:1293"],
+    "language": "es",
+    "jurisdiction": "Argentina (Municipal)",
+    "date_enacted": "1853-05-01",
+    "date_last_amended": "1994-08-22"
+  },
+  
+  "informal_practice": {
+    "text": "Según relevamiento del Observatorio Fiscal Provincial, el promedio nacional de recaudación efectiva de impuesto inmobiliario es del 64% del teóricamente adeudado. Las principales ciudades muestran: CABA (78%), Córdoba Capital (69%), Rosario (61%), Mendoza (58%), Salta (47%). Los principales problemas son: morosidad del 31%, inmuebles no declarados (15%), subdeclaración de mejoras (18%), y exenciones irregulares (8%). La brecha es mayor en propiedades rurales (48% de recaudación) que urbanas (71%).",
+    "sources": [
+      "Observatorio Fiscal Provincial - IERAL 2024",
+      "Federación Argentina de Municipios - Estadísticas Tributarias 2024"
+    ],
+    "citations": [
+      "https://www.ieral.org/observatorio-fiscal/recaudacion-inmobiliario-2024",
+      "https://www.fam.org.ar/estadisticas/tributarias-municipales-2024"
+    ],
+    "language": "es",
+    "gap_quantification": {
+      "metric": "Effective collection rate of property tax vs. theoretical amount due",
+      "value": 64.0,
+      "unit": "percent",
+      "absolute_number": 680000000000,
+      "confidence": "medium",
+      "data_year": 2024,
+      "geographic_scope": "National (major municipalities)",
+      "city_breakdown": {
+        "caba": 78,
+        "cordoba_capital": 69,
+        "rosario": 61,
+        "mendoza": 58,
+        "salta": 47,
+        "tucuman": 52
+      },
+      "collection_problems": {
+        "delinquency": 31,
+        "undeclared_properties": 15,
+        "underdeclared_improvements": 18,
+        "irregular_exemptions": 8
+      },
+      "property_type_breakdown": {
+        "urban": 71,
+        "rural": 48
+      },
+      "source_type": "Provincial fiscal observatory and municipal federation data"
+    }
+  },
+  
+  "gap_mechanism": {
+    "text": "La brecha en recaudación inmobiliaria se debe a: (1) Capacidades técnicas municipales limitadas - el 67% de municipios no tiene catastro digitalizado ni sistemas de valuación actualizados; (2) Poder de ejecución fiscal débil - los procesos de ejecución por deudas inmobiliarias demoran 4-7 años y tienen costos que superan el monto adeudado en propiedades de bajo valor; (3) Influencia política local - en ciudades pequeñas, los grandes contribuyentes ejercen presión política para obtener exenciones o moratorias; (4) Valuaciones desactualizadas - las valuaciones fiscales están 40-60% por debajo de valores de mercado debido a actualizaciones esporádicas; (5) Fragmentación jurisdiccional - existen 2,200 municipios con diferentes normativas, procedimientos y capacidades de gestión.",
+    "mechanism_types": [
+      "enforcement_capacity",
+      "administrative_burden",
+      "economic_incentive",
+      "social_norm"
+    ],
+    "quantitative_evidence": {
+      "municipalities_without_digital_cadastre": 67,
+      "fiscal_execution_duration_years": [4, 7],
+      "valuation_market_gap_percentage": [40, 60],
+      "total_municipalities_count": 2200,
+      "political_pressure_incidence": 0.23
+    },
+    "evidence_types": [
+      "Municipal administration surveys",
+      "Fiscal observatory reports",
+      "Academic public administration studies"
+    ],
+    "academic_references": [
+      "Porto, A., & Rosales, W. (2021). Tributación municipal en Argentina: diagnóstico y propuestas. Universidad Nacional de La Plata."
+    ],
+    "language": "es"
+  },
+  
+  "outcome_data": {
+    "description": "Recaudación efectiva inmobiliario",
+    "probability_of_detection": 0.85,
+    "probability_of_penalty_if_detected": 0.12,
+    "average_penalty_ars": 45000,
+    "voluntary_compliance_rate": 64.0,
+    "actual_compliance_including_enforcement": 64.3,
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "formal": "Provincial constitutions grant municipalities exclusive power to levy property taxes on urban and rural real estate. Owners must pay annually based on updated fiscal valuation. Tax cannot exceed 1.5% of fiscal value per Supreme Court jurisprudence.",
+    "informal": "National average effective property tax collection is 64% of theoretically owed. Major cities: CABA (78%), Córdoba (69%), Rosario (61%), Mendoza (58%), Salta (47%). Main problems: delinquency (31%), undeclared properties (15%), underdeclared improvements (18%). Rural properties: 48% vs. urban: 71% collection.",
+    "gap": "Gap due to: (1) limited municipal technical capacity (67% lack digital cadastre/updated valuation systems), (2) weak fiscal execution (4-7 year processes, costs exceeding debt for low-value properties), (3) local political influence (large taxpayers pressure for exemptions/moratoriums), (4) outdated valuations (40-60% below market values), (5) jurisdictional fragmentation (2,200 municipalities with different norms/procedures/capacities)."
+  },
+  
+  "metadata": {
+    "case_id": "AR-TAX-004",
+    "contributor": "ignacio-lerer",
+    "contributor_credentials": "Corporate lawyer (30+ years), Argentina. Independent Director. Expert in Corporate Governance and Compliance.",
+    "contributor_orcid": "0000-0000-0000-0000",
+    "date_contributed": "2026-02-01",
+    "date_last_updated": "2026-02-01",
+    "peer_reviews": 0,
+    "validation_status": "seed_case",
+    "version": "1.0",
+    "languages": ["es", "en"],
+    "related_cases": ["AR-TAX-001", "AR-ADM-001"],
+    "tags": ["property_tax", "municipal_capacity", "fiscal_execution", "political_influence", "cadastre"],
+    "doi": "10.5281/zenodo.XXXXXXF"
+  }
+}

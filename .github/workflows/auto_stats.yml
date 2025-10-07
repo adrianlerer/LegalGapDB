@@ -1,0 +1,68 @@
+name: Auto-generate Statistics
+
+on:
+  schedule:
+    # Run weekly on Sundays at 00:00 UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch: # Allow manual trigger
+  push:
+    branches: [ main ]
+    paths:
+      - 'cases/**/*.json'
+
+jobs:
+  generate-stats:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install jsonschema requests pandas
+    
+    - name: Generate statistics
+      run: |
+        cd tools
+        python stats_dashboard.py --output-format json html --output-dir ../docs/stats/
+    
+    - name: Check for changes
+      id: verify-changed-files
+      run: |
+        if git diff --quiet HEAD -- docs/stats/; then
+          echo "changed=false" >> $GITHUB_OUTPUT
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Commit and push changes
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add docs/stats/
+        git commit -m "🤖 Auto-update statistics dashboard"
+        git push
+    
+    - name: Create summary comment
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      run: |
+        echo "📊 **Statistics Updated**" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "The statistics dashboard has been automatically updated with the latest case data." >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**Updated files:**" >> $GITHUB_STEP_SUMMARY
+        echo "- \`docs/stats/statistics.html\`" >> $GITHUB_STEP_SUMMARY
+        echo "- \`docs/stats/statistics.json\`" >> $GITHUB_STEP_SUMMARY

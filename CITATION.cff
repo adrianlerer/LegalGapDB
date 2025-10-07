@@ -1,0 +1,91 @@
+cff-version: 1.2.0
+title: 'LegalGapDB: A Crowdsourced Database of Formal/Informal Legal Gaps in Non-WEIRD Jurisdictions'
+message: 'If you use this dataset, please cite it as below.'
+type: dataset
+authors:
+  - family-names: Lerer
+    given-names: Ignacio Adrian
+    email: adrian@lerer.com.ar
+    orcid: 'https://orcid.org/0000-0000-0000-0000'
+    affiliation: 'Independent Legal Researcher'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.XXXXXXX
+    description: 'This is the collection of archived snapshots of all versions of LegalGapDB'
+repository-code: 'https://github.com/adrianlerer/LegalGapDB'
+url: 'https://legalgapdb.org'
+repository-artifact: 'https://zenodo.org/record/XXXXXXX'
+abstract: 'LegalGapDB is the first open-source database documenting systematic divergences between formal legal rules and informal enforcement practices in non-WEIRD (Western, Educated, Industrialized, Rich, Democratic) jurisdictions. The database enables researchers and practitioners to build Legal AI systems that account for real-world legal practice rather than formal law alone. Each case documents the formal rule, quantifies actual compliance rates, and explains the mechanisms that sustain the enforcement gap. Cases are peer-reviewed and include proper citations to official sources, making the database suitable for academic research and commercial applications.'
+keywords:
+  - legal-ai
+  - legal-tech
+  - machine-learning
+  - non-weird
+  - law-and-society
+  - open-data
+  - crowdsourcing
+  - enforcement
+  - legal-gaps
+  - concept-models
+  - nlp
+  - legal-reasoning
+  - compliance
+  - informal-law
+license: CC-BY-SA-4.0
+date-released: '2026-02-01'
+version: 1.0.0
+contact:
+  - family-names: Lerer
+    given-names: Ignacio Adrian
+    email: adrian@lerer.com.ar
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Lerer
+      given-names: Ignacio Adrian
+      email: adrian@lerer.com.ar
+      orcid: 'https://orcid.org/0000-0000-0000-0000'
+  title: 'Beyond WEIRD Legal AI: A Crowdsourced Database of Formal/Informal Legal Gaps'
+  journal: 'Journal of Legal Technology'
+  volume: 15
+  issue: 2
+  start: 45
+  end: 73
+  year: 2026
+  doi: 10.1000/182
+references:
+  - type: article
+    authors:
+      - family-names: Henrich
+        given-names: Joseph
+      - family-names: Heine
+        given-names: Steven J.
+      - family-names: Norenzayan
+        given-names: Ara
+    title: 'The Weirdest People in the World?'
+    journal: 'Behavioral and Brain Sciences'
+    volume: 33
+    issue: 2-3
+    start: 61
+    end: 83
+    year: 2010
+    doi: 10.1017/S0140525X0999152X
+  - type: book
+    authors:
+      - family-names: Hadfield
+        given-names: Gillian K.
+    title: 'Rules for a Flat World: Why Humans Invented Law and How to Reinvent It for a Complex Global Economy'
+    publisher: 'Oxford University Press'
+    year: 2016
+    isbn: '9780190931827'
+  - type: article
+    authors:
+      - family-names: Genn
+        given-names: Hazel
+    title: 'What is Civil Justice For? Reform, ADR, and Access to Justice'
+    journal: 'Yale Journal of Law & the Humanities'
+    volume: 24
+    issue: 1
+    start: 397
+    end: 417
+    year: 2012

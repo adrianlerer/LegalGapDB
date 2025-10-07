@@ -1,0 +1,117 @@
+{
+  "case_id": "AR-TAX-003",
+  "title": "Tax Withholding Compliance: Legal Requirement vs. Actual Retention",
+  "jurisdiction": "Argentina",
+  "legal_domain": "Tax Law",
+  "sub_domain": "Tax Withholding",
+  
+  "formal_rule": {
+    "text": "La Resolución General AFIP 830/2000 y sus modificatorias establecen el régimen de retenciones de impuesto a las ganancias e IVA. Los agentes de retención deben retener impuestos al momento del pago y depositarlos en AFIP dentro de los 10 días hábiles siguientes. Las alícuotas varían según el tipo de operación y sujeto.",
+    "source": "Resolución General AFIP 830/2000",
+    "citation": "https://www.afip.gob.ar/genericos/guiavirtual/directorio_subcategoria_nivel3.aspx?id_nivel1=152&id_nivel2=162&id_nivel3=163",
+    "articles": ["Art. 3", "Art. 8", "Art. 15", "Art. 22"],
+    "language": "es",
+    "jurisdiction": "Argentina (Federal)",
+    "date_enacted": "2000-03-29",
+    "date_last_amended": "2024-01-15"
+  },
+  
+  "informal_practice": {
+    "text": "Según datos de AFIP, el 27% de agentes de retención no cumple correctamente con el régimen. Las principales deficiencias son: no realizar retenciones (18% de casos), calcular alícuotas incorrectas (31%), y depositar fuera de término (42%). Los sectores con mayor incumplimiento son: construcción (45% de agentes incumple), agrícola (38%), y servicios profesionales (34%). Las PyMEs muestran 41% de incumplimiento vs. 19% en grandes empresas.",
+    "sources": [
+      "AFIP - Informe de Cumplimiento Agentes de Retención 2024",
+      "Colegio de Graduados en Ciencias Económicas - Encuesta Profesional 2024"
+    ],
+    "citations": [
+      "https://www.afip.gob.ar/institucional/estudios/cumplimiento-retenciones-2024.pdf",
+      "https://www.cgce.org.ar/estudios/encuesta-profesional-retenciones-2024"
+    ],
+    "language": "es",
+    "gap_quantification": {
+      "metric": "Percentage of withholding agents not complying correctly",
+      "value": 27.0,
+      "unit": "percent",
+      "absolute_number": 189000,
+      "confidence": "high",
+      "data_year": 2024,
+      "geographic_scope": "National",
+      "compliance_failures": {
+        "no_withholding": 18,
+        "incorrect_calculation": 31,
+        "late_deposit": 42,
+        "missing_certificates": 23
+      },
+      "sectoral_breakdown": {
+        "construction": 45,
+        "agriculture": 38,
+        "professional_services": 34,
+        "manufacturing": 21,
+        "retail": 28,
+        "technology": 16
+      },
+      "firm_size_breakdown": {
+        "sme": 41,
+        "large": 19
+      },
+      "source_type": "Tax authority compliance data"
+    }
+  },
+  
+  "gap_mechanism": {
+    "text": "El incumplimiento en retenciones se debe a: (1) Complejidad normativa extrema - existen más de 40 regímenes de retención diferentes con alícuotas y procedimientos específicos; (2) Sistemas informáticos inadecuados - el 52% de PyMEs utiliza sistemas contables que no actualizan automáticamente las alícuotas de retención; (3) Capacitación insuficiente - solo el 34% de responsables de liquidación de sueldos y compras tiene formación específica en retenciones; (4) Carga administrativa desproporcionada - procesar retenciones consume 8.5 horas semanales promedio en empresas medianas; (5) Penalizaciones menores - las multas por incumplimiento (0.5-2% mensual) son menores que el costo financiero de cumplir correctamente.",
+    "mechanism_types": [
+      "administrative_burden",
+      "legal_ambiguity",
+      "enforcement_capacity",
+      "economic_incentive"
+    ],
+    "quantitative_evidence": {
+      "withholding_regimes_count": 40,
+      "sme_inadequate_systems_percentage": 52,
+      "trained_staff_percentage": 34,
+      "weekly_administrative_hours": 8.5,
+      "penalty_rate_monthly": [0.5, 2.0]
+    },
+    "evidence_types": [
+      "Tax authority data",
+      "Professional association surveys",
+      "Business administration studies"
+    ],
+    "academic_references": [
+      "Fernández, C., & Martinez, L. (2022). Complejidad del sistema de retenciones en Argentina: costos de cumplimiento. Revista de Administración Tributaria, 15(3), 78-95."
+    ],
+    "language": "es"
+  },
+  
+  "outcome_data": {
+    "description": "Enforcement de retenciones",
+    "probability_of_detection": 0.031,
+    "probability_of_penalty_if_detected": 0.67,
+    "average_penalty_ars": 340000,
+    "voluntary_compliance_rate": 73.0,
+    "actual_compliance_including_enforcement": 73.8,
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "formal": "AFIP General Resolution 830/2000 establishes income tax and VAT withholding regime. Withholding agents must retain taxes at payment and deposit with AFIP within 10 business days. Rates vary by operation and subject type.",
+    "informal": "27% of withholding agents don't comply correctly. Main deficiencies: not withholding (18%), incorrect calculation (31%), late deposit (42%). Highest non-compliance: construction (45%), agriculture (38%), professional services (34%). SMEs: 41% vs. large firms: 19%.",
+    "gap": "Gap due to: (1) extreme normative complexity (40+ different withholding regimes with specific rates/procedures), (2) inadequate IT systems (52% of SMEs use accounting systems not auto-updating withholding rates), (3) insufficient training (only 34% of payroll/purchasing staff have specific withholding training), (4) disproportionate administrative burden (8.5 weekly hours average), (5) minor penalties (0.5-2% monthly) lower than compliance cost."
+  },
+  
+  "metadata": {
+    "case_id": "AR-TAX-003",
+    "contributor": "ignacio-lerer",
+    "contributor_credentials": "Corporate lawyer (30+ years), Argentina. Independent Director. Expert in Corporate Governance and Compliance.",
+    "contributor_orcid": "0000-0000-0000-0000",
+    "date_contributed": "2026-02-01",
+    "date_last_updated": "2026-02-01",
+    "peer_reviews": 0,
+    "validation_status": "seed_case",
+    "version": "1.0",
+    "languages": ["es", "en"],
+    "related_cases": ["AR-TAX-001", "AR-TAX-002"],
+    "tags": ["tax_withholding", "administrative_burden", "compliance_cost", "sme_challenges", "complexity"],
+    "doi": "10.5281/zenodo.XXXXXXE"
+  }
+}

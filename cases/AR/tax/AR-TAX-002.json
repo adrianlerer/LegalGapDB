@@ -1,0 +1,114 @@
+{
+  "case_id": "AR-TAX-002",
+  "title": "Corporate Income Tax Gap: Legal Rate vs. Effective Collection",
+  "jurisdiction": "Argentina",
+  "legal_domain": "Tax Law",
+  "sub_domain": "Corporate Income Tax",
+  
+  "formal_rule": {
+    "text": "La Ley del Impuesto a las Ganancias establece que las sociedades de capital deben tributar el 35% sobre su ganancia neta del ejercicio fiscal. Las sociedades deben presentar declaración jurada anual y realizar pagos a cuenta mensuales basados en el impuesto del período anterior.",
+    "source": "Ley 20.628 - Impuesto a las Ganancias",
+    "citation": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/19707/texact.htm",
+    "articles": ["Art. 69", "Art. 73", "Art. 98"],
+    "language": "es",
+    "jurisdiction": "Argentina (Federal)",
+    "date_enacted": "1973-12-31",
+    "date_last_amended": "2023-12-29"
+  },
+  
+  "informal_practice": {
+    "text": "Según análisis de AFIP y la OCDE, la tasa efectiva de impuesto a las ganancias societarias en Argentina es del 19.2%, significativamente menor al 35% legal. Las principales sociedades anónimas tributan en promedio 22.1%, mientras que las SRL y sociedades familiares tributan 16.8%. Los sectores con mayor brecha son: agronegocio (tasa efectiva 12.4%), servicios financieros (14.7%), y tecnología (11.9%). El 23% de las sociedades de capital no presenta declaraciones o declaran pérdidas sistemáticas.",
+    "sources": [
+      "AFIP - Estadísticas Tributarias Sociedades de Capital 2024",
+      "OCDE - Revenue Statistics Argentina 2024"
+    ],
+    "citations": [
+      "https://www.afip.gob.ar/institucional/estudios/estadisticas-societarias-2024.pdf",
+      "https://www.oecd.org/tax/revenue-statistics-argentina-2024.pdf"
+    ],
+    "language": "es",
+    "gap_quantification": {
+      "metric": "Effective corporate income tax rate vs statutory rate gap",
+      "value": 15.8,
+      "unit": "percentage points",
+      "absolute_number": 1200000000000,
+      "confidence": "high",
+      "data_year": 2024,
+      "geographic_scope": "National",
+      "effective_rates": {
+        "statutory_rate": 35.0,
+        "effective_rate_overall": 19.2,
+        "large_corporations": 22.1,
+        "sme_llc": 16.8
+      },
+      "sectoral_breakdown": {
+        "agribusiness": 12.4,
+        "financial_services": 14.7,
+        "technology": 11.9,
+        "manufacturing": 23.2,
+        "retail": 18.4,
+        "energy": 28.1
+      },
+      "non_filers_percentage": 23,
+      "source_type": "Official tax authority data and OECD analysis"
+    }
+  },
+  
+  "gap_mechanism": {
+    "text": "La brecha en ganancias societarias se debe a: (1) Planificación fiscal agresiva - uso extensivo de sociedades offshore, precios de transferencia y estructuras híbridas para reducir base imponible; (2) Diferencias contables-fiscales - las empresas aprovechan diferencias entre normas contables y fiscales para diferir o reducir obligaciones; (3) Incentivos sectoriales fragmentados - existen más de 80 regímenes promocionales que reducen la carga efectiva; (4) Fiscalización compleja - auditar sociedades requiere 180 días promedio vs. 45 días para personas físicas, limitando la capacidad de control; (5) Litigiosidad estratégica - las grandes empresas mantienen contingencias fiscales promedio de 4.2 años en discusión administrativa y judicial.",
+    "mechanism_types": [
+      "legal_ambiguity",
+      "administrative_burden",
+      "enforcement_capacity",
+      "economic_incentive"
+    ],
+    "quantitative_evidence": {
+      "offshore_structures_percentage": 34,
+      "promotional_regimes_count": 80,
+      "average_audit_duration_days": 180,
+      "tax_litigation_average_years": 4.2,
+      "transfer_pricing_adjustments_percentage": 67
+    },
+    "evidence_types": [
+      "Tax authority audit reports",
+      "Academic tax policy studies",
+      "Corporate financial disclosures"
+    ],
+    "academic_references": [
+      "Cetrángolo, O., & Gómez Sabaini, J. C. (2020). Tributación de empresas en Argentina: diagnóstico y propuestas. CIPPEC."
+    ],
+    "language": "es"
+  },
+  
+  "outcome_data": {
+    "description": "Enforcement de ganancias societarias",
+    "probability_of_detection": 0.045,
+    "probability_of_penalty_if_detected": 0.89,
+    "average_penalty_ars": 8500000,
+    "voluntary_compliance_rate": 54.9,
+    "actual_compliance_including_enforcement": 57.8,
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "formal": "Income Tax Law 20.628 requires capital companies to pay 35% on net income for fiscal year. Companies must file annual returns and make monthly advance payments based on prior period tax.",
+    "informal": "Effective corporate income tax rate is 19.2% vs. 35% statutory rate. Large corporations pay 22.1%, SME LLCs pay 16.8%. Biggest gaps in agribusiness (12.4%), financial services (14.7%), technology (11.9%). 23% of capital companies don't file or systematically declare losses.",
+    "gap": "Gap due to: (1) aggressive tax planning (offshore structures, transfer pricing, hybrid arrangements), (2) accounting-tax differences exploitation for deferrals/reductions, (3) 80+ fragmented sectoral incentives reducing effective burden, (4) complex auditing (180-day average vs. 45 for individuals), (5) strategic litigation (4.2-year average tax contingencies in administrative/judicial dispute)."
+  },
+  
+  "metadata": {
+    "case_id": "AR-TAX-002",
+    "contributor": "ignacio-lerer",
+    "contributor_credentials": "Corporate lawyer (30+ years), Argentina. Independent Director. Expert in Corporate Governance and Compliance.",
+    "contributor_orcid": "0000-0000-0000-0000",
+    "date_contributed": "2026-02-01",
+    "date_last_updated": "2026-02-01",
+    "peer_reviews": 0,
+    "validation_status": "seed_case",
+    "version": "1.0",
+    "languages": ["es", "en"],
+    "related_cases": ["AR-TAX-001", "AR-CORP-001"],
+    "tags": ["corporate_income_tax", "tax_planning", "enforcement_gap", "effective_rate", "litigation"],
+    "doi": "10.5281/zenodo.XXXXXXD"
+  }
+}

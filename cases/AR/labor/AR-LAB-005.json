@@ -1,0 +1,116 @@
+{
+  "case_id": "AR-LAB-005",
+  "title": "Vacation Rights Enforcement: Legal Entitlement vs. Actual Usage",
+  "jurisdiction": "Argentina",
+  "legal_domain": "Labor Law",
+  "sub_domain": "Vacation Rights",
+  
+  "formal_rule": {
+    "text": "La Ley de Contrato de Trabajo otorga a todo trabajador derecho a vacaciones anuales remuneradas: 14 días corridos con menos de 5 años de antigüedad, 21 días entre 5-10 años, 28 días entre 10-20 años, y 35 días con más de 20 años. El empleador debe otorgar las vacaciones entre el 1 de octubre y el 30 de abril del año siguiente.",
+    "source": "Ley 20.744 - Ley de Contrato de Trabajo",
+    "citation": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+    "articles": ["Art. 150", "Art. 151", "Art. 152", "Art. 153"],
+    "language": "es",
+    "jurisdiction": "Argentina (Federal)",
+    "date_enacted": "1974-09-20",
+    "date_last_amended": "2021-08-04"
+  },
+  
+  "informal_practice": {
+    "text": "Según la Encuesta Nacional de Condiciones de Trabajo, el 34% de trabajadores registrados no utiliza la totalidad de días de vacaciones que le corresponden legalmente. El 18% no toma vacaciones en absoluto, el 16% toma menos días de los permitidos, y solo el 66% utiliza su derecho completo. Los sectores con menor uso efectivo son: comercio (47% no usa vacaciones completas), gastronomía (52%), construcción (41%), y servicios profesionales (29%). Las PyMEs muestran mayor incumplimiento (43%) que las grandes empresas (22%).",
+    "sources": [
+      "MTESS - Encuesta Nacional de Condiciones de Trabajo 2024",
+      "Superintendencia de Riesgos del Trabajo - Encuesta de Estrés Laboral 2024"
+    ],
+    "citations": [
+      "https://www.argentina.gob.ar/trabajo/estadisticas/condiciones-trabajo",
+      "https://www.srt.gob.ar/estadisticas/estres-laboral-2024"
+    ],
+    "language": "es",
+    "gap_quantification": {
+      "metric": "Percentage of workers not using full vacation entitlement",
+      "value": 34.0,
+      "unit": "percent",
+      "absolute_number": 2040000,
+      "confidence": "high",
+      "data_year": 2024,
+      "geographic_scope": "National",
+      "usage_breakdown": {
+        "no_vacation": 18,
+        "partial_vacation": 16,
+        "full_vacation": 66
+      },
+      "sectoral_breakdown": {
+        "commerce": 47,
+        "gastronomy": 52,
+        "construction": 41,
+        "professional_services": 29,
+        "manufacturing": 31,
+        "education": 12
+      },
+      "firm_size_breakdown": {
+        "sme": 43,
+        "large": 22
+      },
+      "source_type": "Official labor conditions survey"
+    }
+  },
+  
+  "gap_mechanism": {
+    "text": "La brecha en el uso de vacaciones se debe a: (1) Presión laboral implícita - aunque formalmente permitido, tomar vacaciones completas es culturalmente desalentado en muchos sectores competitivos; (2) Carga de trabajo no redistributiva - empleadores no contratan reemplazos temporales, resultando en acumulación de trabajo que disuade las vacaciones; (3) Incentivos económicos perversos - muchos trabajadores prefieren 'vender' días de vacaciones por necesidad económica, práctica tolerada aunque legalmente irregular; (4) Estacionalidad empresarial - sectores como comercio y gastronomía tienen picos de demanda que coinciden con períodos vacacionales tradicionales; (5) Cultura del 'presentismo' - estar presente es valorado sobre productividad, especialmente en PyMEs familiares.",
+    "mechanism_types": [
+      "social_norm",
+      "economic_incentive",
+      "administrative_burden",
+      "enforcement_capacity"
+    ],
+    "quantitative_evidence": {
+      "temporary_replacement_rate": 0.23,
+      "vacation_sale_informal_practice": 0.31,
+      "seasonal_business_conflict": 0.67,
+      "presentism_culture_score": 6.8,
+      "workload_accumulation_factor": 2.4
+    },
+    "evidence_types": [
+      "Labor conditions surveys",
+      "Workplace psychology studies",
+      "Business management surveys"
+    ],
+    "academic_references": [
+      "Neffa, J. C., & Panigo, D. (2020). Descanso y productividad: el uso efectivo de vacaciones en Argentina. CEIL-CONICET."
+    ],
+    "language": "es"
+  },
+  
+  "outcome_data": {
+    "description": "Uso efectivo de vacaciones",
+    "probability_of_detection": 0.002,
+    "probability_of_penalty_if_detected": 0.15,
+    "average_penalty_ars": 80000,
+    "voluntary_compliance_rate": 66.0,
+    "actual_compliance_including_enforcement": 66.1,
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "formal": "Labor Contract Law grants all workers paid annual vacation: 14 days (<5 years tenure), 21 days (5-10 years), 28 days (10-20 years), 35 days (>20 years). Employers must grant vacations between October 1 - April 30.",
+    "informal": "34% of registered workers don't use full vacation entitlement. 18% take no vacation, 16% take partial. Lowest usage in commerce (47% don't use full), gastronomy (52%), construction (41%). SMEs show higher non-compliance (43%) than large firms (22%).",
+    "gap": "Gap due to: (1) implicit workplace pressure discouraging full vacation use in competitive sectors, (2) non-redistributive workload (no temporary replacements, leading to work accumulation), (3) perverse incentives (workers 'sell' vacation days for economic need), (4) seasonal business conflicts with traditional vacation periods, (5) 'presentism' culture valuing presence over productivity, especially in family SMEs."
+  },
+  
+  "metadata": {
+    "case_id": "AR-LAB-005",
+    "contributor": "ignacio-lerer",
+    "contributor_credentials": "Corporate lawyer (30+ years), Argentina. Independent Director. Expert in Corporate Governance and Compliance.",
+    "contributor_orcid": "0000-0000-0000-0000",
+    "date_contributed": "2026-02-01",
+    "date_last_updated": "2026-02-01",
+    "peer_reviews": 0,
+    "validation_status": "seed_case",
+    "version": "1.0",
+    "languages": ["es", "en"],
+    "related_cases": ["AR-LAB-003", "AR-LAB-001"],
+    "tags": ["vacation_rights", "work_life_balance", "enforcement_gap", "labor_law", "presentism"],
+    "doi": "10.5281/zenodo.XXXXXXB"
+  }
+}

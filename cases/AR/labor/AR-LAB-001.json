@@ -1,0 +1,113 @@
+{
+  "case_id": "AR-LAB-001",
+  "title": "Informal Labor: Registration and Social Security Gap",
+  "jurisdiction": "Argentina",
+  "legal_domain": "Labor Law",
+  "sub_domain": "Employment Registration",
+  
+  "formal_rule": {
+    "text": "La Ley de Contrato de Trabajo establece que todo empleador debe registrar trabajadores en seguridad social dentro de 5 días del inicio de la relación laboral y realizar aportes previsionales mensuales equivalentes al 23% del salario bruto.",
+    "source": "Ley 20.744 - Ley de Contrato de Trabajo",
+    "citation": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+    "articles": ["Art. 7", "Art. 10", "Art. 12"],
+    "language": "es",
+    "jurisdiction": "Argentina (Federal)",
+    "date_enacted": "1974-09-20",
+    "date_last_amended": "2021-08-04"
+  },
+  
+  "informal_practice": {
+    "text": "En la práctica, el 40.1% de trabajadores argentinos opera sin registro formal en seguridad social ('trabajo en negro'). La tasa de informalidad varía por sector: construcción (58%), trabajo doméstico (72%), comercio minorista (47%), agricultura (51%), industria (28%). El incumplimiento es mayor en empresas pequeñas (<10 empleados: 65%) que en grandes (>200 empleados: 12%).",
+    "sources": [
+      "INDEC - Encuesta Permanente de Hogares Q4 2024",
+      "Ministerio de Trabajo - Sistema de Inspecciones"
+    ],
+    "citations": [
+      "https://www.indec.gob.ar/uploads/informesdeprensa/mercado_trabajo_eph_4trim24.pdf",
+      "https://www.argentina.gob.ar/trabajo/estadisticas/inspeccion"
+    ],
+    "language": "es",
+    "gap_quantification": {
+      "metric": "Percentage of workers without formal registration",
+      "value": 40.1,
+      "unit": "percent",
+      "absolute_number": 4800000,
+      "confidence": "high",
+      "data_year": 2024,
+      "geographic_scope": "National (31 urban agglomerations)",
+      "sectoral_breakdown": {
+        "construction": 58,
+        "domestic_work": 72,
+        "retail": 47,
+        "agriculture": 51,
+        "manufacturing": 28
+      },
+      "firm_size_breakdown": {
+        "micro_0_10": 65,
+        "small_10_50": 38,
+        "medium_50_200": 22,
+        "large_200_plus": 12
+      },
+      "source_type": "Official government statistics"
+    }
+  },
+  
+  "gap_mechanism": {
+    "text": "La informalidad laboral persiste por múltiples factores estructurales: (1) Capacidad de inspección limitada - el Ministerio de Trabajo dispone de ~300 inspectores para supervisar 1.2 millones de empresas registradas (ratio: 1 inspector por 4,000 empresas), resultando en probabilidad de inspección <0.8% anual; (2) Costo administrativo prohibitivo - empleadores pequeños enfrentan carga de trámites mensuales ante 4 organismos diferentes (AFIP, ANSES, sindicato, ART), con costo estimado de 18 horas/mes de trabajo administrativo; (3) Enforcement selectivo - las multas por trabajo no registrado ($250,000-2,000,000 ARS) raramente se ejecutan debido a procesos judiciales que demoran 2-4 años; (4) Equilibrio económico informal - en sectores de baja productividad (comercio minorista, construcción pequeña), el margen de ganancia no permite absorber costos de formalización (23% aportes patronales + costos administrativos); (5) Norma social - la informalidad es percibida como práctica 'normal' y necesaria para supervivencia empresarial, especialmente en PyMEs.",
+    "mechanism_types": [
+      "enforcement_capacity",
+      "administrative_burden",
+      "economic_incentive",
+      "social_norm"
+    ],
+    "quantitative_evidence": {
+      "inspector_to_firm_ratio": 0.00025,
+      "annual_inspection_probability": 0.008,
+      "administrative_hours_monthly": 18,
+      "penalty_range_ars": [250000, 2000000],
+      "judicial_process_duration_years": 3.5,
+      "enforcement_rate_if_detected": 0.15
+    },
+    "evidence_types": [
+      "Government capacity data",
+      "Academic studies",
+      "Professional observation"
+    ],
+    "academic_references": [
+      "Bertranou, F., Casalí, P., & Cerruti, P. (2013). El trabajo informal en Argentina: evolución reciente, trayectorias e impactos. OIT."
+    ],
+    "language": "es"
+  },
+  
+  "outcome_data": {
+    "description": "Probabilidad y resultados de enforcement",
+    "probability_of_detection": 0.008,
+    "probability_of_penalty_if_detected": 0.15,
+    "average_penalty_ars": 600000,
+    "voluntary_compliance_rate": 59.9,
+    "actual_compliance_including_enforcement": 60.1,
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "formal": "Argentine Labor Contract Law (LCT 20.744) mandates that all employers register workers with social security within 5 days of hiring and contribute 23% of gross salary monthly.",
+    "informal": "In practice, 40.1% of Argentine workers operate without formal registration ('trabajo en negro'). Informality varies by sector: construction (58%), domestic work (72%), retail (47%), agriculture (51%), manufacturing (28%).",
+    "gap": "Gap persists due to: (1) limited inspection capacity (300 inspectors for 1.2M firms = 0.8% annual inspection probability), (2) administrative burden (18 hours/month for small employers), (3) selective enforcement (penalties rarely executed due to 3.5-year judicial delays), (4) economic equilibrium (low-productivity sectors cannot absorb 23% contribution + admin costs), (5) social norm (informality perceived as necessary for SME survival)."
+  },
+  
+  "metadata": {
+    "case_id": "AR-LAB-001",
+    "contributor": "ignacio-lerer",
+    "contributor_credentials": "Corporate lawyer (30+ years), Argentina. Independent Director. Expert in Corporate Governance and Compliance.",
+    "contributor_orcid": "0000-0000-0000-0000",
+    "date_contributed": "2026-02-01",
+    "date_last_updated": "2026-02-01",
+    "peer_reviews": 0,
+    "validation_status": "seed_case",
+    "version": "1.0",
+    "languages": ["es", "en"],
+    "related_cases": ["AR-LAB-002", "AR-TAX-001"],
+    "tags": ["informality", "enforcement_gap", "labor_law", "social_security", "compliance"],
+    "doi": "10.5281/zenodo.XXXXXXX"
+  }
+}

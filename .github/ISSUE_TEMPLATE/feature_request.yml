@@ -1,0 +1,114 @@
+name: Feature Request
+description: Suggest new features or improvements for LegalGapDB
+title: "[FEATURE] "
+labels: ["enhancement", "feature-request"]
+projects: ["LegalGapDB"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to LegalGapDB! Use this template to suggest new features or improvements.
+
+  - type: dropdown
+    id: feature_category
+    attributes:
+      label: Feature Category
+      description: What category does this feature belong to?
+      options:
+        - Data Collection
+        - Validation Tools
+        - Export/Analysis Tools
+        - Website/UI
+        - Documentation
+        - GitHub Automation
+        - API Development
+        - Data Visualization
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem_description
+    attributes:
+      label: Problem Description
+      description: What problem does this feature solve?
+      placeholder: "Describe the current limitation or challenge..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your proposed solution in detail
+      placeholder: "Explain how you envision this feature working..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Have you considered any alternative approaches?
+      placeholder: "List any alternative solutions you've considered..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: use_cases
+    attributes:
+      label: Use Cases
+      description: Provide specific examples of how this feature would be used
+      placeholder: "Example scenarios where this feature would be helpful..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature?
+      options:
+        - Critical (blocks core functionality)
+        - High (significantly improves usability)
+        - Medium (nice to have improvement)
+        - Low (minor enhancement)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Expected Complexity
+      description: How complex do you think this feature would be to implement?
+      options:
+        - Simple (small code change)
+        - Medium (moderate development effort)
+        - Complex (significant development work)
+        - Unknown
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: implementation_offer
+    attributes:
+      label: Implementation
+      description: Are you willing to help implement this feature?
+      options:
+        - label: I would like to implement this feature myself
+          required: false
+        - label: I can provide guidance/expertise for implementation
+          required: false
+        - label: I can help with testing once implemented
+          required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Any additional information, mockups, or references
+      placeholder: "Links to similar implementations, mockups, technical details, etc."
+    validations:
+      required: false

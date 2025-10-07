@@ -1,0 +1,2 @@
+# This file ensures the stats directory is tracked in git
+# Generated statistics files will be placed here by the automation workflows

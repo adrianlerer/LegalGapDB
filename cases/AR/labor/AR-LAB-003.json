@@ -1,0 +1,109 @@
+{
+  "case_id": "AR-LAB-003",
+  "title": "Working Hours Enforcement: 8-Hour Limit vs. Actual Practice",
+  "jurisdiction": "Argentina",
+  "legal_domain": "Labor Law",
+  "sub_domain": "Working Hours",
+  
+  "formal_rule": {
+    "text": "La Constitución Nacional (Art. 14 bis) y la Ley de Contrato de Trabajo establecen una jornada máxima de 8 horas diarias y 48 horas semanales. Las horas extraordinarias deben ser remuneradas con un recargo del 50% en días hábiles y 100% en días no laborables.",
+    "source": "Constitución Nacional Argentina y Ley 20.744",
+    "citation": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/804/norma.htm",
+    "articles": ["Art. 14 bis CN", "Art. 196-204 LCT"],
+    "language": "es",
+    "jurisdiction": "Argentina (Federal)",
+    "date_enacted": "1853-05-01",
+    "date_last_amended": "1994-08-22"
+  },
+  
+  "informal_practice": {
+    "text": "Según la Encuesta Nacional de Condiciones de Trabajo del MTESS, el 38% de trabajadores registrados trabaja más de 48 horas semanales sin recibir compensación por horas extras. En el sector privado, el promedio de horas trabajadas es 51.2 horas semanales. Los sectores con mayor incumplimiento son: comercio (45% excede límite), gastronomía (52%), transporte (48%), seguridad privada (61%). Solo el 23% de trabajadores que exceden 48 horas recibe pago de horas extras.",
+    "sources": [
+      "MTESS - Encuesta Nacional de Condiciones de Trabajo 2024",
+      "INDEC - Encuesta Permanente de Hogares 2024"
+    ],
+    "citations": [
+      "https://www.argentina.gob.ar/trabajo/estadisticas/condiciones-trabajo",
+      "https://www.indec.gob.ar/uploads/informesdeprensa/condiciones_trabajo_03_24.pdf"
+    ],
+    "language": "es",
+    "gap_quantification": {
+      "metric": "Percentage of workers exceeding 48 weekly hours without overtime compensation",
+      "value": 38.0,
+      "unit": "percent",
+      "absolute_number": 2280000,
+      "confidence": "high",
+      "data_year": 2024,
+      "geographic_scope": "National",
+      "sectoral_breakdown": {
+        "commerce": 45,
+        "gastronomy": 52,
+        "transport": 48,
+        "private_security": 61,
+        "manufacturing": 29,
+        "services": 34
+      },
+      "overtime_compensation_rate": 23,
+      "average_weekly_hours": 51.2,
+      "source_type": "Official labor survey"
+    }
+  },
+  
+  "gap_mechanism": {
+    "text": "El incumplimiento de límites horarios se debe a: (1) Control de horarios deficiente - solo 34% de empresas utilizan sistemas de registro horario verificables, el resto depende de declaraciones del empleador; (2) Presión competitiva - en sectores de alta competencia (comercio, gastronomía), el cumplimiento estricto es percibido como desventaja competitiva; (3) Enforcement reactivo - las inspecciones laborales ocurren solo por denuncias (0.3% de empresas inspeccionadas anualmente), no preventivamente; (4) Normalización cultural - trabajar más de 8 horas es socialmente aceptado e incluso valorado como 'compromiso laboral'; (5) Flexibilidad informal - muchos trabajadores prefieren arreglos informales (compensación con tiempo libre, bonos no registrados) sobre horas extras formales por razones fiscales.",
+    "mechanism_types": [
+      "enforcement_capacity",
+      "social_norm",
+      "economic_incentive",
+      "administrative_burden"
+    ],
+    "quantitative_evidence": {
+      "verifiable_time_tracking_percentage": 34,
+      "annual_inspection_rate": 0.003,
+      "complaint_triggered_inspections_percentage": 89,
+      "worker_preference_informal_compensation": 0.42,
+      "employer_competitive_pressure_score": 7.2
+    },
+    "evidence_types": [
+      "Official labor surveys",
+      "Ministry inspection data",
+      "Academic workplace studies"
+    ],
+    "academic_references": [
+      "Novick, M., & Tomada, C. (2019). Jornada laboral y productividad en Argentina: un análisis sectorial. CEIL-CONICET."
+    ],
+    "language": "es"
+  },
+  
+  "outcome_data": {
+    "description": "Enforcement de límites horarios",
+    "probability_of_detection": 0.003,
+    "probability_of_penalty_if_detected": 0.67,
+    "average_penalty_ars": 180000,
+    "voluntary_compliance_rate": 62.0,
+    "actual_compliance_including_enforcement": 62.2,
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "formal": "Argentine Constitution (Art. 14 bis) and Labor Contract Law establish maximum 8-hour daily and 48-hour weekly work limits. Overtime must be compensated at 50% premium on workdays, 100% on non-workdays.",
+    "informal": "38% of registered workers exceed 48 weekly hours without overtime compensation. Average is 51.2 hours/week. Highest violations in commerce (45%), gastronomy (52%), transport (48%), private security (61%). Only 23% receive overtime pay.",
+    "gap": "Gap due to: (1) poor time tracking (only 34% use verifiable systems), (2) competitive pressure in high-competition sectors, (3) reactive enforcement (0.3% annual inspection rate, 89% complaint-triggered), (4) cultural normalization of long hours, (5) worker preference for informal compensation arrangements over formal overtime."
+  },
+  
+  "metadata": {
+    "case_id": "AR-LAB-003",
+    "contributor": "ignacio-lerer",
+    "contributor_credentials": "Corporate lawyer (30+ years), Argentina. Independent Director. Expert in Corporate Governance and Compliance.",
+    "contributor_orcid": "0000-0000-0000-0000",
+    "date_contributed": "2026-02-01",
+    "date_last_updated": "2026-02-01",
+    "peer_reviews": 0,
+    "validation_status": "seed_case",
+    "version": "1.0",
+    "languages": ["es", "en"],
+    "related_cases": ["AR-LAB-001", "AR-LAB-004"],
+    "tags": ["working_hours", "overtime", "enforcement_gap", "labor_law", "time_tracking"],
+    "doi": "10.5281/zenodo.XXXXXXZ"
+  }
+}

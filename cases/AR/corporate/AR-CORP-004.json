@@ -1,0 +1,110 @@
+{
+  "case_id": "AR-CORP-004",
+  "title": "Audit Committee Gap: Legal Requirements vs. Functional Implementation",
+  "jurisdiction": "Argentina",
+  "legal_domain": "Corporate Law",
+  "sub_domain": "Audit Committee",
+  
+  "formal_rule": {
+    "text": "Las normas de la CNV requieren que las sociedades que hacen oferta pública de sus acciones constituyan un Comité de Auditoría integrado por al menos tres directores, mayoría independientes, con competencia en temas contables y financieros. El comité debe supervisar el sistema de control interno, auditores externos y cumplimiento normativo.",
+    "source": "Normas CNV - Texto Ordenado 2013",
+    "citation": "https://www.cnv.gob.ar/SitioWeb/DescargaPDF?id=45854",
+    "articles": ["Cap. VI Sec. I", "Art. 15", "Art. 16"],
+    "language": "es",
+    "jurisdiction": "Argentina (Federal)",
+    "date_enacted": "2013-06-27",
+    "date_last_amended": "2020-11-18"
+  },
+  
+  "informal_practice": {
+    "text": "Según relevamiento de PwC sobre 68 empresas cotizantes con obligación de comité de auditoría, solo el 41% tiene comités que funcionan efectivamente según las mejores prácticas internacionales. El 29% tiene comités formales pero sin actividad sustantiva, el 21% tiene comités mal integrados (sin mayoría independiente o sin competencias), y el 9% no ha constituido comité. La frecuencia promedio de reuniones es 3.2 por año (vs. 6-8 recomendadas).",
+    "sources": [
+      "PwC Argentina - Encuesta Comités de Auditoría 2024",
+      "Instituto Argentino de Mercado de Capitales - Governance Report 2024"
+    ],
+    "citations": [
+      "https://www.pwc.com.ar/comites-auditoria-2024.pdf",
+      "https://www.iamc.org.ar/governance-report-2024"
+    ],
+    "language": "es",
+    "gap_quantification": {
+      "metric": "Percentage of listed companies with effectively functioning audit committees",
+      "value": 41.0,
+      "unit": "percent",
+      "absolute_number": 28,
+      "confidence": "high",
+      "data_year": 2024,
+      "geographic_scope": "National (companies with public offering)",
+      "functionality_breakdown": {
+        "effective_functioning": 41,
+        "formal_no_substance": 29,
+        "poorly_integrated": 21,
+        "not_constituted": 9
+      },
+      "meeting_frequency": {
+        "actual_average": 3.2,
+        "recommended_range": [6, 8]
+      },
+      "total_required_companies": 68,
+      "source_type": "Professional audit and capital markets surveys"
+    }
+  },
+  
+  "gap_mechanism": {
+    "text": "La brecha en comités de auditoría se debe a: (1) Escasez de directores calificados - hay menos de 80 profesionales en Argentina con experiencia simultánea en directorios, auditoría y finanzas para roles de comité; (2) Resistencia del management - el 54% de CEOs percibe los comités de auditoría como interferencia en la gestión en lugar de valor agregado; (3) Costos desproporcionados para empresas medianas - mantener un comité efectivo cuesta $3-6 millones ARS anuales en honorarios y consultoría externa; (4) Supervisión limitada de CNV - no existen estándares específicos para evaluar la efectividad del comité más allá de su constitución formal; (5) Responsabilidades difusas - la ley no define claramente las responsabilidades legales de miembros del comité vs. directorio completo.",
+    "mechanism_types": [
+      "enforcement_capacity",
+      "economic_incentive",
+      "social_norm",
+      "legal_ambiguity"
+    ],
+    "quantitative_evidence": {
+      "qualified_professionals_pool": 80,
+      "ceo_resistance_percentage": 54,
+      "annual_committee_cost_ars": [3000000, 6000000],
+      "cnv_effectiveness_standards": 0,
+      "legal_responsibility_clarity_score": 4.1
+    },
+    "evidence_types": [
+      "Professional market analysis",
+      "Corporate governance surveys",
+      "Legal interpretation studies"
+    ],
+    "academic_references": [
+      "Masci, F., & Rodriguez, A. (2022). Comités de auditoría en Argentina: entre el cumplimiento formal y la efectividad. Revista de Auditoria, 18(4), 12-28."
+    ],
+    "language": "es"
+  },
+  
+  "outcome_data": {
+    "description": "Funcionamiento efectivo comités auditoría",
+    "probability_of_detection": 0.15,
+    "probability_of_penalty_if_detected": 0.12,
+    "average_penalty_ars": 1200000,
+    "voluntary_compliance_rate": 41.0,
+    "actual_compliance_including_enforcement": 41.3,
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "formal": "CNV regulations require public companies to establish Audit Committee with at least three directors, independent majority, with accounting/financial competence. Committee must oversee internal control systems, external auditors and regulatory compliance.",
+    "informal": "Only 41% of 68 listed companies required to have audit committees have effectively functioning ones per international best practices. 29% have formal but non-substantive committees, 21% poorly integrated committees, 9% haven't constituted committees. Average 3.2 meetings/year vs. 6-8 recommended.",
+    "gap": "Gap due to: (1) shortage of qualified directors (<80 professionals in Argentina with simultaneous board/audit/finance experience), (2) management resistance (54% of CEOs perceive audit committees as interference vs. value-add), (3) disproportionate costs for mid-size firms (ARS $3-6M annually for effective committee), (4) limited CNV supervision (no specific effectiveness standards beyond formal constitution), (5) diffuse responsibilities (unclear legal duties of committee members vs. full board)."
+  },
+  
+  "metadata": {
+    "case_id": "AR-CORP-004",
+    "contributor": "ignacio-lerer",
+    "contributor_credentials": "Corporate lawyer (30+ years), Argentina. Independent Director. Expert in Corporate Governance and Compliance.",
+    "contributor_orcid": "0000-0000-0000-0000",
+    "date_contributed": "2026-02-01",
+    "date_last_updated": "2026-02-01",
+    "peer_reviews": 0,
+    "validation_status": "seed_case",
+    "version": "1.0",
+    "languages": ["es", "en"],
+    "related_cases": ["AR-CORP-002", "AR-CORP-003"],
+    "tags": ["audit_committee", "internal_controls", "cnv_compliance", "director_qualifications", "effectiveness_gap"],
+    "doi": "10.5281/zenodo.XXXXXXJ"
+  }
+}

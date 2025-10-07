@@ -1,0 +1,111 @@
+{
+  "case_id": "AR-CORP-001",
+  "title": "Corporate Compliance Law 27.401: Legal Requirements vs. Actual Implementation",
+  "jurisdiction": "Argentina",
+  "legal_domain": "Corporate Law",
+  "sub_domain": "Corporate Criminal Liability",
+  
+  "formal_rule": {
+    "text": "La Ley 27.401 de Responsabilidad Penal Empresaria establece que las personas jurídicas deben implementar programas de integridad para prevenir delitos de corrupción y lavado de activos. Los programas deben incluir códigos de ética, canales de denuncias, due diligence de terceros, capacitación y monitoreo. Su implementación efectiva puede eximir de responsabilidad penal.",
+    "source": "Ley 27.401 - Régimen de Responsabilidad Penal Empresaria",
+    "citation": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/280000-284999/280145/norma.htm",
+    "articles": ["Art. 22", "Art. 23", "Art. 24"],
+    "language": "es",
+    "jurisdiction": "Argentina (Federal)",
+    "date_enacted": "2017-11-01",
+    "date_last_amended": "2017-11-01"
+  },
+  
+  "informal_practice": {
+    "text": "Según encuesta de PwC y OEADE a 500 empresas, solo el 31% de sociedades sujetas a la Ley 27.401 ha implementado programas de integridad completos que cumplen los requisitos legales. El 28% tiene implementaciones parciales, el 23% programas meramente formales sin operatividad real, y el 18% no tiene programa alguno. Entre empresas cotizantes, el cumplimiento sube al 67%, mientras que en PyMEs familiares baja al 12%.",
+    "sources": [
+      "PwC Argentina - Encuesta Compliance 2024",
+      "OEADE - Observatorio de Integridad Empresarial 2024"
+    ],
+    "citations": [
+      "https://www.pwc.com.ar/es/publicaciones/encuesta-compliance-2024.pdf",
+      "https://www.oeade.org.ar/observatorio-integridad-2024"
+    ],
+    "language": "es",
+    "gap_quantification": {
+      "metric": "Percentage of companies with complete integrity programs complying with Law 27.401",
+      "value": 31.0,
+      "unit": "percent",
+      "absolute_number": 62000,
+      "confidence": "medium",
+      "data_year": 2024,
+      "geographic_scope": "National",
+      "implementation_levels": {
+        "complete_compliant": 31,
+        "partial_implementation": 28,
+        "formal_only": 23,
+        "no_program": 18
+      },
+      "company_type_breakdown": {
+        "listed_companies": 67,
+        "large_private": 45,
+        "medium_companies": 28,
+        "family_sme": 12
+      },
+      "source_type": "Professional services survey and business observatory"
+    }
+  },
+  
+  "gap_mechanism": {
+    "text": "La baja implementación de programas de integridad se debe a: (1) Falta de enforcement judicial - desde 2017 no ha habido condenas empresariales bajo la Ley 27.401, reduciendo la percepción de riesgo real; (2) Costos de implementación elevados - un programa completo cuesta $2.5-8 millones ARS anuales, prohibitivo para PyMEs; (3) Cultura corporativa resistente - el 58% de directores considera los programas de compliance como 'burocracia innecesaria'; (4) Ambigüedad normativa - la ley no especifica estándares mínimos concretos, generando incertidumbre sobre qué constituye cumplimiento efectivo; (5) Incentivos económicos limitados - no existen beneficios fiscales o comerciales para empresas con programas certificados.",
+    "mechanism_types": [
+      "enforcement_capacity",
+      "economic_incentive",
+      "social_norm",
+      "legal_ambiguity"
+    ],
+    "quantitative_evidence": {
+      "corporate_convictions_since_2017": 0,
+      "annual_program_cost_ars": [2500000, 8000000],
+      "director_resistance_percentage": 58,
+      "legal_ambiguity_score": 6.8,
+      "fiscal_incentives_available": 0
+    },
+    "evidence_types": [
+      "Judicial statistics",
+      "Corporate compliance surveys",
+      "Legal analysis studies"
+    ],
+    "academic_references": [
+      "Hendler, E. S. (2020). Programas de integridad en Argentina: entre la norma y la práctica. Revista de Derecho Penal Empresarial, 8(2), 145-167."
+    ],
+    "language": "es"
+  },
+  
+  "outcome_data": {
+    "description": "Cumplimiento Ley 27.401",
+    "probability_of_detection": 0.05,
+    "probability_of_penalty_if_detected": 0.0,
+    "average_penalty_ars": 0,
+    "voluntary_compliance_rate": 31.0,
+    "actual_compliance_including_enforcement": 31.0,
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "formal": "Law 27.401 on Corporate Criminal Liability requires legal entities to implement integrity programs preventing corruption and money laundering crimes. Programs must include ethics codes, whistleblowing channels, third-party due diligence, training and monitoring.",
+    "informal": "Only 31% of companies subject to Law 27.401 have implemented complete compliant integrity programs. 28% have partial implementations, 23% formal-only programs, 18% no program. Listed companies: 67% compliance vs. family SMEs: 12%.",
+    "gap": "Gap due to: (1) lack of judicial enforcement (zero corporate convictions since 2017), (2) high implementation costs (ARS $2.5-8M annually, prohibitive for SMEs), (3) resistant corporate culture (58% of directors view compliance as 'unnecessary bureaucracy'), (4) normative ambiguity (law doesn't specify concrete minimum standards), (5) limited economic incentives (no fiscal/commercial benefits for certified programs)."
+  },
+  
+  "metadata": {
+    "case_id": "AR-CORP-001",
+    "contributor": "ignacio-lerer",
+    "contributor_credentials": "Corporate lawyer (30+ years), Argentina. Independent Director. Expert in Corporate Governance and Compliance.",
+    "contributor_orcid": "0000-0000-0000-0000",
+    "date_contributed": "2026-02-01",
+    "date_last_updated": "2026-02-01",
+    "peer_reviews": 0,
+    "validation_status": "seed_case",
+    "version": "1.0",
+    "languages": ["es", "en"],
+    "related_cases": ["AR-CORP-002", "AR-CRIM-002"],
+    "tags": ["corporate_compliance", "integrity_programs", "law_27401", "enforcement_gap", "corporate_culture"],
+    "doi": "10.5281/zenodo.XXXXXXG"
+  }
+}

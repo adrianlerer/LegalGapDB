@@ -1,0 +1,112 @@
+{
+  "case_id": "AR-CORP-003",
+  "title": "Board Meeting Requirements: Legal Mandates vs. Actual Practice",
+  "jurisdiction": "Argentina",
+  "legal_domain": "Corporate Law",
+  "sub_domain": "Board Operations",
+  
+  "formal_rule": {
+    "text": "La Ley de Sociedades Comerciales establece que el directorio debe reunirse al menos una vez cada tres meses (Art. 260), llevar libro de actas con todas las decisiones (Art. 261), y que las decisiones se tomen por mayoría presente (Art. 262). Las reuniones pueden ser presenciales o por medios de comunicación simultánea que permitan la libre discusión.",
+    "source": "Ley 19.550 - Ley de Sociedades Comerciales",
+    "citation": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25553/texact.htm",
+    "articles": ["Art. 260", "Art. 261", "Art. 262"],
+    "language": "es",
+    "jurisdiction": "Argentina (Federal)",
+    "date_enacted": "1972-04-03",
+    "date_last_amended": "2020-03-19"
+  },
+  
+  "informal_practice": {
+    "text": "Según encuesta del IAEF a 150 sociedades anónimas, el 34% no cumple con la frecuencia mínima de reuniones trimestrales del directorio. En empresas no cotizantes, el incumplimiento sube al 52%. Las principales deficiencias son: reuniones informales sin actas (41%), decisiones por consulta individual sin reunión (38%), y actas incompletas o retrospectivas (29%). Solo el 23% de empresas mantiene registros completos y actualizados de todas las decisiones directivas.",
+    "sources": [
+      "IAEF - Encuesta Prácticas Directorio 2024",
+      "Colegio de Abogados - Estudio Compliance Societario 2024"
+    ],
+    "citations": [
+      "https://www.iaef.org.ar/practicas-directorio-2024",
+      "https://www.colabogados.org.ar/estudios/compliance-societario-2024"
+    ],
+    "language": "es",
+    "gap_quantification": {
+      "metric": "Percentage of companies not meeting quarterly board meeting requirements",
+      "value": 34.0,
+      "unit": "percent",
+      "absolute_number": 170000,
+      "confidence": "medium",
+      "data_year": 2024,
+      "geographic_scope": "National",
+      "compliance_issues": {
+        "informal_meetings_no_minutes": 41,
+        "individual_consultation_no_meeting": 38,
+        "incomplete_retrospective_minutes": 29,
+        "missing_documentation": 35
+      },
+      "company_type_breakdown": {
+        "listed": 18,
+        "non_listed": 52,
+        "family_controlled": 67,
+        "professional_management": 21
+      },
+      "complete_record_keeping": 23,
+      "source_type": "Professional association survey"
+    }
+  },
+  
+  "gap_mechanism": {
+    "text": "El incumplimiento de requisitos de directorio se debe a: (1) Costos de coordinación elevados - organizar reuniones trimestrales con directores externos cuesta $80-150k ARS por reunión en honorarios y logística; (2) Cultura de management operativo - muchos directorios funcionan como equipos de gerenciamiento diario en lugar de órganos de supervisión estratégica; (3) Concentración accionaria - en empresas con accionista controlador >75%, las reuniones formales se perciben como 'teatro corporativo' innecesario; (4) Falta de secretaría corporativa profesional - solo el 31% de empresas tiene secretario corporativo dedicado para organizar reuniones y documentación; (5) Enforcement prácticamente nulo - no existen inspecciones rutinarias del cumplimiento de aspectos formales del directorio.",
+    "mechanism_types": [
+      "economic_incentive",
+      "social_norm",
+      "administrative_burden",
+      "enforcement_capacity"
+    ],
+    "quantitative_evidence": {
+      "meeting_cost_per_session_ars": [80000, 150000],
+      "controlling_shareholder_75_plus_percentage": 58,
+      "professional_corporate_secretary_percentage": 31,
+      "routine_inspections_annual": 0.001,
+      "operational_vs_governance_culture_score": 7.2
+    },
+    "evidence_types": [
+      "Corporate governance surveys",
+      "Legal compliance studies",
+      "Business administration research"
+    ],
+    "academic_references": [
+      "Viegas, J. C. (2019). Funcionamiento efectivo de directorios en Argentina: formalidad vs. sustancia. Revista de Derecho Comercial, 42(3), 78-95."
+    ],
+    "language": "es"
+  },
+  
+  "outcome_data": {
+    "description": "Cumplimiento reuniones directorio",
+    "probability_of_detection": 0.001,
+    "probability_of_penalty_if_detected": 0.05,
+    "average_penalty_ars": 120000,
+    "voluntary_compliance_rate": 66.0,
+    "actual_compliance_including_enforcement": 66.0,
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "formal": "Commercial Companies Law requires board meetings at least quarterly (Art. 260), maintaining minutes book with all decisions (Art. 261), and majority voting of present members (Art. 262). Meetings can be in-person or via simultaneous communication allowing free discussion.",
+    "informal": "34% of companies don't meet quarterly board meeting requirements; 52% for non-listed firms. Main deficiencies: informal meetings without minutes (41%), individual consultation without meetings (38%), incomplete/retrospective minutes (29%). Only 23% maintain complete updated records.",
+    "gap": "Gap due to: (1) high coordination costs (ARS $80-150k per meeting for external directors), (2) operational management culture (boards function as daily management teams vs. strategic oversight), (3) ownership concentration (>75% controlling shareholders view formal meetings as unnecessary 'corporate theater'), (4) lack of professional corporate secretaries (only 31% have dedicated staff), (5) virtually no enforcement (0.1% annual routine inspections of board compliance)."
+  },
+  
+  "metadata": {
+    "case_id": "AR-CORP-003",
+    "contributor": "ignacio-lerer",
+    "contributor_credentials": "Corporate lawyer (30+ years), Argentina. Independent Director. Expert in Corporate Governance and Compliance.",
+    "contributor_orcid": "0000-0000-0000-0000",
+    "date_contributed": "2026-02-01",
+    "date_last_updated": "2026-02-01",
+    "peer_reviews": 0,
+    "validation_status": "seed_case",
+    "version": "1.0",
+    "languages": ["es", "en"],
+    "related_cases": ["AR-CORP-002", "AR-CORP-004"],
+    "tags": ["board_meetings", "corporate_formalities", "governance_culture", "documentation", "enforcement_gap"],
+    "doi": "10.5281/zenodo.XXXXXXI"
+  }
+}

@@ -1,0 +1,86 @@
+name: Challenge Existing Case
+description: Report concerns about an existing case or request updates
+title: "[CHALLENGE] "
+labels: ["case-challenge", "needs-review"]
+projects: ["LegalGapDB"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve LegalGapDB! Use this template to challenge existing cases or report concerns about data accuracy.
+
+  - type: input
+    id: case_id
+    attributes:
+      label: Case ID
+      description: The ID of the case you're challenging (e.g., AR-LAB-001)
+      placeholder: "AR-XXX-001"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: challenge_type
+    attributes:
+      label: Type of Challenge
+      description: What type of issue are you reporting?
+      options:
+        - Factual Inaccuracy
+        - Outdated Information
+        - Missing Context
+        - Citation Error
+        - Methodology Issue
+        - Duplicate Case
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Detailed Description
+      description: Provide a detailed explanation of your concern
+      placeholder: "Please explain the specific issue with the case data..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting Evidence
+      description: Provide sources, citations, or evidence supporting your challenge
+      placeholder: "Include links to official sources, academic papers, news reports, etc."
+    validations:
+      required: false
+
+  - type: textarea
+    id: proposed_correction
+    attributes:
+      label: Proposed Correction
+      description: If you have suggestions for how to fix the issue, please share them
+      placeholder: "Suggested changes to the case data..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Verification
+      description: Please confirm the following
+      options:
+        - label: I have reviewed the case thoroughly
+          required: true
+        - label: I have checked for duplicate challenges
+          required: true
+        - label: I am providing this challenge in good faith
+          required: true
+
+  - type: input
+    id: expertise
+    attributes:
+      label: Your Expertise (Optional)
+      description: Brief description of your relevant background or expertise
+      placeholder: "e.g., Labor lawyer in Argentina, Academic researcher, etc."
+    validations:
+      required: false

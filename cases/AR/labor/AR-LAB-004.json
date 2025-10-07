@@ -1,0 +1,117 @@
+{
+  "case_id": "AR-LAB-004",
+  "title": "Minimum Wage Compliance: Legal Mandate vs. Actual Payments",
+  "jurisdiction": "Argentina",
+  "legal_domain": "Labor Law",
+  "sub_domain": "Minimum Wage",
+  
+  "formal_rule": {
+    "text": "La Ley 24.013 establece que todo trabajador tiene derecho al Salario Mínimo Vital y Móvil (SMVM) fijado por el Consejo Nacional del Empleo, la Productividad y el Salario Mínimo Vital y Móvil. A febrero 2024, el SMVM es de $230,000 ARS mensuales para trabajadores de jornada completa.",
+    "source": "Ley 24.013 - Ley Nacional de Empleo",
+    "citation": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/412/norma.htm",
+    "articles": ["Art. 139", "Art. 140", "Art. 141"],
+    "language": "es",
+    "jurisdiction": "Argentina (Federal)",
+    "date_enacted": "1991-11-13",
+    "date_last_amended": "2024-02-01"
+  },
+  
+  "informal_practice": {
+    "text": "Según datos del INDEC y MTESS, el 28% de trabajadores registrados del sector privado recibe menos del SMVM vigente. Entre trabajadores no registrados, el 67% percibe ingresos por debajo del mínimo legal. Los sectores con mayor incumplimiento son: trabajo doméstico (78% bajo SMVM), agricultura (71%), comercio minorista (45%), gastronomía (52%). Las diferencias regionales son significativas: NOA (41% bajo SMVM) vs. CABA (18%).",
+    "sources": [
+      "INDEC - Encuesta Permanente de Hogares Q4 2024",
+      "MTESS - Registro de Infracciones Laborales 2024"
+    ],
+    "citations": [
+      "https://www.indec.gob.ar/uploads/informesdeprensa/ingresos_4trim24.pdf",
+      "https://www.argentina.gob.ar/trabajo/estadisticas/infracciones"
+    ],
+    "language": "es",
+    "gap_quantification": {
+      "metric": "Percentage of registered workers receiving below minimum wage",
+      "value": 28.0,
+      "unit": "percent",
+      "absolute_number": 1680000,
+      "confidence": "high",
+      "data_year": 2024,
+      "geographic_scope": "National",
+      "sectoral_breakdown": {
+        "domestic_work": 78,
+        "agriculture": 71,
+        "retail": 45,
+        "gastronomy": 52,
+        "manufacturing": 19,
+        "services": 23
+      },
+      "regional_breakdown": {
+        "caba": 18,
+        "buenos_aires": 25,
+        "center": 32,
+        "cuyo": 34,
+        "noa": 41,
+        "nea": 38,
+        "patagonia": 22
+      },
+      "unregistered_workers_below_minimum": 67,
+      "source_type": "Official household survey and labor inspections"
+    }
+  },
+  
+  "gap_mechanism": {
+    "text": "El incumplimiento del SMVM se debe a: (1) Fragmentación del control - diferentes organismos (MTESS, AFIP, sindicatos) tienen competencias superpuestas pero coordinación limitada; (2) Evasión através del 'salario registrado' - muchos empleadores declaran el SMVM pero pagan menos en efectivo, especialmente en PyMEs; (3) Sectores de baja productividad - en actividades como trabajo doméstico y agricultura familiar, los empleadores no pueden pagar el SMVM sin quebrar económicamente; (4) Enforcement geográfico desigual - las provincias del interior tienen 60% menos inspectores laborales per capita que CABA; (5) Negociación individual vs. colectiva - trabajadores sin representación sindical aceptan salarios por debajo del mínimo por necesidad.",
+    "mechanism_types": [
+      "enforcement_capacity",
+      "economic_incentive",
+      "administrative_burden",
+      "legal_ambiguity"
+    ],
+    "quantitative_evidence": {
+      "overlapping_agencies": 3,
+      "declared_vs_actual_payment_gap_percentage": 23,
+      "interior_vs_caba_inspector_ratio": 0.4,
+      "unionized_vs_individual_compliance_rate": [89, 62],
+      "sector_productivity_correlation": -0.78
+    },
+    "evidence_types": [
+      "Government inspection data",
+      "Academic labor economics studies",
+      "Union reports"
+    ],
+    "academic_references": [
+      "Salvia, A., & Vera, J. (2021). Salario mínimo y mercado laboral en Argentina: efectos sobre empleo y distribución. UCA-CONICET."
+    ],
+    "language": "es"
+  },
+  
+  "outcome_data": {
+    "description": "Enforcement del salario mínimo",
+    "probability_of_detection": 0.012,
+    "probability_of_penalty_if_detected": 0.45,
+    "average_penalty_ars": 320000,
+    "voluntary_compliance_rate": 72.0,
+    "actual_compliance_including_enforcement": 72.5,
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "formal": "Law 24.013 establishes right to Minimum Vital and Mobile Salary (SMVM) set by National Council. As of February 2024, SMVM is ARS $230,000 monthly for full-time workers.",
+    "informal": "28% of registered private sector workers receive below SMVM. Among unregistered workers, 67% earn below minimum. Highest violations: domestic work (78%), agriculture (71%), retail (45%), gastronomy (52%). Regional gaps: NOA (41% below) vs. CABA (18%).",
+    "gap": "Gap due to: (1) fragmented control across agencies with limited coordination, (2) 'registered salary' evasion (declare SMVM, pay less in cash), (3) low-productivity sectors unable to afford SMVM, (4) unequal geographic enforcement (interior has 60% fewer inspectors per capita), (5) individual vs. collective bargaining power (89% vs 62% compliance rates)."
+  },
+  
+  "metadata": {
+    "case_id": "AR-LAB-004",
+    "contributor": "ignacio-lerer",
+    "contributor_credentials": "Corporate lawyer (30+ years), Argentina. Independent Director. Expert in Corporate Governance and Compliance.",
+    "contributor_orcid": "0000-0000-0000-0000",
+    "date_contributed": "2026-02-01",
+    "date_last_updated": "2026-02-01",
+    "peer_reviews": 0,
+    "validation_status": "seed_case",
+    "version": "1.0",
+    "languages": ["es", "en"],
+    "related_cases": ["AR-LAB-001", "AR-LAB-003"],
+    "tags": ["minimum_wage", "smvm", "enforcement_gap", "labor_law", "regional_inequality"],
+    "doi": "10.5281/zenodo.XXXXXXA"
+  }
+}

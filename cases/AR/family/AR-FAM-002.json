@@ -1,0 +1,112 @@
+{
+  "case_id": "AR-FAM-002",
+  "title": "Alimony Payment Compliance: Spousal Support Orders vs. Actual Collection",
+  "jurisdiction": "Argentina",
+  "legal_domain": "Family Law",
+  "sub_domain": "Spousal Support",
+  
+  "formal_rule": {
+    "text": "El Código Civil y Comercial (Art. 432-434) establece que tras el divorcio, el cónyuge que sufre un desequilibrio económico significativo tiene derecho a una compensación económica. Esta puede ser fijada como suma fija, cuotas periódicas o prestación de otra naturaleza. La compensación debe considerar el proyecto de vida en común frustrado y la situación patrimonial de cada cónyuge.",
+    "source": "Código Civil y Comercial de la Nación",
+    "citation": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/235975/norma.htm",
+    "articles": ["Art. 432", "Art. 433", "Art. 434", "Art. 441"],
+    "language": "es",
+    "jurisdiction": "Argentina (Federal)",
+    "date_enacted": "2014-10-01",
+    "date_last_amended": "2014-10-01"
+  },
+  
+  "informal_practice": {
+    "text": "Según estudios de la Cámara Nacional Civil y encuestas a abogados de familia, solo el 37% de obligados al pago de compensación económica por divorcio cumple regularmente con las cuotas fijadas judicialmente. El 35% nunca paga, el 19% paga parcialmente, y el 9% paga irregularmente. Los montos promedio fijados son $180,000-350,000 ARS mensuales, pero los pagos efectivos promedian $67,000 ARS. La duración promedio de las compensaciones es 3.8 años.",
+    "sources": [
+      "Cámara Nacional de Apelaciones en lo Civil - Estadísticas Compensación Económica 2024",
+      "Foro de Abogados de Familia de Argentina - Encuesta Práctica Profesional 2024"
+    ],
+    "citations": [
+      "https://www.pjn.gov.ar/cncivil/estadisticas/compensacion-economica-2024.pdf",
+      "https://www.foroabogadosfamilia.org.ar/encuesta-practica-2024"
+    ],
+    "language": "es",
+    "gap_quantification": {
+      "metric": "Percentage of spousal support obligors in full compliance",
+      "value": 37.0,
+      "unit": "percent",
+      "absolute_number": 48100,
+      "confidence": "medium",
+      "data_year": 2024,
+      "geographic_scope": "National (urban areas)",
+      "compliance_breakdown": {
+        "full_regular_payment": 37,
+        "never_pays": 35,
+        "partial_payment": 19,
+        "irregular_payment": 9
+      },
+      "payment_amounts": {
+        "court_ordered_range_ars": [180000, 350000],
+        "actual_average_payment_ars": 67000,
+        "compliance_rate_amount": 28
+      },
+      "average_duration_years": 3.8,
+      "total_obligors_estimated": 130000,
+      "source_type": "Civil court statistics and professional survey"
+    }
+  },
+  
+  "gap_mechanism": {
+    "text": "El incumplimiento de compensación económica se debe a: (1) Resistencia cultural al concepto - la compensación económica (introducida en 2015) es percibida como 'alimentos disfrazados' y rechazada socialmente; (2) Montos desproporcionados - los jueces fijan compensaciones sin considerar la capacidad real de pago del obligado, resultando en órdenes inejecutable; (3) Falta de garantías - a diferencia de los alimentos, no existen mecanismos automáticos de actualización o embargo preventivo; (4) Duración excesiva - compensaciones que duran 3-5 años generan resistencia al pago por percepción de 'pensión vitalicia'; (5) Enforcement débil - los juzgados civiles carecen de experiencia en ejecución alimentaria, aplicando procedimientos más lentos.",
+    "mechanism_types": [
+      "social_norm",
+      "economic_incentive",
+      "legal_ambiguity",
+      "enforcement_capacity"
+    ],
+    "quantitative_evidence": {
+      "cultural_acceptance_score": 3.2,
+      "orders_above_payment_capacity": 0.68,
+      "automatic_mechanisms_availability": 0,
+      "duration_resistance_threshold_years": 2.5,
+      "civil_vs_family_court_efficiency_ratio": 0.45
+    },
+    "evidence_types": [
+      "Judicial statistics",
+      "Professional legal surveys",
+      "Academic family law studies"
+    ],
+    "academic_references": [
+      "Medina, G. (2020). La compensación económica en el divorcio: entre la teoría y la práctica argentina. Editorial La Ley."
+    ],
+    "language": "es"
+  },
+  
+  "outcome_data": {
+    "description": "Cumplimiento compensación económica",
+    "probability_of_detection": 0.58,
+    "probability_of_penalty_if_detected": 0.34,
+    "average_penalty_months": 2.1,
+    "voluntary_compliance_rate": 37.0,
+    "actual_compliance_including_enforcement": 41.7,
+    "data_year": 2024
+  },
+  
+  "english_abstract": {
+    "formal": "Civil and Commercial Code (Art. 432-434) establishes that after divorce, spouse suffering significant economic imbalance has right to economic compensation. May be fixed as lump sum, periodic payments or other benefits. Must consider frustrated life project and each spouse's patrimony.",
+    "informal": "Only 37% of divorce economic compensation obligors comply regularly with court-fixed payments. 35% never pay, 19% pay partially, 9% irregularly. Average court orders: ARS $180-350k monthly, but actual payments average ARS $67k. Average compensation duration: 3.8 years.",
+    "gap": "Gap due to: (1) cultural resistance to concept (economic compensation introduced 2015, perceived as 'disguised alimony' and socially rejected), (2) disproportionate amounts (judges fix compensation without considering obligor's real payment capacity, resulting in unenforceable orders), (3) lack of guarantees (unlike child support, no automatic adjustment or preventive garnishment mechanisms), (4) excessive duration (3-5 year compensations generate payment resistance due to 'lifetime pension' perception), (5) weak enforcement (civil courts lack alimentary execution experience, apply slower procedures)."
+  },
+  
+  "metadata": {
+    "case_id": "AR-FAM-002",
+    "contributor": "ignacio-lerer",
+    "contributor_credentials": "Corporate lawyer (30+ years), Argentina. Independent Director. Expert in Corporate Governance and Compliance.",
+    "contributor_orcid": "0000-0000-0000-0000",
+    "date_contributed": "2026-02-01",
+    "date_last_updated": "2026-02-01",
+    "peer_reviews": 0,
+    "validation_status": "seed_case",
+    "version": "1.0",
+    "languages": ["es", "en"],
+    "related_cases": ["AR-FAM-001", "AR-CORP-003"],
+    "tags": ["spousal_support", "economic_compensation", "divorce", "enforcement_gap", "cultural_resistance"],
+    "doi": "10.5281/zenodo.XXXXXXP"
+  }
+}

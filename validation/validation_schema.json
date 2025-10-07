@@ -1,0 +1,417 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LegalGapDB Case Schema",
+  "description": "JSON Schema for validating legal gap cases in LegalGapDB",
+  "type": "object",
+  "required": [
+    "case_id",
+    "title", 
+    "jurisdiction",
+    "legal_domain",
+    "formal_rule",
+    "informal_practice", 
+    "gap_mechanism",
+    "english_abstract",
+    "metadata"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "_comment": {
+      "type": "string",
+      "description": "Optional comment field"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}-[A-Z]+[A-Z0-9]*-[0-9]{3}$",
+      "description": "Format: XX-DOMAIN-NNN (e.g., AR-LAB-001)",
+      "examples": ["AR-LAB-001", "BR-TAX-015", "IN-CORP-003"]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 150,
+      "description": "Brief descriptive title of the legal gap"
+    },
+    "jurisdiction": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 50,
+      "description": "Country or jurisdiction name"
+    },
+    "legal_domain": {
+      "type": "string",
+      "enum": [
+        "Labor Law",
+        "Tax Law", 
+        "Corporate Law",
+        "Criminal Law",
+        "Family Law",
+        "Property Law",
+        "Environmental Law",
+        "Consumer Law", 
+        "Administrative Law",
+        "Contract Law"
+      ],
+      "description": "Primary legal area"
+    },
+    "sub_domain": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100,
+      "description": "Specific sub-area within legal domain"
+    },
+    "formal_rule": {
+      "type": "object",
+      "required": ["text", "source", "citation", "language"],
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 50,
+          "description": "Complete text of formal legal rule"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 5,
+          "description": "Name of legal source (statute, regulation, etc.)"
+        },
+        "citation": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to official source"
+        },
+        "articles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "List of specific articles or sections"
+        },
+        "language": {
+          "type": "string",
+          "pattern": "^[a-z]{2}$",
+          "description": "ISO 639-1 language code"
+        },
+        "jurisdiction": {
+          "type": "string",
+          "description": "Federal, Provincial, State, Municipal"
+        },
+        "date_enacted": {
+          "type": "string",
+          "format": "date",
+          "description": "Date law was enacted (YYYY-MM-DD)"
+        },
+        "date_last_amended": {
+          "type": "string", 
+          "format": "date",
+          "description": "Date of last amendment (YYYY-MM-DD)"
+        }
+      }
+    },
+    "informal_practice": {
+      "type": "object",
+      "required": ["text", "sources", "citations", "gap_quantification"],
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 50,
+          "description": "Description of actual practice with statistics"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 3
+          },
+          "minItems": 1,
+          "description": "List of data sources"
+        },
+        "citations": {
+          "type": "array", 
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "minItems": 1,
+          "description": "URLs to source materials"
+        },
+        "language": {
+          "type": "string",
+          "pattern": "^[a-z]{2}$",
+          "description": "ISO 639-1 language code"
+        },
+        "gap_quantification": {
+          "type": "object",
+          "required": ["metric", "value", "unit", "confidence", "data_year"],
+          "additionalProperties": true,
+          "properties": {
+            "metric": {
+              "type": "string",
+              "minLength": 10,
+              "description": "Clear description of what is measured"
+            },
+            "value": {
+              "type": "number",
+              "minimum": 0,
+              "description": "Numeric value of the gap measurement"
+            },
+            "unit": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Unit of measurement"
+            },
+            "absolute_number": {
+              "type": "number",
+              "minimum": 0,
+              "description": "Absolute number affected"
+            },
+            "confidence": {
+              "type": "string",
+              "enum": ["high", "medium", "low"],
+              "description": "Confidence level in the data"
+            },
+            "data_year": {
+              "type": "integer",
+              "minimum": 2000,
+              "maximum": 2030,
+              "description": "Year the data was collected"
+            },
+            "geographic_scope": {
+              "type": "string",
+              "description": "Geographic coverage of data"
+            },
+            "source_type": {
+              "type": "string",
+              "description": "Type of data source"
+            }
+          }
+        }
+      }
+    },
+    "gap_mechanism": {
+      "type": "object",
+      "required": ["text", "mechanism_types"],
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 100,
+          "description": "Detailed explanation of why gap persists"
+        },
+        "mechanism_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "enforcement_capacity",
+              "administrative_burden", 
+              "social_norm",
+              "economic_incentive",
+              "corruption",
+              "legal_ambiguity"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Types of mechanisms causing the gap"
+        },
+        "quantitative_evidence": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number"
+          },
+          "description": "Numeric evidence supporting mechanism explanation"
+        },
+        "evidence_types": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Types of evidence used"
+        },
+        "academic_references": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 10
+          },
+          "description": "Academic citations supporting the analysis"
+        },
+        "language": {
+          "type": "string",
+          "pattern": "^[a-z]{2}$",
+          "description": "ISO 639-1 language code"
+        }
+      }
+    },
+    "outcome_data": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Description of outcome data"
+        },
+        "probability_of_detection": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Probability non-compliance is detected"
+        },
+        "probability_of_penalty_if_detected": {
+          "type": "number", 
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Probability of penalty given detection"
+        },
+        "average_penalty": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Average monetary penalty in local currency"
+        },
+        "average_penalty_years": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Average prison sentence in years"
+        },
+        "voluntary_compliance_rate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Compliance rate without enforcement"
+        },
+        "actual_compliance_including_enforcement": {
+          "type": "number",
+          "minimum": 0, 
+          "maximum": 100,
+          "description": "Total compliance rate including enforcement"
+        },
+        "data_year": {
+          "type": "integer",
+          "minimum": 2000,
+          "maximum": 2030,
+          "description": "Year of outcome data"
+        }
+      }
+    },
+    "english_abstract": {
+      "type": "object",
+      "required": ["formal", "informal", "gap"],
+      "additionalProperties": false,
+      "properties": {
+        "formal": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 500,
+          "description": "Summary of formal rule in English"
+        },
+        "informal": {
+          "type": "string", 
+          "minLength": 20,
+          "maxLength": 500,
+          "description": "Summary of informal practice in English"
+        },
+        "gap": {
+          "type": "string",
+          "minLength": 20, 
+          "maxLength": 800,
+          "description": "Summary of gap mechanism in English"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "case_id",
+        "contributor", 
+        "date_contributed",
+        "validation_status",
+        "version",
+        "languages"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}-[A-Z]+[A-Z0-9]*-[0-9]{3}$",
+          "description": "Must match main case_id field"
+        },
+        "contributor": {
+          "type": "string",
+          "minLength": 2,
+          "description": "Contributor identification"
+        },
+        "contributor_credentials": {
+          "type": "string", 
+          "description": "Brief professional background"
+        },
+        "contributor_orcid": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]$",
+          "description": "ORCID identifier if available"
+        },
+        "date_contributed": {
+          "type": "string",
+          "format": "date",
+          "description": "Date first contributed (YYYY-MM-DD)"
+        },
+        "date_last_updated": {
+          "type": "string",
+          "format": "date", 
+          "description": "Date last updated (YYYY-MM-DD)"
+        },
+        "peer_reviews": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of completed peer reviews"
+        },
+        "validation_status": {
+          "type": "string",
+          "enum": ["pending", "verified", "disputed", "seed_case"],
+          "description": "Current validation status"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+$",
+          "description": "Version number (e.g., 1.0, 1.1, 2.0)"
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z]{2}$"
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Languages used in the case"
+        },
+        "related_cases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}-[A-Z]+[A-Z0-9]*-[0-9]{3}$"
+          },
+          "uniqueItems": true,
+          "description": "Related case IDs"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 30
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Keywords for categorization"
+        },
+        "doi": {
+          "type": "string",
+          "description": "DOI assigned upon verification"
+        }
+      }
+    }
+  }
+}
