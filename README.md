@@ -1,10 +1,10 @@
 # 🌍 LegalGapDB
 
 [![License: Dual](https://img.shields.io/badge/License-Dual%20(CC--BY--SA%204.0%20%2B%20MIT)-blue.svg)](LICENSE.md)
-[![Cases](https://img.shields.io/badge/Cases-20-green.svg)](cases/)
+[![Cases](https://img.shields.io/badge/Cases-19-green.svg)](cases/)
 [![Contributors](https://img.shields.io/github/contributors/adrianlerer/LegalGapDB.svg)](https://github.com/adrianlerer/LegalGapDB/graphs/contributors)
 [![Build Status](https://github.com/adrianlerer/LegalGapDB/workflows/Validate%20Cases/badge.svg)](https://github.com/adrianlerer/LegalGapDB/actions)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+
 
 **The first open-source database documenting formal/informal legal gaps in non-WEIRD jurisdictions.**
 
@@ -18,7 +18,7 @@ LegalGapDB documents this gap to enable Legal AI that works for the **Global Maj
 
 ## 📊 Current Status
 
-- **🇦🇷 20 seed cases** covering Argentina across 5 legal domains
+- **🇦🇷 19 seed cases** covering Argentina across 5 legal domains
 - **🌎 5 target countries** (Argentina, Brazil, Mexico, India, Nigeria)
 - **🎯 500 case target** for Year 1
 - **📖 Dual licensing** (CC BY-SA 4.0 for data, MIT for code)
@@ -31,13 +31,12 @@ LegalGapDB documents this gap to enable Legal AI that works for the **Global Maj
 | Corporate Law | 4 | 0 | 0 | 0 | 0 | **4** |
 | Criminal Law | 4 | 0 | 0 | 0 | 0 | **4** |
 | Family Law | 2 | 0 | 0 | 0 | 0 | **2** |
-| Administrative Law | 1 | 0 | 0 | 0 | 0 | **1** |
-| **Total** | **20** | **0** | **0** | **0** | **0** | **20** |
+| **Total** | **19** | **0** | **0** | **0** | **0** | **19** |
 
 ## 🚀 Quick Start
 
 ### 1. 🔍 Explore
-Browse cases at **[legalgapdb.org/browse](https://legalgapdb.org/browse)** or directly in the [`cases/`](cases/) directory.
+Browse cases at **[adrianlerer.github.io/LegalGapDB/browse.html](https://adrianlerer.github.io/LegalGapDB/browse.html)** or directly in the [`cases/`](cases/) directory.
 
 ### 2. 📝 Contribute  
 Use our [templates](templates/) to document a gap in your jurisdiction:
@@ -143,15 +142,15 @@ We welcome contributions from:
   title        = {{LegalGapDB: A Crowdsourced Database of 
                    Formal/Informal Legal Gaps in Non-WEIRD 
                    Jurisdictions}},
-  year         = 2026,
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.XXXXXXX},
+  year         = 2025,
+  publisher    = {GitHub},
+
   url          = {https://github.com/adrianlerer/LegalGapDB}
 }
 ```
 
 ### APA
-Lerer, I. A. (2026). *LegalGapDB: A Crowdsourced Database of Formal/Informal Legal Gaps in Non-WEIRD Jurisdictions* [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+Lerer, I. A. (2025). *LegalGapDB: A Crowdsourced Database of Formal/Informal Legal Gaps in Non-WEIRD Jurisdictions* [Dataset]. GitHub. https://github.com/adrianlerer/LegalGapDB
 
 ## 🏛️ Governance
 
@@ -166,7 +165,7 @@ LegalGapDB is governed by a **Scientific Advisory Committee** including:
 ## 🗺️ Roadmap
 
 ### 🎯 Year 1 Milestones (2026)
-- [x] **Q1**: Launch with 20 Argentina seed cases
+- [x] **Q1**: Launch with 19 Argentina seed cases
 - [ ] **Q2**: Expand to Brazil (50+ cases), add peer review system
 - [ ] **Q3**: Add Mexico and India (100+ cases each)  
 - [ ] **Q4**: Nigeria expansion, first academic paper, 500+ total cases
@@ -181,18 +180,19 @@ LegalGapDB is governed by a **Scientific Advisory Committee** including:
 
 ## 📬 Contact
 
-- **📧 Email**: legalgapdb@gmail.com
-- **🐦 Twitter**: [@LegalGapDB](https://twitter.com/LegalGapDB)
 - **💬 Issues**: [GitHub Issues](https://github.com/adrianlerer/LegalGapDB/issues)
-- **📱 WhatsApp**: +54 9 11 xxxx-xxxx (for field researchers)
+- **🗣️ Discussions**: [GitHub Discussions](https://github.com/adrianlerer/LegalGapDB/discussions)
+- **📂 Repository**: [github.com/adrianlerer/LegalGapDB](https://github.com/adrianlerer/LegalGapDB)
 
 ## 🙏 Acknowledgments
 
-Special thanks to our **founding contributors**:
-- Prof. Maria Santos (Universidad de Buenos Aires) - Labor Law expert
-- Dr. Carlos Rodriguez (CONICET) - Legal anthropologist  
-- Ana García (Ministerio de Trabajo) - Policy analyst
-- The **Open Law Movement** community
+Special thanks to the academic and legal community whose work inspired this project:
+- Joseph Henrich (Harvard) - WEIRD framework
+- Guillermo O'Donnell (Notre Dame) - Delegative democracy theory  
+- Catalina Smulovitz (UTDT) - Judicial enforcement research
+- Meta AI Research - Large Concept Models framework
+
+This project builds on decades of law and society scholarship.
 
 **View all contributors:** [CONTRIBUTORS.md](CONTRIBUTORS.md)
 
@@ -206,11 +206,11 @@ Special thanks to our **founding contributors**:
 
 ## 🔗 Links
 
-- **🌐 Website**: https://legalgapdb.org
-- **📊 Browse Cases**: https://legalgapdb.org/browse  
-- **📈 Statistics**: https://legalgapdb.org/stats
-- **🤝 Contributors**: https://legalgapdb.org/leaderboard
-- **📚 API Docs**: https://legalgapdb.org/api
+- **🌐 Website**: https://adrianlerer.github.io/LegalGapDB
+- **📊 Browse Cases**: https://adrianlerer.github.io/LegalGapDB/browse.html
+- **📈 Statistics**: https://adrianlerer.github.io/LegalGapDB/stats.html
+- **🤝 Contributors**: https://adrianlerer.github.io/LegalGapDB/contributors.html
+- **📚 API Docs**: https://adrianlerer.github.io/LegalGapDB/api.html
 
 ---
 
