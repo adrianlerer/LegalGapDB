@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegalGapDB - Legal AI for the Global Majority</title>
+    <meta name="description" content="The first open-source database documenting formal/informal legal gaps in non-WEIRD jurisdictions. Building Legal AI that works for 88% of humanity.">
+    <meta name="keywords" content="legal ai, legal tech, law enforcement, compliance, non-weird, legal gaps, machine learning">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'legal-blue': '#1e40af',
+                        'legal-light': '#f8fafc',
+                        'legal-dark': '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-legal-light text-legal-dark">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl mr-2">⚖️</span>
+                        <span class="font-bold text-xl text-legal-blue">LegalGapDB</span>
+                    </div>
+                    <div class="hidden md:ml-10 md:flex space-x-8">
+                        <a href="#home" class="text-gray-700 hover:text-legal-blue px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="#about" class="text-gray-700 hover:text-legal-blue px-3 py-2 text-sm font-medium">About</a>
+                        <a href="#cases" class="text-gray-700 hover:text-legal-blue px-3 py-2 text-sm font-medium">Cases</a>
+                        <a href="#contribute" class="text-gray-700 hover:text-legal-blue px-3 py-2 text-sm font-medium">Contribute</a>
+                        <a href="browse.html" class="text-gray-700 hover:text-legal-blue px-3 py-2 text-sm font-medium">Browse</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://github.com/adrianlerer/LegalGapDB" 
+                       class="bg-legal-blue text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16 bg-gradient-to-br from-legal-blue to-blue-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                Legal AI for the <span class="text-yellow-400">Global Majority</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-4xl mx-auto">
+                The first open-source database documenting formal/informal legal gaps in non-WEIRD jurisdictions. 
+                Building AI that works for <strong>88% of humanity</strong>.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="browse.html" 
+                   class="bg-yellow-400 text-legal-dark px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-300 transition-colors">
+                    🔍 Browse Cases
+                </a>
+                <a href="#contribute" 
+                   class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-legal-blue transition-colors">
+                    📝 Contribute
+                </a>
+                <a href="https://github.com/adrianlerer/LegalGapDB" 
+                   class="bg-gray-800 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-colors">
+                    💻 GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="bg-legal-light p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-legal-blue mb-2" id="stat-cases">20</div>
+                    <div class="text-gray-600">Legal Gap Cases</div>
+                </div>
+                <div class="bg-legal-light p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-legal-blue mb-2">1</div>
+                    <div class="text-gray-600">Country (Argentina)</div>
+                </div>
+                <div class="bg-legal-light p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-legal-blue mb-2">5</div>
+                    <div class="text-gray-600">Legal Domains</div>
+                </div>
+                <div class="bg-legal-light p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-legal-blue mb-2">88%</div>
+                    <div class="text-gray-600">Humanity Covered</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-legal-dark mb-6">
+                    Why Legal Gaps Matter
+                </h2>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    88% of humanity lives in countries where written law diverges systematically from legal practice. 
+                    Current Legal AI systems fail when deployed in these contexts.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">The Problem</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <span class="text-red-500 text-xl">❌</span>
+                            <p><strong>Legal AI trained only on formal law</strong> predicts 100% compliance where reality is 60%</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-red-500 text-xl">❌</span>
+                            <p><strong>WEIRD bias</strong> - Most legal AI research focuses on US/EU, ignoring the Global Majority</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-red-500 text-xl">❌</span>
+                            <p><strong>Deployment failures</strong> when AI systems encounter real-world legal practice</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Our Solution</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <span class="text-green-500 text-xl">✅</span>
+                            <p><strong>Gap Documentation</strong> - Quantify formal vs. informal practice</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-green-500 text-xl">✅</span>
+                            <p><strong>Causal Analysis</strong> - Understand WHY gaps persist</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-green-500 text-xl">✅</span>
+                            <p><strong>Open Source</strong> - Free access with proper licensing</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-green-500 text-xl">✅</span>
+                            <p><strong>Global Focus</strong> - Non-WEIRD jurisdictions prioritized</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cases -->
+    <section id="cases" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-legal-dark mb-6">
+                    Featured Legal Gap Cases
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Explore documented gaps between formal law and informal practice across different legal domains.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Case 1: Labor -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <span class="text-2xl mr-3">👨‍💼</span>
+                        <div>
+                            <h3 class="font-bold text-lg">Labor Informality</h3>
+                            <p class="text-sm text-gray-600">AR-LAB-001 • Argentina</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Law requires worker registration within 5 days. Reality: 40.1% of workers operate without formal registration.
+                    </p>
+                    <div class="bg-red-50 p-3 rounded-lg mb-4">
+                        <div class="text-sm font-semibold text-red-800">Compliance Gap</div>
+                        <div class="text-2xl font-bold text-red-600">59.9%</div>
+                    </div>
+                    <a href="browse.html#AR-LAB-001" class="text-legal-blue font-semibold hover:underline">
+                        View Full Case →
+                    </a>
+                </div>
+
+                <!-- Case 2: Tax -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <span class="text-2xl mr-3">💰</span>
+                        <div>
+                            <h3 class="font-bold text-lg">VAT Evasion</h3>
+                            <p class="text-sm text-gray-600">AR-TAX-001 • Argentina</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Law requires 21% VAT on sales. Reality: 32% of theoretical VAT goes uncollected due to systematic evasion.
+                    </p>
+                    <div class="bg-red-50 p-3 rounded-lg mb-4">
+                        <div class="text-sm font-semibold text-red-800">VAT Gap</div>
+                        <div class="text-2xl font-bold text-red-600">32%</div>
+                    </div>
+                    <a href="browse.html#AR-TAX-001" class="text-legal-blue font-semibold hover:underline">
+                        View Full Case →
+                    </a>
+                </div>
+
+                <!-- Case 3: Criminal -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <span class="text-2xl mr-3">⚖️</span>
+                        <div>
+                            <h3 class="font-bold text-lg">Economic Crimes</h3>
+                            <p class="text-sm text-gray-600">AR-CRIM-001 • Argentina</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Law criminalizes fraud, money laundering. Reality: Only 23.1% of initiated cases result in convictions.
+                    </p>
+                    <div class="bg-red-50 p-3 rounded-lg mb-4">
+                        <div class="text-sm font-semibold text-red-800">Conviction Rate</div>
+                        <div class="text-2xl font-bold text-red-600">23.1%</div>
+                    </div>
+                    <a href="browse.html#AR-CRIM-001" class="text-legal-blue font-semibold hover:underline">
+                        View Full Case →
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="browse.html" 
+                   class="bg-legal-blue text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
+                    Browse All 20 Cases
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-legal-dark mb-6">
+                    How It Works
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our structured approach to documenting legal gaps enables researchers and practitioners 
+                    to understand real-world legal practice.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-legal-blue text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">1</div>
+                    <h3 class="text-xl font-bold mb-4">Document Formal Rule</h3>
+                    <p class="text-gray-600">
+                        Identify the official legal requirement with citations to statutes, regulations, or case law.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-legal-blue text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">2</div>
+                    <h3 class="text-xl font-bold mb-4">Quantify Informal Practice</h3>
+                    <p class="text-gray-600">
+                        Gather empirical data on actual compliance rates from government statistics, surveys, or academic studies.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-legal-blue text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">3</div>
+                    <h3 class="text-xl font-bold mb-4">Explain Gap Mechanisms</h3>
+                    <p class="text-gray-600">
+                        Analyze WHY the gap persists - enforcement capacity, economic incentives, social norms, etc.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contribute Section -->
+    <section id="contribute" class="py-20 bg-legal-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Join Our Global Community
+            </h2>
+            <p class="text-xl mb-12 max-w-4xl mx-auto">
+                Help us document legal gaps in your jurisdiction. Together, we're building Legal AI 
+                that works for the Global Majority.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div class="bg-blue-700 p-6 rounded-lg">
+                    <span class="text-3xl mb-4 block">👨‍⚖️</span>
+                    <h3 class="font-bold mb-2">Legal Practitioners</h3>
+                    <p class="text-blue-100">Share your experience with enforcement gaps</p>
+                </div>
+
+                <div class="bg-blue-700 p-6 rounded-lg">
+                    <span class="text-3xl mb-4 block">🎓</span>
+                    <h3 class="font-bold mb-2">Researchers</h3>
+                    <p class="text-blue-100">Contribute data from your studies</p>
+                </div>
+
+                <div class="bg-blue-700 p-6 rounded-lg">
+                    <span class="text-3xl mb-4 block">💻</span>
+                    <h3 class="font-bold mb-2">Developers</h3>
+                    <p class="text-blue-100">Improve tools and infrastructure</p>
+                </div>
+
+                <div class="bg-blue-700 p-6 rounded-lg">
+                    <span class="text-3xl mb-4 block">🏛️</span>
+                    <h3 class="font-bold mb-2">Policy Analysts</h3>
+                    <p class="text-blue-100">Document regulatory effectiveness</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="contribute.html" 
+                   class="bg-yellow-400 text-legal-dark px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-300 transition-colors">
+                    📝 Start Contributing
+                </a>
+                <a href="https://github.com/adrianlerer/LegalGapDB/discussions" 
+                   class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-legal-blue transition-colors">
+                    💬 Join Discussion
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-legal-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <span class="text-3xl mr-3">⚖️</span>
+                        <span class="text-2xl font-bold">LegalGapDB</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        The first open-source database documenting formal/informal legal gaps 
+                        in non-WEIRD jurisdictions. Building Legal AI for the Global Majority.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/adrianlerer/LegalGapDB" class="text-gray-300 hover:text-white">
+                            <span class="sr-only">GitHub</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:adrian@lerer.com.ar" class="text-gray-300 hover:text-white">
+                            <span class="sr-only">Email</span>
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="browse.html" class="hover:text-white">Browse Cases</a></li>
+                        <li><a href="statistics.html" class="hover:text-white">Statistics</a></li>
+                        <li><a href="api_docs.html" class="hover:text-white">API Docs</a></li>
+                        <li><a href="contribute.html" class="hover:text-white">Contribute</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://github.com/adrianlerer/LegalGapDB/blob/main/LICENSE-DATA.md" class="hover:text-white">Data License (CC BY-SA 4.0)</a></li>
+                        <li><a href="https://github.com/adrianlerer/LegalGapDB/blob/main/LICENSE-CODE.md" class="hover:text-white">Code License (MIT)</a></li>
+                        <li><a href="https://github.com/adrianlerer/LegalGapDB/blob/main/CODE_OF_CONDUCT.md" class="hover:text-white">Code of Conduct</a></li>
+                        <li><a href="https://github.com/adrianlerer/LegalGapDB/blob/main/CITATION.cff" class="hover:text-white">Citation</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-300">
+                <p>&copy; 2026 LegalGapDB. Dataset licensed under CC BY-SA 4.0, Code under MIT License.</p>
+                <p class="mt-2">Building Legal AI that works for 88% of humanity, not just the WEIRD 12%.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling and interactivity -->
+    <script src="js/main.js"></script>
+</body>
+</html>
