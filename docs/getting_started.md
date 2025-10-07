@@ -41,9 +41,9 @@ find cases/AR -name "*.json" | head -5
 ```
 
 **Example Cases to Check Out:**
-- **AR-LAB-001**: Labor informality (40.1% unregistered workers)
+- **AR-LAB-001**: Labor informality (42% unregistered workers)
 - **AR-TAX-001**: VAT evasion (32% tax gap)
-- **AR-CRIM-001**: Economic crimes (23.1% conviction rate)
+- **AR-CRIM-001**: Economic crimes ([ESTIMATION: 23.1%] conviction rate)
 
 ## 📥 Step 2: Download Data for Analysis
 

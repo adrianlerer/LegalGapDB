@@ -228,9 +228,9 @@ function loadAndDisplayCases() {
             title: 'Informal Labor: Registration and Social Security Gap',
             country: 'Argentina',
             domain: 'Labor Law',
-            gapValue: 40.1,
+            gapValue: 42,
             gapUnit: 'percent',
-            description: 'Law requires worker registration within 5 days. Reality: 40.1% of workers operate without formal registration.',
+            description: 'Law requires worker registration within 5 days. Reality: 42% of workers operate without formal registration.',
             tags: ['informality', 'social_security', 'enforcement_gap']
         },
         {
@@ -250,7 +250,7 @@ function loadAndDisplayCases() {
             domain: 'Criminal Law',
             gapValue: 23.1,
             gapUnit: 'percent',
-            description: 'Law criminalizes economic crimes. Reality: Only 23.1% conviction rate for initiated cases.',
+            description: 'Law criminalizes economic crimes. Reality: [ESTIMATION] Only 23.1% conviction rate for initiated cases.',
             tags: ['economic_crimes', 'conviction_rate', 'judicial_system']
         }
         // Add more cases as needed

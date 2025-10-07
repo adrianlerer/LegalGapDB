@@ -78,9 +78,9 @@ python tools/validate_case.py cases/AR/labor/AR-LAB-001.json
   "informal_practice": {
     "gap_quantification": {
       "metric": "Percentage of workers without formal registration",
-      "value": 40.1,
+      "value": 42,
       "unit": "percent",
-      "absolute_number": 4800000,
+      "absolute_number": 9000000,
       "confidence": "high",
       "data_year": 2024
     }
@@ -88,8 +88,8 @@ python tools/validate_case.py cases/AR/labor/AR-LAB-001.json
   
   "english_abstract": {
     "formal": "Argentine Labor Contract Law mandates employer registration of workers within 5 days and 23% salary contributions.",
-    "informal": "40.1% of workers operate without registration, varying by sector: construction (58%), domestic work (72%).",
-    "gap": "Gap persists due to limited inspection capacity (0.8% annual probability), administrative burden (18 hours/month), and selective enforcement."
+    "informal": "42% of workers operate without registration, varying by sector: construction (76.6%), domestic work (77%)."
+    "gap": "Gap persists due to limited inspection capacity [ESTIMACIÓN: 0.8% annual probability], administrative burden (18 hours/month), and selective enforcement."
   }
 }
 ```
@@ -111,7 +111,7 @@ python tools/validate_case.py cases/AR/labor/AR-LAB-001.json
 - ⚖️ **Labor Law**: 59.9% average compliance
 - 💼 **Corporate Law**: 71.2% average compliance
 - 💰 **Tax Law**: 68.5% average compliance
-- 🏛️ **Criminal Law**: 23.1% conviction rate
+- 🏛️ **Criminal Law**: [ESTIMACIÓN: 23.1%] conviction rate
 - 👨‍👩‍👧‍👦 **Family Law**: 45.3% average compliance
 
 *Updated: February 2026*

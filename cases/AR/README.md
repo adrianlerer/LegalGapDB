@@ -18,7 +18,7 @@ This directory contains legal gap cases documented in Argentina, covering system
 ### Case Overview
 
 #### Labor Law (`labor/`)
-- **AR-LAB-001**: Informal Labor Registration Gap (40.1% unregistered workers)
+- **AR-LAB-001**: Informal Labor Registration Gap (42% unregistered workers)
 - **AR-LAB-002**: Severance Payment Gap (42% receive full payment)
 - **AR-LAB-003**: Working Hours Enforcement (38% exceed limits without compensation)
 - **AR-LAB-004**: Minimum Wage Compliance (28% below SMVM)
@@ -37,7 +37,7 @@ This directory contains legal gap cases documented in Argentina, covering system
 - **AR-CORP-004**: Audit Committee Effectiveness (41% functional committees)
 
 #### Criminal Law (`criminal/`)
-- **AR-CRIM-001**: Economic Crimes Conviction Rate (23.1% conviction rate)
+- **AR-CRIM-001**: Economic Crimes Conviction Rate ([ESTIMACIÓN: 23.1%] conviction rate)
 - **AR-CRIM-002**: Corporate Bribery Enforcement (5.1% conviction rate)
 - **AR-CRIM-003**: Money Laundering Prosecution (3.1% from ROS reports)
 - **AR-CRIM-004**: Tax Fraud Criminal Cases (4.97% conviction rate)
@@ -56,7 +56,7 @@ This directory contains legal gap cases documented in Argentina, covering system
 5. **Legal Ambiguity**: Unclear standards enabling evasion
 
 ### Sectoral Insights
-- **Labor informality** affects 40.1% of workers, highest in construction (58%) and domestic work (72%)
+- **Labor informality** affects 42% of workers, highest in construction (76.6%) and domestic work (77%)
 - **Tax compliance** varies significantly by sector and firm size
 - **Corporate governance** shows better compliance in listed vs. family companies
 - **Criminal enforcement** suffers from long procedural delays and resource constraints
@@ -66,7 +66,7 @@ This directory contains legal gap cases documented in Argentina, covering system
 
 | Metric | Average | Range |
 |--------|---------|--------|
-| **Compliance Rate** | 58.3% | 23.1% - 73.0% |
+| **Compliance Rate** | 58.3% | [EST: 23.1%] - 73.0% |
 | **Detection Probability** | 15.2% | 0.1% - 85.0% |
 | **Enforcement Success** | 34.7% | 5.0% - 89.0% |
 | **Case Duration** | 3.8 years | 2.1 - 6.4 years |

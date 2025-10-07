@@ -45,7 +45,7 @@
       "_comment": "This is the most critical section - quantify the gap precisely",
       "metric": "Clear description of what is being measured (e.g., 'Percentage of workers without formal registration')",
       "value": 0.0,
-      "_value_note": "Numeric value - use decimals for percentages (e.g., 40.1 for 40.1%)",
+      "_value_note": "Numeric value - use decimals for percentages (e.g., 42.5 for 42.5%)",
       "unit": "Unit of measurement (percent, number, rate, ratio, etc.)",
       "absolute_number": 0,
       "_absolute_number_note": "Actual number of people/entities affected, if available",

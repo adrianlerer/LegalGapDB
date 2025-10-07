@@ -17,27 +17,27 @@
   },
   
   "informal_practice": {
-    "text": "En la práctica, el 40.1% de trabajadores argentinos opera sin registro formal en seguridad social ('trabajo en negro'). La tasa de informalidad varía por sector: construcción (58%), trabajo doméstico (72%), comercio minorista (47%), agricultura (51%), industria (28%). El incumplimiento es mayor en empresas pequeñas (<10 empleados: 65%) que en grandes (>200 empleados: 12%).",
+    "text": "En la práctica, el 42% de trabajadores argentinos opera sin registro formal en seguridad social ('trabajo en negro'). La tasa de informalidad varía por sector: construcción (76.6%), trabajo doméstico (77%), comercio minorista (47%), agricultura (51%), industria (28%). El incumplimiento es mayor en empresas pequeñas (<10 empleados: 65%) que en grandes (>200 empleados: 12%).",
     "sources": [
-      "INDEC - Encuesta Permanente de Hogares Q4 2024",
+      "INDEC - Informe de Informalidad Laboral EPH Q4 2024",
       "Ministerio de Trabajo - Sistema de Inspecciones"
     ],
     "citations": [
-      "https://www.indec.gob.ar/uploads/informesdeprensa/mercado_trabajo_eph_4trim24.pdf",
+      "https://www.indec.gob.ar/uploads/informesdeprensa/informalidad_laboral_eph_04_2529DEBE4DBB.pdf",
       "https://www.argentina.gob.ar/trabajo/estadisticas/inspeccion"
     ],
     "language": "es",
     "gap_quantification": {
       "metric": "Percentage of workers without formal registration",
-      "value": 40.1,
+      "value": 42,
       "unit": "percent",
-      "absolute_number": 4800000,
+      "absolute_number": 9000000,
       "confidence": "high",
       "data_year": 2024,
       "geographic_scope": "National (31 urban agglomerations)",
       "sectoral_breakdown": {
-        "construction": 58,
-        "domestic_work": 72,
+        "construction": 76.6,
+        "domestic_work": 77,
         "retail": 47,
         "agriculture": 51,
         "manufacturing": 28
@@ -53,7 +53,7 @@
   },
   
   "gap_mechanism": {
-    "text": "La informalidad laboral persiste por múltiples factores estructurales: (1) Capacidad de inspección limitada - el Ministerio de Trabajo dispone de ~300 inspectores para supervisar 1.2 millones de empresas registradas (ratio: 1 inspector por 4,000 empresas), resultando en probabilidad de inspección <0.8% anual; (2) Costo administrativo prohibitivo - empleadores pequeños enfrentan carga de trámites mensuales ante 4 organismos diferentes (AFIP, ANSES, sindicato, ART), con costo estimado de 18 horas/mes de trabajo administrativo; (3) Enforcement selectivo - las multas por trabajo no registrado ($250,000-2,000,000 ARS) raramente se ejecutan debido a procesos judiciales que demoran 2-4 años; (4) Equilibrio económico informal - en sectores de baja productividad (comercio minorista, construcción pequeña), el margen de ganancia no permite absorber costos de formalización (23% aportes patronales + costos administrativos); (5) Norma social - la informalidad es percibida como práctica 'normal' y necesaria para supervivencia empresarial, especialmente en PyMEs.",
+    "text": "La informalidad laboral persiste por múltiples factores estructurales: (1) Capacidad de inspección limitada - el Ministerio de Trabajo dispone de ~300 inspectores para supervisar 1.2 millones de empresas registradas (ratio: 1 inspector por 4,000 empresas), resultando en [ESTIMACIÓN: probabilidad de inspección <0.8% anual]; (2) Costo administrativo prohibitivo - empleadores pequeños enfrentan carga de trámites mensuales ante 4 organismos diferentes (AFIP, ANSES, sindicato, ART), con costo estimado de 18 horas/mes de trabajo administrativo; (3) Enforcement selectivo - las multas por trabajo no registrado ($250,000-2,000,000 ARS) raramente se ejecutan debido a procesos judiciales que demoran 2-4 años; (4) Equilibrio económico informal - en sectores de baja productividad (comercio minorista, construcción pequeña), el margen de ganancia no permite absorber costos de formalización (23% aportes patronales + costos administrativos); (5) Norma social - la informalidad es percibida como práctica 'normal' y necesaria para supervivencia empresarial, especialmente en PyMEs.",
     "mechanism_types": [
       "enforcement_capacity",
       "administrative_burden",
@@ -91,8 +91,8 @@
   
   "english_abstract": {
     "formal": "Argentine Labor Contract Law (LCT 20.744) mandates that all employers register workers with social security within 5 days of hiring and contribute 23% of gross salary monthly.",
-    "informal": "In practice, 40.1% of Argentine workers operate without formal registration ('trabajo en negro'). Informality varies by sector: construction (58%), domestic work (72%), retail (47%), agriculture (51%), manufacturing (28%).",
-    "gap": "Gap persists due to: (1) limited inspection capacity (300 inspectors for 1.2M firms = 0.8% annual inspection probability), (2) administrative burden (18 hours/month for small employers), (3) selective enforcement (penalties rarely executed due to 3.5-year judicial delays), (4) economic equilibrium (low-productivity sectors cannot absorb 23% contribution + admin costs), (5) social norm (informality perceived as necessary for SME survival)."
+    "informal": "In practice, 42% of Argentine workers operate without formal registration ('trabajo en negro'). Informality varies by sector: construction (76.6%), domestic work (77%), retail (47%), agriculture (51%), manufacturing (28%).",
+    "gap": "Gap persists due to: (1) limited inspection capacity (300 inspectors for 1.2M firms = [ESTIMACIÓN: 0.8% annual inspection probability]), (2) administrative burden (18 hours/month for small employers), (3) selective enforcement (penalties rarely executed due to 3.5-year judicial delays), (4) economic equilibrium (low-productivity sectors cannot absorb 23% contribution + admin costs), (5) social norm (informality perceived as necessary for SME survival)."
   },
   
   "metadata": {
