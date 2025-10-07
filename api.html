@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation - LegalGapDB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-gray-900">
+                        ⚖️ LegalGapDB
+                    </a>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="/" class="text-gray-600 hover:text-gray-900">Home</a>
+                    <a href="/browse.html" class="text-gray-600 hover:text-gray-900">Browse Cases</a>
+                    <a href="/stats.html" class="text-gray-600 hover:text-gray-900">Statistics</a>
+                    <a href="/api.html" class="text-blue-600 font-medium">API Docs</a>
+                    <a href="https://github.com/adrianlerer/LegalGapDB" class="text-gray-600 hover:text-gray-900">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-gradient-to-r from-purple-600 to-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <h1 class="text-4xl font-bold mb-4">API Documentation</h1>
+            <p class="text-xl text-purple-100">Access LegalGapDB data programmatically</p>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Quick Start -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Quick Start</h2>
+            <p class="text-gray-600 mb-4">
+                LegalGapDB provides several ways to access the legal gap data programmatically. 
+                All data is open source and available under dual licensing (CC BY-SA 4.0 for data, MIT for code).
+            </p>
+            
+            <div class="bg-gray-50 rounded-lg p-4 mb-4">
+                <h3 class="font-semibold mb-2">🚀 Current Status: GitHub-based API</h3>
+                <p class="text-sm text-gray-600">
+                    Currently, all data is accessible via GitHub's API. A dedicated REST API is planned for future releases.
+                </p>
+            </div>
+        </div>
+
+        <!-- GitHub API Access -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4">GitHub API Access</h2>
+            
+            <div class="space-y-6">
+                <!-- List all cases -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">📋 List All Cases</h3>
+                    <div class="bg-gray-900 rounded-lg p-4 overflow-x-auto">
+                        <code class="text-green-400 text-sm">
+GET https://api.github.com/repos/adrianlerer/LegalGapDB/contents/cases
+                        </code>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-2">Returns a list of all jurisdiction directories in the cases folder.</p>
+                </div>
+
+                <!-- Get specific case -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">📄 Get Specific Case</h3>
+                    <div class="bg-gray-900 rounded-lg p-4 overflow-x-auto">
+                        <code class="text-green-400 text-sm">
+GET https://api.github.com/repos/adrianlerer/LegalGapDB/contents/cases/AR/labor/AR-LAB-001.json
+                        </code>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-2">Returns the raw JSON data for a specific case. Content is base64 encoded.</p>
+                </div>
+
+                <!-- Raw file access -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">📥 Direct Raw File Access</h3>
+                    <div class="bg-gray-900 rounded-lg p-4 overflow-x-auto">
+                        <code class="text-green-400 text-sm">
+GET https://raw.githubusercontent.com/adrianlerer/LegalGapDB/main/cases/AR/labor/AR-LAB-001.json
+                        </code>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-2">Returns the JSON file directly without base64 encoding.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Python Examples -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4">🐍 Python Examples</h2>
+            
+            <div class="space-y-6">
+                <!-- Fetch case example -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Fetch a Single Case</h3>
+                    <div class="bg-gray-900 rounded-lg p-4 overflow-x-auto">
+                        <pre class="text-sm text-gray-300"><code>import requests
+import json
+
+# Fetch a specific case
+case_url = "https://raw.githubusercontent.com/adrianlerer/LegalGapDB/main/cases/AR/labor/AR-LAB-001.json"
+response = requests.get(case_url)
+case_data = response.json()
+
+print(f"Case ID: {case_data['case_id']}")
+print(f"Title: {case_data['title']}")
+print(f"Gap Type: {case_data['gap_analysis']['gap_type']}")
+</code></pre>
+                    </div>
+                </div>
+
+                <!-- Fetch all cases -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Fetch All Argentina Cases</h3>
+                    <div class="bg-gray-900 rounded-lg p-4 overflow-x-auto">
+                        <pre class="text-sm text-gray-300"><code>import requests
+import json
+from pathlib import Path
+
+def fetch_all_argentina_cases():
+    cases = []
+    base_url = "https://raw.githubusercontent.com/adrianlerer/LegalGapDB/main/cases/AR"
+    
+    # Legal areas and case counts (would normally be discovered dynamically)
+    areas = {
+        'labor': 5,
+        'tax': 4, 
+        'corporate': 4,
+        'criminal': 4,
+        'family': 2
+    }
+    
+    for area, count in areas.items():
+        for i in range(1, count + 1):
+            case_id = f"AR-{area.upper()[:3]}-{i:03d}"
+            url = f"{base_url}/{area}/{case_id}.json"
+            
+            try:
+                response = requests.get(url)
+                if response.status_code == 200:
+                    cases.append(response.json())
+            except Exception as e:
+                print(f"Error fetching {case_id}: {e}")
+    
+    return cases
+
+# Usage
+argentina_cases = fetch_all_argentina_cases()
+print(f"Fetched {len(argentina_cases)} cases from Argentina")
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript Examples -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4">🟨 JavaScript Examples</h2>
+            
+            <div>
+                <h3 class="text-lg font-semibold mb-2">Fetch Case Data</h3>
+                <div class="bg-gray-900 rounded-lg p-4 overflow-x-auto">
+                    <pre class="text-sm text-gray-300"><code>// Fetch a specific case
+async function fetchCase(caseId) {
+    const url = `https://raw.githubusercontent.com/adrianlerer/LegalGapDB/main/cases/AR/labor/${caseId}.json`;
+    
+    try {
+        const response = await fetch(url);
+        const caseData = await response.json();
+        
+        console.log('Case Title:', caseData.title);
+        console.log('Jurisdiction:', caseData.jurisdiction);
+        console.log('Legal Area:', caseData.legal_area);
+        
+        return caseData;
+    } catch (error) {
+        console.error('Error fetching case:', error);
+        return null;
+    }
+}
+
+// Usage
+fetchCase('AR-LAB-001')
+    .then(caseData => {
+        if (caseData) {
+            // Process the case data
+            displayCase(caseData);
+        }
+    });
+</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- CLI Tools -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4">🔧 CLI Tools</h2>
+            
+            <p class="text-gray-600 mb-4">
+                LegalGapDB includes several command-line tools for data validation and export.
+            </p>
+            
+            <div class="space-y-4">
+                <div>
+                    <h3 class="font-semibold mb-2">Validate Cases</h3>
+                    <div class="bg-gray-900 rounded-lg p-4">
+                        <code class="text-green-400 text-sm">
+python tools/validate_case.py cases/AR/labor/AR-LAB-001.json
+                        </code>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-2">Export to CSV</h3>
+                    <div class="bg-gray-900 rounded-lg p-4">
+                        <code class="text-green-400 text-sm">
+python tools/export_corpus.py --format csv --output argentina_cases.csv
+                        </code>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-2">Generate Statistics</h3>
+                    <div class="bg-gray-900 rounded-lg p-4">
+                        <code class="text-green-400 text-sm">
+python tools/stats_dashboard.py --output-format json
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Future API -->
+        <div class="bg-blue-50 rounded-lg p-6 mb-8 border border-blue-200">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-800">🚀 Future: Dedicated REST API</h2>
+            
+            <p class="text-blue-700 mb-4">
+                We're planning a dedicated REST API with the following endpoints:
+            </p>
+            
+            <div class="space-y-2 text-sm">
+                <div class="font-mono bg-white p-2 rounded border">GET /api/v1/cases</div>
+                <div class="font-mono bg-white p-2 rounded border">GET /api/v1/cases/{jurisdiction}</div>
+                <div class="font-mono bg-white p-2 rounded border">GET /api/v1/cases/{jurisdiction}/{area}</div>
+                <div class="font-mono bg-white p-2 rounded border">GET /api/v1/case/{case_id}</div>
+                <div class="font-mono bg-white p-2 rounded border">GET /api/v1/stats</div>
+            </div>
+            
+            <p class="text-blue-600 mt-4 text-sm">
+                🗓️ Expected release: Q1 2026 • 
+                <a href="https://github.com/adrianlerer/LegalGapDB/issues" class="underline">Track progress on GitHub</a>
+            </p>
+        </div>
+
+        <!-- Rate Limits & Usage -->
+        <div class="bg-white rounded-lg shadow-sm p-6">
+            <h2 class="text-2xl font-semibold mb-4">⚠️ Usage Guidelines</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-semibold mb-2">GitHub API Rate Limits</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• 60 requests/hour (unauthenticated)</li>
+                        <li>• 5,000 requests/hour (authenticated)</li>
+                        <li>• Raw file access: No rate limits</li>
+                        <li>• Use raw.githubusercontent.com for high-volume access</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-2">Best Practices</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Cache responses when possible</li>
+                        <li>• Use conditional requests (ETags)</li>
+                        <li>• Batch requests efficiently</li>
+                        <li>• Attribution required (CC BY-SA 4.0)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="text-center">
+                <p class="text-gray-300">
+                    💻 Open Source API • 
+                    <a href="https://github.com/adrianlerer/LegalGapDB" class="text-blue-400 hover:text-blue-300">View Code</a> • 
+                    Dual Licensed (CC BY-SA 4.0 + MIT)
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

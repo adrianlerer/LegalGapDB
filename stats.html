@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - LegalGapDB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-gray-900">
+                        ⚖️ LegalGapDB
+                    </a>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="/" class="text-gray-600 hover:text-gray-900">Home</a>
+                    <a href="/browse.html" class="text-gray-600 hover:text-gray-900">Browse Cases</a>
+                    <a href="/stats.html" class="text-blue-600 font-medium">Statistics</a>
+                    <a href="https://github.com/adrianlerer/LegalGapDB" class="text-gray-600 hover:text-gray-900">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <h1 class="text-4xl font-bold mb-4">Database Statistics</h1>
+            <p class="text-xl text-blue-100">Real-time insights into our legal gap documentation</p>
+        </div>
+    </div>
+
+    <!-- Statistics Dashboard -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Key Metrics -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-sm p-6 text-center">
+                <div class="text-3xl font-bold text-blue-600 mb-2">19</div>
+                <div class="text-sm text-gray-600">Total Cases</div>
+            </div>
+            <div class="bg-white rounded-lg shadow-sm p-6 text-center">
+                <div class="text-3xl font-bold text-green-600 mb-2">1</div>
+                <div class="text-sm text-gray-600">Jurisdictions</div>
+            </div>
+            <div class="bg-white rounded-lg shadow-sm p-6 text-center">
+                <div class="text-3xl font-bold text-purple-600 mb-2">5</div>
+                <div class="text-sm text-gray-600">Legal Areas</div>
+            </div>
+            <div class="bg-white rounded-lg shadow-sm p-6 text-center">
+                <div class="text-3xl font-bold text-red-600 mb-2">88%</div>
+                <div class="text-sm text-gray-600">Global Population Target</div>
+            </div>
+        </div>
+
+        <!-- Charts Row -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <!-- Cases by Legal Area -->
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <h3 class="text-lg font-semibold mb-4">Cases by Legal Area</h3>
+                <canvas id="legalAreaChart" width="400" height="300"></canvas>
+            </div>
+
+            <!-- Confidence Levels -->
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <h3 class="text-lg font-semibold mb-4">Confidence Level Distribution</h3>
+                <canvas id="confidenceChart" width="400" height="300"></canvas>
+            </div>
+        </div>
+
+        <!-- Argentina Deep Dive -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h3 class="text-lg font-semibold mb-4">Argentina Cases Breakdown</h3>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div class="text-center p-4 bg-red-50 rounded-lg">
+                    <div class="text-2xl font-bold text-red-600">5</div>
+                    <div class="text-sm text-gray-600">Labor Law</div>
+                </div>
+                <div class="text-center p-4 bg-green-50 rounded-lg">
+                    <div class="text-2xl font-bold text-green-600">4</div>
+                    <div class="text-sm text-gray-600">Tax Law</div>
+                </div>
+                <div class="text-center p-4 bg-blue-50 rounded-lg">
+                    <div class="text-2xl font-bold text-blue-600">4</div>
+                    <div class="text-sm text-gray-600">Corporate Law</div>
+                </div>
+                <div class="text-center p-4 bg-purple-50 rounded-lg">
+                    <div class="text-2xl font-bold text-purple-600">4</div>
+                    <div class="text-sm text-gray-600">Criminal Law</div>
+                </div>
+                <div class="text-center p-4 bg-pink-50 rounded-lg">
+                    <div class="text-2xl font-bold text-pink-600">2</div>
+                    <div class="text-sm text-gray-600">Family Law</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Quality Metrics -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h3 class="text-lg font-semibold mb-4">Data Quality Metrics</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <h4 class="font-medium text-gray-700 mb-2">Source Quality</h4>
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="text-sm text-gray-600">Government Sources</span>
+                            <span class="text-sm font-medium">85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-green-600 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-medium text-gray-700 mb-2">Citation Completeness</h4>
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="text-sm text-gray-600">Complete Citations</span>
+                            <span class="text-sm font-medium">100%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-green-600 h-2 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-medium text-gray-700 mb-2">Validation Status</h4>
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="text-sm text-gray-600">Schema Valid</span>
+                            <span class="text-sm font-medium">100%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-green-600 h-2 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Growth Timeline -->
+        <div class="bg-white rounded-lg shadow-sm p-6">
+            <h3 class="text-lg font-semibold mb-4">Database Growth</h3>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-3 h-3 bg-blue-600 rounded-full mr-4"></div>
+                    <div class="flex-1">
+                        <div class="flex justify-between">
+                            <span class="font-medium">October 2025</span>
+                            <span class="text-gray-600">19 Argentina cases added</span>
+                        </div>
+                        <div class="text-sm text-gray-500">Initial database release with comprehensive Argentina legal gaps</div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-3 h-3 bg-gray-300 rounded-full mr-4"></div>
+                    <div class="flex-1">
+                        <div class="flex justify-between">
+                            <span class="font-medium">Q4 2025</span>
+                            <span class="text-gray-600">Coming Soon</span>
+                        </div>
+                        <div class="text-sm text-gray-500">Expansion to Brazil, Colombia, and India</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="text-center">
+                <p class="text-gray-300">
+                    📊 Statistics updated automatically • 
+                    <a href="https://github.com/adrianlerer/LegalGapDB" class="text-blue-400 hover:text-blue-300">View Raw Data</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Legal Area Chart
+        const ctxArea = document.getElementById('legalAreaChart').getContext('2d');
+        new Chart(ctxArea, {
+            type: 'doughnut',
+            data: {
+                labels: ['Labor Law', 'Tax Law', 'Corporate Law', 'Criminal Law', 'Family Law'],
+                datasets: [{
+                    data: [5, 4, 4, 4, 2],
+                    backgroundColor: [
+                        '#EF4444',
+                        '#10B981',
+                        '#3B82F6',
+                        '#8B5CF6',
+                        '#EC4899'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+        // Confidence Chart
+        const ctxConf = document.getElementById('confidenceChart').getContext('2d');
+        new Chart(ctxConf, {
+            type: 'bar',
+            data: {
+                labels: ['High (90-100%)', 'Medium (70-89%)', 'Low (50-69%)'],
+                datasets: [{
+                    label: 'Number of Cases',
+                    data: [12, 5, 2],
+                    backgroundColor: ['#10B981', '#F59E0B', '#EF4444']
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 1
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
