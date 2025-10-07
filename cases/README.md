@@ -191,5 +191,5 @@ Each case follows a standardized JSON structure:
 
 **Building Legal AI that works for 88% of humanity, not just the WEIRD 12%.**
 
-*Last updated: February 2026*  
+*Last updated: October 2025*  
 *Next milestone: Brazil expansion (Q2 2026)*

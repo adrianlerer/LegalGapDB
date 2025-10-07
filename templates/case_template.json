@@ -1,7 +1,7 @@
 {
   "_comment": "LegalGapDB Case Template - Fill all required fields below",
   "_version": "1.0",
-  "_last_updated": "2026-02-01",
+  "_last_updated": "2025-10-07",
   
   "case_id": "XX-DOMAIN-NNN",
   "_case_id_format": "ISO country code (XX) + legal domain abbreviation (DOMAIN) + sequential number (NNN)",

@@ -35,7 +35,7 @@ This license covers:
 
 **MIT License**
 
-Copyright (c) 2026 Ignacio Adrian Lerer and LegalGapDB Contributors
+Copyright (c) 2025 Ignacio Adrian Lerer and LegalGapDB Contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -62,7 +62,7 @@ SOFTWARE.
 ### Including in Your Project
 ```
 This project includes code from LegalGapDB (https://github.com/adrianlerer/LegalGapDB)
-Licensed under MIT License. Copyright (c) 2026 Ignacio Adrian Lerer.
+Licensed under MIT License. Copyright (c) 2025 Ignacio Adrian Lerer.
 ```
 
 ### Commercial Use

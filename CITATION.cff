@@ -32,7 +32,7 @@ keywords:
   - compliance
   - informal-law
 license: CC-BY-SA-4.0
-date-released: '2026-02-01'
+date-released: '2025-10-07'
 version: 1.0.0
 contact:
   - family-names: Lerer
@@ -51,7 +51,7 @@ preferred-citation:
   issue: 2
   start: 45
   end: 73
-  year: 2026
+  year: 2025
   doi: 10.1000/182
 references:
   - type: article
