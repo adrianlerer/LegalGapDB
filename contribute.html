@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribute to LegalGapDB - Help Build Legal AI for the Global Majority</title>
+    <meta name="description" content="Join the LegalGapDB community. Contribute legal gap cases, improve documentation, or help build tools for Legal AI that works for 88% of humanity.">
+    <meta name="keywords" content="legal ai contribution, legal research, legal gaps, volunteer, open source legal data">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'legal-blue': '#1e40af',
+                        'legal-light': '#f8fafc',
+                        'legal-dark': '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-legal-light text-legal-dark">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl mr-2">⚖️</span>
+                        <a href="index.html" class="font-bold text-xl text-legal-blue">LegalGapDB</a>
+                    </div>
+                    <div class="hidden md:ml-10 md:flex space-x-8">
+                        <a href="index.html" class="text-gray-700 hover:text-legal-blue px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="index.html#about" class="text-gray-700 hover:text-legal-blue px-3 py-2 text-sm font-medium">About</a>
+                        <a href="browse.html" class="text-gray-700 hover:text-legal-blue px-3 py-2 text-sm font-medium">Browse</a>
+                        <a href="contribute.html" class="text-legal-blue border-b-2 border-legal-blue px-3 py-2 text-sm font-medium">Contribute</a>
+                        <a href="stats.html" class="text-gray-700 hover:text-legal-blue px-3 py-2 text-sm font-medium">Stats</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://github.com/adrianlerer/LegalGapDB" 
+                       class="bg-legal-blue text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="pt-16">
+        <div class="bg-gradient-to-r from-legal-blue to-blue-700 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                        🤝 Contribute to LegalGapDB
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 opacity-90">
+                        Help build Legal AI that works for <strong>88% of humanity</strong>
+                    </p>
+                    <p class="text-lg mb-8 max-w-3xl mx-auto opacity-80">
+                        Join legal practitioners, researchers, and developers from around the world documenting 
+                        the gaps between written law and legal reality in non-WEIRD jurisdictions.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#get-started" 
+                           class="bg-white text-legal-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                            🚀 Start Contributing
+                        </a>
+                        <a href="https://github.com/adrianlerer/LegalGapDB/blob/main/CONTRIBUTING.md" 
+                           class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-legal-blue transition-colors">
+                            📖 Full Guide
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contribution Types -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">How You Can Contribute</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Legal Practitioners -->
+                <div class="bg-legal-light p-6 rounded-lg border">
+                    <div class="text-4xl mb-4">👨‍⚖️</div>
+                    <h3 class="text-xl font-bold mb-3">Legal Practitioners</h3>
+                    <p class="text-gray-600 mb-4">
+                        Document gaps you see in daily practice. Your real-world experience is invaluable.
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• Submit case studies from your jurisdiction</li>
+                        <li>• Review and validate existing cases</li>
+                        <li>• Provide enforcement statistics</li>
+                        <li>• Share compliance patterns</li>
+                    </ul>
+                </div>
+
+                <!-- Researchers -->
+                <div class="bg-legal-light p-6 rounded-lg border">
+                    <div class="text-4xl mb-4">🎓</div>
+                    <h3 class="text-xl font-bold mb-3">Researchers</h3>
+                    <p class="text-gray-600 mb-4">
+                        Contribute rigorous analysis and help establish methodology standards.
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• Conduct systematic legal gap studies</li>
+                        <li>• Peer review submitted cases</li>
+                        <li>• Improve data validation protocols</li>
+                        <li>• Write methodology documentation</li>
+                    </ul>
+                </div>
+
+                <!-- Developers -->
+                <div class="bg-legal-light p-6 rounded-lg border">
+                    <div class="text-4xl mb-4">💻</div>
+                    <h3 class="text-xl font-bold mb-3">Developers</h3>
+                    <p class="text-gray-600 mb-4">
+                        Build tools and infrastructure to scale the project globally.
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• Improve validation tools</li>
+                        <li>• Build data visualization tools</li>
+                        <li>• Create mobile documentation app</li>
+                        <li>• Develop API endpoints</li>
+                    </ul>
+                </div>
+
+                <!-- Data Scientists -->
+                <div class="bg-legal-light p-6 rounded-lg border">
+                    <div class="text-4xl mb-4">📊</div>
+                    <h3 class="text-xl font-bold mb-3">Data Scientists</h3>
+                    <p class="text-gray-600 mb-4">
+                        Analyze patterns and help predict compliance gaps across jurisdictions.
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• Identify gap patterns and correlations</li>
+                        <li>• Build predictive compliance models</li>
+                        <li>• Create statistical dashboards</li>
+                        <li>• Validate data quality and consistency</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start Guide -->
+    <section id="get-started" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">🚀 Quick Start Guide</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8">
+                    <!-- Step 1 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-legal-blue text-white rounded-full flex items-center justify-center font-bold">1</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">🔍 Choose a Legal Gap</h3>
+                            <p class="text-gray-600 mb-3">
+                                Identify a law in your jurisdiction where there's systematic non-compliance or enforcement gaps.
+                            </p>
+                            <div class="bg-white p-4 rounded border-l-4 border-blue-500">
+                                <strong>Examples:</strong> Labor registration requirements vs. informal work, 
+                                tax compliance vs. actual collection, corporate governance vs. enforcement.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-legal-blue text-white rounded-full flex items-center justify-center font-bold">2</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">📝 Document the Gap</h3>
+                            <p class="text-gray-600 mb-3">
+                                Use our templates to structure your case with formal rule, informal practice, and gap mechanisms.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-2">
+                                <a href="https://github.com/adrianlerer/LegalGapDB/blob/main/templates/case_template.json" 
+                                   class="bg-legal-blue text-white px-4 py-2 rounded text-center hover:bg-blue-700">
+                                   📋 JSON Template
+                                </a>
+                                <a href="https://github.com/adrianlerer/LegalGapDB/blob/main/templates/case_template_simple.md" 
+                                   class="bg-gray-600 text-white px-4 py-2 rounded text-center hover:bg-gray-700">
+                                   📝 Markdown Template
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-legal-blue text-white rounded-full flex items-center justify-center font-bold">3</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">👥 Submit for Review</h3>
+                            <p class="text-gray-600 mb-3">
+                                Submit your case via GitHub Pull Request or email for peer review by our community.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-2">
+                                <a href="https://github.com/adrianlerer/LegalGapDB/compare" 
+                                   class="bg-green-600 text-white px-4 py-2 rounded text-center hover:bg-green-700">
+                                   🔀 Create Pull Request
+                                </a>
+                                <a href="mailto:contribute@legalgapdb.org" 
+                                   class="bg-blue-600 text-white px-4 py-2 rounded text-center hover:bg-blue-700">
+                                   📧 Email Submission
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-legal-blue text-white rounded-full flex items-center justify-center font-bold">4</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">🎉 Get Published & DOI</h3>
+                            <p class="text-gray-600 mb-3">
+                                Once approved, your case gets a DOI and becomes part of the permanent academic record.
+                            </p>
+                            <div class="bg-green-50 p-4 rounded border-l-4 border-green-500">
+                                <strong>Benefits:</strong> Academic citation, contributor credit, community recognition, 
+                                and impact on Legal AI development for the Global Majority.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Priority Countries -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">🌍 Priority Jurisdictions</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">
+                We're especially looking for contributors from these jurisdictions to help expand our coverage:
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Argentina -->
+                <div class="text-center p-6 bg-green-50 rounded-lg border border-green-200">
+                    <div class="text-4xl mb-2">🇦🇷</div>
+                    <h3 class="font-bold">Argentina</h3>
+                    <div class="text-green-600 font-semibold">19 cases</div>
+                    <p class="text-sm text-gray-600">Active • Need reviewers</p>
+                </div>
+
+                <!-- Brazil -->
+                <div class="text-center p-6 bg-yellow-50 rounded-lg border border-yellow-200">
+                    <div class="text-4xl mb-2">🇧🇷</div>
+                    <h3 class="font-bold">Brazil</h3>
+                    <div class="text-yellow-600 font-semibold">0 cases</div>
+                    <p class="text-sm text-gray-600">Q2 2026 (planned) • Contributors needed</p>
+                </div>
+
+                <!-- Mexico -->
+                <div class="text-center p-6 bg-yellow-50 rounded-lg border border-yellow-200">
+                    <div class="text-4xl mb-2">🇲🇽</div>
+                    <h3 class="font-bold">Mexico</h3>
+                    <div class="text-yellow-600 font-semibold">0 cases</div>
+                    <p class="text-sm text-gray-600">Q3 2026 (planned) • Contributors needed</p>
+                </div>
+
+                <!-- India -->
+                <div class="text-center p-6 bg-yellow-50 rounded-lg border border-yellow-200">
+                    <div class="text-4xl mb-2">🇮🇳</div>
+                    <h3 class="font-bold">India</h3>
+                    <div class="text-yellow-600 font-semibold">0 cases</div>
+                    <p class="text-sm text-gray-600">Q3 2026 (planned) • Contributors needed</p>
+                </div>
+
+                <!-- Nigeria -->
+                <div class="text-center p-6 bg-yellow-50 rounded-lg border border-yellow-200">
+                    <div class="text-4xl mb-2">🇳🇬</div>
+                    <h3 class="font-bold">Nigeria</h3>
+                    <div class="text-yellow-600 font-semibold">0 cases</div>
+                    <p class="text-sm text-gray-600">Q4 2026 (planned) • Contributors needed</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <p class="text-gray-600 mb-4">
+                    Don't see your jurisdiction? <strong>We want to hear from you!</strong>
+                </p>
+                <a href="https://github.com/adrianlerer/LegalGapDB/discussions" 
+                   class="bg-legal-blue text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                    💬 Propose New Jurisdiction
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contributor Benefits -->
+    <section class="py-16 bg-legal-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">🏆 Contributor Benefits</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl mb-4">📚</div>
+                    <h3 class="text-xl font-bold mb-2">Academic Credit</h3>
+                    <p class="opacity-90">Get DOI citations for your contributions and co-authorship on research papers.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-4xl mb-4">🌐</div>
+                    <h3 class="text-xl font-bold mb-2">Global Network</h3>
+                    <p class="opacity-90">Connect with legal experts, researchers, and technologists worldwide.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-bold mb-2">Impact on AI</h3>
+                    <p class="opacity-90">Directly influence how Legal AI systems understand law in your jurisdiction.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-4xl mb-4">🎓</div>
+                    <h3 class="text-xl font-bold mb-2">Skill Building</h3>
+                    <p class="opacity-90">Develop expertise in legal research, data science, and AI development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">❓ Frequently Asked Questions</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg border">
+                    <h3 class="font-bold mb-2">Do I need to be a lawyer to contribute?</h3>
+                    <p class="text-gray-600">
+                        No! While legal expertise is valuable, we also need researchers, developers, data scientists, 
+                        and anyone with knowledge of how law works in practice in their jurisdiction.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg border">
+                    <h3 class="font-bold mb-2">How much time does contributing require?</h3>
+                    <p class="text-gray-600">
+                        A single case contribution typically takes 2-4 hours to research and document properly. 
+                        You can contribute as little or as much as your schedule allows.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg border">
+                    <h3 class="font-bold mb-2">What if I find errors in existing cases?</h3>
+                    <p class="text-gray-600">
+                        Great! Please submit corrections via GitHub Issues or Pull Requests. Maintaining 
+                        data quality is crucial for the project's credibility.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg border">
+                    <h3 class="font-bold mb-2">How is my contribution credited?</h3>
+                    <p class="text-gray-600">
+                        All contributors are credited in case metadata, on the contributors page, 
+                        and in any resulting academic publications. Major contributors may be 
+                        invited as co-authors on research papers.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg border">
+                    <h3 class="font-bold mb-2">What languages can I contribute in?</h3>
+                    <p class="text-gray-600">
+                        Cases can include content in local languages, but we require English abstracts 
+                        for all cases to ensure global accessibility. We're working on expanding 
+                        multilingual support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-6">Ready to Make an Impact?</h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Join hundreds of legal experts building the future of Legal AI for the Global Majority.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://github.com/adrianlerer/LegalGapDB/blob/main/templates/case_template.json" 
+                   class="bg-legal-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    🚀 Start Your First Case
+                </a>
+                <a href="https://github.com/adrianlerer/LegalGapDB/discussions" 
+                   class="border-2 border-legal-blue text-legal-blue px-8 py-3 rounded-lg font-semibold hover:bg-legal-blue hover:text-white transition-colors">
+                    💬 Join Community Discussion
+                </a>
+            </div>
+
+            <p class="text-sm text-gray-500 mt-6">
+                Questions? Email us at <a href="mailto:contribute@legalgapdb.org" class="text-legal-blue hover:underline">contribute@legalgapdb.org</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-legal-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <span class="text-2xl mr-2">⚖️</span>
+                        <span class="font-bold text-xl">LegalGapDB</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Building Legal AI that works for 88% of humanity, not just the WEIRD 12%.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4">Contribute</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#get-started" class="hover:text-white">Getting Started</a></li>
+                        <li><a href="https://github.com/adrianlerer/LegalGapDB/blob/main/templates/case_template.json" class="hover:text-white">Case Template</a></li>
+                        <li><a href="https://github.com/adrianlerer/LegalGapDB/blob/main/CONTRIBUTING.md" class="hover:text-white">Contribution Guide</a></li>
+                        <li><a href="https://github.com/adrianlerer/LegalGapDB/discussions" class="hover:text-white">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="browse.html" class="hover:text-white">Browse Cases</a></li>
+                        <li><a href="stats.html" class="hover:text-white">Statistics</a></li>
+                        <li><a href="api.html" class="hover:text-white">API Documentation</a></li>
+                        <li><a href="contributors.html" class="hover:text-white">Contributors</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4">Connect</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://github.com/adrianlerer/LegalGapDB" class="hover:text-white">GitHub</a></li>
+                        <li><a href="https://github.com/adrianlerer/LegalGapDB/discussions" class="hover:text-white">Discussions</a></li>
+                        <li><a href="https://github.com/adrianlerer/LegalGapDB/issues" class="hover:text-white">Issues</a></li>
+                        <li><a href="mailto:contribute@legalgapdb.org" class="hover:text-white">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 LegalGapDB. Dataset licensed under CC BY-SA 4.0, Code under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
