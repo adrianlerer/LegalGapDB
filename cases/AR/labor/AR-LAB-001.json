@@ -92,8 +92,8 @@
     "probability_of_detection": 0.008,
     "probability_of_penalty_if_detected": 0.15,
     "average_penalty_ars": 600000,
-    "voluntary_compliance_rate": 59.9,
-    "actual_compliance_including_enforcement": 60.1,
+    "voluntary_compliance_rate": 57.9,
+    "actual_compliance_including_enforcement": 58.1,
     "data_year": 2024
   },
   
