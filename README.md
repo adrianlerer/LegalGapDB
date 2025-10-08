@@ -105,7 +105,7 @@ python tools/validate_case.py cases/AR/labor/AR-LAB-001.json
 }
 ```
 
-**Why this matters for AI:** Legal AI trained only on the formal rule would predict 100% compliance, but reality is 60% - a catastrophic error for any system deployed in Argentina.
+**Why this matters for AI:** Legal AI trained only on the formal rule would predict 100% compliance, but reality is 58% - a catastrophic error for any system deployed in Argentina.
 
 </details>
 
