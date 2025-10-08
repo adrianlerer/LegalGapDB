@@ -4,6 +4,7 @@
 [![Cases](https://img.shields.io/badge/Cases-19-green.svg)](cases/)
 [![Contributors](https://img.shields.io/github/contributors/adrianlerer/LegalGapDB.svg)](https://github.com/adrianlerer/LegalGapDB/graphs/contributors)
 [![Build Status](https://github.com/adrianlerer/LegalGapDB/workflows/Validate%20Cases/badge.svg)](https://github.com/adrianlerer/LegalGapDB/actions)
+[![SSRN Paper](https://img.shields.io/badge/SSRN-Published-blue.svg)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5576850)
 
 
 **The first open-source database documenting formal/informal legal gaps in non-WEIRD jurisdictions.**
@@ -172,22 +173,34 @@ We apply Reality Reasoner 3.0 protocol to verify all statistical claims:
 
 ## 📚 Citation
 
-### BibTeX
+### Academic Paper (SSRN)
 ```bibtex
-@dataset{lerer_2025_legalgapdb,
+@article{lerer_2025_legalgapdb,
   author       = {Lerer, Ignacio Adrian},
   title        = {{LegalGapDB: A Crowdsourced Database of 
                    Formal/Informal Legal Gaps in Non-WEIRD 
                    Jurisdictions}},
   year         = 2025,
-  publisher    = {GitHub},
+  journal      = {SSRN Electronic Journal},
+  url          = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5576850}
+}
+```
 
+### Dataset
+```bibtex
+@dataset{lerer_2025_legalgapdb_dataset,
+  author       = {Lerer, Ignacio Adrian},
+  title        = {{LegalGapDB Dataset}},
+  year         = 2025,
+  publisher    = {GitHub},
   url          = {https://github.com/adrianlerer/LegalGapDB}
 }
 ```
 
 ### APA
-Lerer, I. A. (2025). *LegalGapDB: A Crowdsourced Database of Formal/Informal Legal Gaps in Non-WEIRD Jurisdictions* [Dataset]. GitHub. https://github.com/adrianlerer/LegalGapDB
+**Paper:** Lerer, I. A. (2025). *LegalGapDB: A Crowdsourced Database of Formal/Informal Legal Gaps in Non-WEIRD Jurisdictions*. Available at SSRN: https://ssrn.com/abstract=5576850
+
+**Dataset:** Lerer, I. A. (2025). *LegalGapDB Dataset* [Dataset]. GitHub. https://github.com/adrianlerer/LegalGapDB
 
 ## 🏛️ Governance
 
@@ -243,6 +256,7 @@ This project builds on decades of law and society scholarship.
 
 ## 🔗 Links
 
+- **📄 SSRN Paper**: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5576850
 - **🌐 Website**: https://adrianlerer.github.io/LegalGapDB
 - **📊 Browse Cases**: https://adrianlerer.github.io/LegalGapDB/browse.html
 - **📈 Statistics**: https://adrianlerer.github.io/LegalGapDB/stats.html
