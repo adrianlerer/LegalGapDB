@@ -1,0 +1,263 @@
+# Paris-SCM System Configuration
+# Decentralized Legal AI for Non-WEIRD Jurisdictions
+
+system:
+  name: "Paris-SCM"
+  version: "0.1.0"
+  description: "Small Concept Models for Legal Enforcement Gap Analysis"
+  
+router:
+  model_path: "models/legal_router_mini.pt"
+  embedding_model: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  d_input: 384  # Match embedding model dimension
+  d_hidden: 512
+  n_experts: 8
+  dropout: 0.1
+  default_strategy: "top-2"
+  confidence_threshold: 0.1
+  
+experts:
+  - name: "experto_27401"
+    display_name: "Corporate Integrity Expert (Ley 27.401)"
+    domain: "corporate_compliance"
+    jurisdictions: ["AR"]
+    corpus_path: "experts/experto_27401/meta.jsonl"
+    index_path: "experts/experto_27401/index/"
+    model_path: null  # Use base model initially
+    specialization: "Ley 27.401, corporate integrity programs, compliance implementation gaps"
+    max_retrieval_docs: 6
+    citation_threshold: 0.7
+    
+  - name: "experto_contratacion_publica"
+    display_name: "Public Procurement Expert"
+    domain: "administrative_law"
+    jurisdictions: ["AR", "MERCOSUR"]
+    corpus_path: "experts/experto_contratacion_publica/meta.jsonl"
+    index_path: "experts/experto_contratacion_publica/index/"
+    model_path: null
+    specialization: "Public procurement, bidding processes, administrative sanctions"
+    max_retrieval_docs: 6
+    citation_threshold: 0.7
+    
+  - name: "experto_laboral"
+    display_name: "Labor Law Expert" 
+    domain: "labor_law"
+    jurisdictions: ["AR", "MERCOSUR"]
+    corpus_path: "experts/experto_laboral/meta.jsonl"
+    index_path: "experts/experto_laboral/index/"
+    model_path: null
+    specialization: "Labor law, employment registration, informality gaps (42% unregistered)"
+    max_retrieval_docs: 6
+    citation_threshold: 0.7
+    
+  - name: "experto_penal_economico"
+    display_name: "Economic Crime Expert"
+    domain: "criminal_law"
+    jurisdictions: ["AR", "LATAM"]
+    corpus_path: "experts/experto_penal_economico/meta.jsonl"
+    index_path: "experts/experto_penal_economico/index/"
+    model_path: null
+    specialization: "Economic crimes, money laundering, conviction gaps"
+    max_retrieval_docs: 6
+    citation_threshold: 0.7
+    
+  - name: "experto_administrativo"
+    display_name: "Administrative Law Expert"
+    domain: "administrative_law"
+    jurisdictions: ["AR", "MERCOSUR"]
+    corpus_path: "experts/experto_administrativo/meta.jsonl"
+    index_path: "experts/experto_administrativo/index/"
+    model_path: null
+    specialization: "Administrative sanctions, regulatory enforcement, capacity gaps"
+    max_retrieval_docs: 6
+    citation_threshold: 0.7
+    
+  - name: "experto_datos_ai"
+    display_name: "Data Protection & AI Expert"
+    domain: "data_protection"
+    jurisdictions: ["EU", "AR", "GLOBAL"]
+    corpus_path: "experts/experto_datos_ai/meta.jsonl"
+    index_path: "experts/experto_datos_ai/index/"
+    model_path: null
+    specialization: "GDPR, EU AI Act, cross-border data protection compliance"
+    max_retrieval_docs: 6
+    citation_threshold: 0.7
+    
+  - name: "experto_etica_publica"
+    display_name: "Public Ethics Expert"
+    domain: "public_ethics"
+    jurisdictions: ["GLOBAL", "OCDE"]
+    corpus_path: "experts/experto_etica_publica/meta.jsonl"
+    index_path: "experts/experto_etica_publica/index/"
+    model_path: null
+    specialization: "OECD anti-corruption standards, international public ethics"
+    max_retrieval_docs: 6
+    citation_threshold: 0.7
+    
+  - name: "experto_psicologia_legal"
+    display_name: "Legal Psychology Expert"
+    domain: "behavioral_law"
+    jurisdictions: ["GLOBAL"]
+    corpus_path: "experts/experto_psicologia_legal/meta.jsonl"
+    index_path: "experts/experto_psicologia_legal/index/"
+    model_path: null
+    specialization: "Henrich's WEIRD theory, behavioral compliance, cultural-legal dynamics"
+    max_retrieval_docs: 6
+    citation_threshold: 0.7
+
+# Inference strategies per query type
+inference_strategies:
+  routine_queries:
+    strategy: "top-1"
+    max_response_time_ms: 1000
+    description: "Fast single-expert responses for routine questions"
+    
+  complex_queries:
+    strategy: "top-2"
+    max_response_time_ms: 3000
+    description: "Balanced quality and speed for complex legal analysis"
+    
+  research_queries:
+    strategy: "full"
+    max_response_time_ms: 10000
+    description: "Full ensemble for research and gap detection"
+    
+  critical_queries:
+    strategy: "top-2"
+    max_response_time_ms: 5000
+    enable_validation: true
+    description: "High-stakes legal opinions with validation"
+
+# Quality metrics and thresholds
+quality_metrics:
+  citation_precision:
+    weight: 0.25
+    threshold: 0.90
+    description: "Accuracy of legal citations and references"
+    
+  nli_coherence:
+    weight: 0.20
+    threshold: 0.85
+    description: "Logical consistency of legal reasoning"
+    
+  groundedness:
+    weight: 0.25
+    threshold: 0.95
+    description: "Percentage of statements backed by legal sources"
+    
+  jurisdiction_accuracy:
+    weight: 0.15
+    threshold: 0.98
+    description: "Correct legal system identification"
+    
+  gap_detection_rate:
+    weight: 0.15
+    threshold: 0.80
+    description: "Accuracy in identifying enforcement gaps"
+
+# Enforcement gap detection configuration
+gap_detection:
+  enable: true
+  confidence_threshold: 0.7
+  mechanisms:
+    - "administrative_burden"
+    - "enforcement_capacity"
+    - "economic_incentives"
+    - "social_norms"
+    - "corruption"
+    - "resource_constraints"
+    - "political_influence"
+    - "technical_complexity"
+    - "geographic_barriers"
+    - "cultural_factors"
+  
+  data_sources:
+    - "LegalGapDB"
+    - "INDEC"
+    - "AFIP"
+    - "OECD"
+    - "World Bank"
+
+# Jurisdiction and language configuration
+jurisdictions:
+  supported: ["AR", "BR", "MX", "EU", "MERCOSUR", "LATAM", "GLOBAL", "OCDE"]
+  default: "AR"
+  
+languages:
+  supported: ["es", "en", "pt"]
+  default: "es"
+  
+# Integration with LegalGapDB
+legalgap_integration:
+  enable: true
+  database_path: "../cases/"
+  auto_gap_detection: true
+  gap_threshold_percentage: 15.0
+  update_frequency: "weekly"
+
+# API and serving configuration
+api:
+  host: "0.0.0.0"
+  port: 8000
+  max_concurrent_requests: 10
+  request_timeout_seconds: 30
+  enable_cors: true
+  log_level: "INFO"
+  
+# Monitoring and logging
+monitoring:
+  enable_metrics: true
+  log_queries: true
+  log_responses: true
+  performance_tracking: true
+  error_tracking: true
+  
+  metrics_retention_days: 90
+  log_retention_days: 30
+
+# Training configuration
+training:
+  router_training:
+    batch_size: 32
+    learning_rate: 0.001
+    epochs: 50
+    validation_split: 0.2
+    early_stopping_patience: 5
+    
+  expert_training:
+    enable_fine_tuning: false  # Start with base models
+    training_data_path: "training_data/"
+    validation_frequency: 10
+    
+# Development and testing
+development:
+  debug_mode: false
+  enable_profiling: false
+  test_data_path: "test_data/"
+  benchmark_frequency: "monthly"
+  
+# Security and privacy
+security:
+  enable_authentication: false  # For development
+  rate_limiting: true
+  max_requests_per_minute: 60
+  log_sensitive_data: false
+  
+privacy:
+  anonymize_queries: true
+  data_retention_policy: "6_months"
+  gdpr_compliance: true
+
+# Documentation and citations
+documentation:
+  auto_generate_citations: true
+  citation_format: "apa"
+  include_confidence_scores: true
+  validate_citations: true
+  
+  reference_sources:
+    - "InfoLeg"
+    - "Boletín Oficial"
+    - "OECD Standards" 
+    - "Academic Literature"
+    - "LegalGapDB Cases"
