@@ -1,7 +1,7 @@
 # 🌍 LegalGapDB
 
 [![License: Dual](https://img.shields.io/badge/License-Dual%20(CC--BY--SA%204.0%20%2B%20MIT)-blue.svg)](LICENSE.md)
-[![Cases](https://img.shields.io/badge/Cases-20-green.svg)](cases/)
+[![Cases](https://img.shields.io/badge/Cases-19-green.svg)](cases/)
 [![Status](https://img.shields.io/badge/Status-Live%20%26%20Operational-brightgreen.svg)](https://adrianlerer.github.io/LegalGapDB)
 [![SSRN Paper](https://img.shields.io/badge/SSRN-5584450-blue.svg)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5584450)
 [![París-SCM](https://img.shields.io/badge/París--SCM-Architecture%20Implemented-purple.svg)](scm_paris/)
@@ -30,7 +30,7 @@ LegalGapDB documents this gap to enable Legal AI that works for the **Global Maj
 
 ✅ **LIVE & OPERATIONAL**: LegalGapDB is now publicly available and actively expanding
 
-- **🇦🇷 20 validated cases** from Argentina (2020-2025) with official source verification
+- **🇦🇷 19 validated cases** from Argentina (2020-2025) with official source verification
 - **🤖 París-SCM Architecture**: Decentralized legal AI system implemented and operational
 - **🎯 Expanding to 500 cases** across 20 non-WEIRD jurisdictions by 2027
 - **📊 Documented gaps**: Labor (42%), Environmental (92%), Tax (33%)
@@ -44,7 +44,7 @@ LegalGapDB documents this gap to enable Legal AI that works for the **Global Maj
 | Corporate Law | 4 validated | **25% gap** (Ley 27.401 compliance) | LATAM focus |
 | Environmental Law | 4 validated | **92% non-enforcement** (mining/forest) | Global South |
 | Family Law | 3 validated | **47% gap** (alimony compliance) | Cross-cultural |
-| **Total** | **20 cases** | **Avg 48% gap** | **500 by 2027** |
+| **Total** | **19 cases** | **Avg 48% gap** | **500 by 2027** |
 
 ## 🌐 Website Access
 
