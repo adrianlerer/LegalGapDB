@@ -14,7 +14,7 @@
 **Lerer, I.A. (2025).** *Beyond WEIRD Legal AI: Why Concept-Based Models Outperform Token-Based Models in Non-WEIRD Jurisdictions.* SSRN Working Paper No. 5576850.  
 [Available at SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5576850)
 
-**Abstract:** Current Legal AI models exhibit WEIRD bias, trained on formal texts from Western jurisdictions. This paper introduces LegalGapDB and demonstrates why concept-based architectures (including Meta AI's Large Concept Models) outperform token-based models for the 88% of humanity living in non-WEIRD contexts.
+**Abstract:** Current Legal AI models exhibit WEIRD bias, trained on formal texts from Western jurisdictions. This paper introduces LegalGapDB and demonstrates why concept-based architectures (inspired by Henrich's institutional origins research and Paris decentralized training framework) outperform token-based models for the 88% of humanity living in non-WEIRD, post-colonial compliance contexts. The framework integrates IusSpace morphology and evolutionary psychology to model legal enforcement gaps that token-based systems systematically miss.
 
 ---
 
