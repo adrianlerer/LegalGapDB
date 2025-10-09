@@ -1,0 +1,313 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://legalgapdb.org/schemas/legalgap_v1.0.json",
+  "title": "LegalGapDB Case Schema",
+  "description": "Standardized schema for documenting formal/informal legal gaps",
+  "version": "1.0.0",
+  "type": "object",
+  "required": [
+    "case_id",
+    "title", 
+    "jurisdiction",
+    "legal_domain",
+    "formal_rule",
+    "informal_practice",
+    "validation"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}-[A-Z]{3,6}-[0-9]{3}$",
+      "description": "Unique identifier: [COUNTRY]-[DOMAIN]-[NUMBER]",
+      "examples": ["AR-LAB-001", "NG-TAX-012", "IN-ENV-045"]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 200,
+      "description": "Clear, descriptive title of the legal gap"
+    },
+    "jurisdiction": {
+      "type": "string",
+      "description": "Country or region (ISO 3166-1 alpha-2 preferred)"
+    },
+    "legal_domain": {
+      "type": "string",
+      "enum": [
+        "Labor Law",
+        "Tax Law", 
+        "Environmental Law",
+        "Corporate Law",
+        "Criminal Law",
+        "Family Law",
+        "Administrative Law",
+        "Constitutional Law",
+        "Commercial Law",
+        "Property Law"
+      ]
+    },
+    "contributor": {
+      "type": "object",
+      "required": ["name", "affiliation"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Contributor's full name"
+        },
+        "affiliation": {
+          "type": "string", 
+          "description": "Institution or organization"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "orcid": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]$"
+        }
+      }
+    },
+    "submission_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date case was submitted (ISO 8601)"
+    },
+    "formal_rule": {
+      "type": "object",
+      "required": ["text", "source", "citation"],
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 50,
+          "description": "Exact text or detailed summary of legal requirement"
+        },
+        "source": {
+          "type": "string",
+          "description": "Official law name, article, and section"
+        },
+        "citation": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to official government source"
+        },
+        "enactment_date": {
+          "type": "string",
+          "format": "date",
+          "description": "When the law was enacted"
+        },
+        "sanctions": {
+          "type": "string",
+          "description": "Penalties specified in the formal law"
+        },
+        "scope": {
+          "type": "string",
+          "description": "Who/what the law applies to"
+        }
+      }
+    },
+    "informal_practice": {
+      "type": "object",
+      "required": ["gap_quantification"],
+      "properties": {
+        "gap_quantification": {
+          "type": "object",
+          "required": ["metric", "value", "confidence", "data_year", "data_source"],
+          "properties": {
+            "metric": {
+              "type": "string",
+              "description": "What is being measured (e.g., '% non-compliance')"
+            },
+            "value": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100,
+              "description": "Numeric value of the gap"
+            },
+            "unit": {
+              "type": "string",
+              "enum": ["percent", "absolute_number", "rate", "ratio"],
+              "default": "percent"
+            },
+            "absolute_number": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Absolute number affected (if applicable)"
+            },
+            "confidence": {
+              "type": "string",
+              "enum": ["high", "medium", "low"],
+              "description": "Confidence in the measurement"
+            },
+            "data_year": {
+              "type": "integer",
+              "minimum": 2015,
+              "maximum": 2030,
+              "description": "Year of the data"
+            },
+            "data_source": {
+              "type": "string",
+              "description": "Official agency or research institution"
+            }
+          }
+        },
+        "mechanisms": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "enforcement_capacity",
+              "administrative_burden",
+              "economic_incentives", 
+              "social_norms",
+              "corruption",
+              "institutional_capacity",
+              "cultural_mismatch",
+              "resource_constraints"
+            ]
+          },
+          "description": "Primary causes of the gap"
+        },
+        "regional_variation": {
+          "type": "string",
+          "description": "How gaps vary within the jurisdiction"
+        },
+        "sectoral_variation": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sector": {"type": "string"},
+              "gap_rate": {"type": "number"},
+              "description": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "gap_analysis": {
+      "type": "object",
+      "properties": {
+        "primary_causes": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Detailed explanation of why gap exists"
+        },
+        "enforcement_patterns": {
+          "type": "string",
+          "description": "Who gets sanctioned vs. who doesn't"
+        },
+        "temporal_trends": {
+          "type": "string", 
+          "description": "Is gap growing or shrinking over time?"
+        },
+        "comparative_context": {
+          "type": "string",
+          "description": "How this compares to other jurisdictions"
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": ["confidence_score", "last_verified"],
+      "properties": {
+        "peer_reviewed": {
+          "type": "boolean",
+          "default": false
+        },
+        "official_sources": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of official government sources"
+        },
+        "confidence_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Overall confidence in case (0-1)"
+        },
+        "last_verified": {
+          "type": "string",
+          "format": "date",
+          "description": "When sources were last checked"
+        },
+        "verification_notes": {
+          "type": "string",
+          "description": "Notes on validation process"
+        },
+        "reviewers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "affiliation": {"type": "string"},
+              "expertise": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "english_abstract": {
+      "type": "object",
+      "required": ["formal", "informal", "gap"],
+      "properties": {
+        "formal": {
+          "type": "string",
+          "minLength": 20,
+          "description": "Summary of formal legal requirement"
+        },
+        "informal": {
+          "type": "string", 
+          "minLength": 20,
+          "description": "Summary of actual practice"
+        },
+        "gap": {
+          "type": "string",
+          "minLength": 20, 
+          "description": "Explanation of gap causes and implications"
+        }
+      }
+    },
+    "keywords": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 3,
+      "maxItems": 10,
+      "description": "Relevant keywords for search and classification"
+    },
+    "related_cases": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Case IDs of related legal gaps"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string", 
+          "format": "date-time"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^v[0-9]+\\.[0-9]+$"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "under_review", "validated", "published", "archived"],
+          "default": "draft"
+        },
+        "language": {
+          "type": "string",
+          "pattern": "^[a-z]{2}(-[A-Z]{2})?$",
+          "description": "ISO 639-1 language code"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
