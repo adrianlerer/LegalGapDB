@@ -132,7 +132,7 @@ Yes! Multiple options:
            Jurisdictions}},
   year = 2025,
   publisher = {Zenodo},
-  doi = {10.5281/zenodo.XXXXXXX}
+  doi = {10.5281/zenodo.PENDING}
 }
 ```
 

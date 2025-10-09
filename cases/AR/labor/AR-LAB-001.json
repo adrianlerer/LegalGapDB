@@ -116,6 +116,6 @@
     "languages": ["es", "en"],
     "related_cases": ["AR-LAB-002", "AR-TAX-001"],
     "tags": ["informality", "enforcement_gap", "labor_law", "social_security", "compliance"],
-    "doi": "10.5281/zenodo.XXXXXXX"
+    "doi": null
   }
 }
