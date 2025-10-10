@@ -408,8 +408,8 @@
           "description": "Keywords for categorization"
         },
         "doi": {
-          "type": "string",
-          "description": "DOI assigned upon verification"
+          "type": ["string", "null"],
+          "description": "DOI assigned upon verification (null if pending)"
         }
       }
     }
